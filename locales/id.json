@@ -1,0 +1,724 @@
+{
+    "navbar": {
+        "navigation": {
+            "about": "Tentang kami",
+            "activities": "Kegiatan",
+            "curricula": "Kurikulum",
+            "news": "Berita",
+            "contact": "Hubungi kami"
+        },
+        "registration": "Daftar"
+    },
+    "home": {
+        "hero": {
+            "paragraph": "anak menjadi versi terbaik dari diri mereka sendiri.",
+            "title": "Tempat Tumbuhnya Pikiran Muda dengan",
+            "subtitle": "Pengetahuan, Nilai, dan Kepercayaan Diri",
+            "registration": "Daftar Sekarang",
+            "discover": "Temukan Sekolah Kami"
+        },
+        "step": {
+            "title": {
+                "part1": "Langkah yang Membuat",
+                "part2": "Perbedaan dalam Kehidupan Anak Anda"
+            },
+            "paragraph": "Sekolah Internasional Arab di Jakarta adalah sekolah internasional terkemuka yang menggabungkan pendidikan akademik yang unggul dengan nilai-nilai Islam yang otentik.",
+            "env": "Lingkungan yang menginspirasi pemimpin muda.",
+            "envParagraph": "Kami peduli untuk membina dan mengembangkan kepribadian setiap anak agar percaya diri dan kreatif.",
+            "education": "Pendidikan dalam tiga bahasa",
+            "educationParagraph": "Arab, Inggris, dan Indonesia, untuk membangun fondasi yang kuat dan beragam bagi anak Anda.",
+            "balance": "Keseimbangan antara nilai dan keunggulan akademik",
+            "balanceParagraph": "Kurikulum yang menggabungkan nilai-nilai Islam otentik dengan pendidikan modern.",
+            "team": "Tim pengajar profesional",
+            "teamParagraph": "Arab, Inggris, dan Indonesia, untuk membangun fondasi yang kuat dan beragam bagi anak Anda."
+        },
+        "curricula": {
+            "title": "Kurikulum Pendidikan Terpadu Kami",
+            "desc": "Sistem Sekolah Internasional Arab adalah model pendidikan internasional unggulan yang menggabungkan nilai-nilai Islam, pendidikan berbasis nilai, dan standar internasional.",
+            "kindergarten": "Taman Kanak-kanak",
+            "primary": "Tahap Dasar",
+            "intermediate": "Tahap Menengah",
+            "secondary": "Tahap Sekunder",
+            "quran": "Cahaya Al-Qur'an",
+            "montessori": "Kurikulum Montessori",
+            "cambridge": "Cambridge EYFS",
+            "ico": "ICO",
+            "kindergartenStages": {
+                "0": {
+                    "title": "Cahaya Al-Qur'an",
+                    "desc": "Mengajarkan membaca dan Al-Qur'an dengan cara fonetik dan bertahap."
+                },
+                "1": {
+                    "title": "Kurikulum Montessori",
+                    "desc": "pembelajaran mandiri, kemandirian, dan keterampilan sensorik."
+                },
+                "2": {
+                    "title": "Cambridge EYFS",
+                    "desc": "Untuk memperkuat keterampilan bahasa, sains, dan pemikiran awal."
+                },
+                "3": {
+                    "title": "ICO",
+                    "desc": "Mengajarkan bahasa Arab dan nilai-nilai Islam dengan cara yang disederhanakan."
+                }
+            }
+        },
+        "language": {
+            "title": "Sistem Bahasa di Sekolah",
+            "arabic": "Bahasa Arab",
+            "english": "Bahasa Inggris",
+            "indonesian": "Bahasa Indonesia",
+            "speak": "Berbicara Bahasa Inggris",
+            "langs": {
+                "arabic": {
+                    "title": {
+                        "part1": "Bahasa",
+                        "part2": "Arab"
+                    },
+                    "desc": "Mengajarkan bahasa Arab, agama, dan pembacaan Al-Qur'an dengan penguasaan."
+                },
+                "english": {
+                    "title": {
+                        "part1": "Bahasa",
+                        "part2": "Inggris"
+                    },
+                    "desc": "Untuk sains, matematika, dan komunikasi global dengan lancar dan percaya diri."
+                },
+                "indonesian": {
+                    "title": {
+                        "part1": "Bahasa",
+                        "part2": "Indonesia"
+                    },
+                    "desc": "Mempelajari kurikulum nasional, seni, dan budaya lokal."
+                }
+            }
+        },
+        "activities": {
+            "age": "4-12 tahun",
+            "title": "Kegiatan Sekolah",
+            "paragraph": "Kami memperkaya setiap hari dengan pengalaman menarik yang membangun karakter dan keterampilan.",
+            "value": "Kegiatan Berbasis Nilai & Kreatif",
+            "quran": "Lingkaran Al-Qur'an & Refleksi",
+            "recreational": "Kompetisi Edukatif & Rekreasi",
+            "sports": "Program Olahraga & Fisik",
+            "registerNow": "Daftar Sekarang!",
+
+            "cards": {
+                "0": {
+                    "title": "Kegiatan Berbasis Nilai & Kreatif",
+                    "desc": "Mendorong imajinasi sambil memperkuat nilai-nilai inti."
+                },
+                "1": {
+                    "title": "Lingkaran Al-Qur'an & Refleksi",
+                    "desc": "Menumbuhkan pertumbuhan spiritual di ruang yang tenang dan inspiratif."
+                },
+                "2": {
+                    "title": "Kompetisi Edukatif & Rekreasi",
+                    "desc": "Menggabungkan pembelajaran dengan kesenangan, serta menumbuhkan tantangan yang sehat."
+                },
+                "3": {
+                    "title": "Program Olahraga & Fisik",
+                    "desc": "Mendukung kesehatan fisik, keseimbangan, dan energi."
+                }
+            }
+        },
+
+        "artistic": {
+            "title": "Kehidupan Sekolah yang Memicu Pertumbuhan, di Dalam dan Luar Kelas",
+            "desc": "Di sekolah kami, kami percaya bahwa pembelajaran melampaui buku. Kami menawarkan kehidupan sekolah yang kaya dengan acara yang mengembangkan kepribadian anak dan meningkatkan kepercayaan dirinya.",
+            "art": "Kegiatan Seni dan Kreatif"
+        },
+
+        "announcements": {
+            "title": "Tetap Terinformasi dengan Pengumuman Sekolah Terbaru",
+            "exam": "Tanggal Ujian Tengah Semester Diperbarui"
+        },
+
+        "faq": {
+            "title": "Pertanyaan Anda Dijawab dengan Perhatian",
+            "q1": "Bagaimana sekolah memperhatikan pengajaran nilai-nilai Islam?",
+            "q2": "Apa prosedur jika siswa tidak masuk sekolah?",
+            "q3": "Apakah ada kegiatan ekstrakurikuler di sekolah?",
+            "q4": "Bagaimana rencana pembelajaran? Apa strategi yang digunakan?",
+            "q5": "Apakah sekolah menawarkan layanan bimbingan sebagai bagian dari programnya?",
+            "answer": "Bagaimana sekolah memperhatikan pengajaran nilai-nilai Islam? Sekolah kami menyediakan program pendidikan Islam yang komprehensif yang mengintegrasikan nilai-nilai ke dalam pembelajaran dan aktivitas harian."
+        },
+        "contact": {
+            "title": "Hubungi kami dengan mudah",
+            "desc": "Punya pertanyaan atau ingin bertanya? Kami senang mendengar dari Anda. Silakan kirim pesan!",
+            "button": "Hubungi kami"
+        }
+    },
+    "services": {
+        "hero": {
+            "title": "Lingkungan Belajar Lengkap Untuk Pertumbuhan Dan Kenyamanan Anak Anda.",
+            "subtitle": "Kami menawarkan pendidikan seimbang dalam tiga bahasa, menggabungkan nilai-nilai Islam dengan standar global di lingkungan yang aman dan merangsang."
+        },
+        "stats": {
+            "students": "+154K Siswa ada di sini"
+        },
+        "facilities": {
+            "title": "Fasilitas dan Ruang Sekolah",
+            "subtitle": "Lingkungan yang aman, kreatif, dan inspiratif untuk pertumbuhan dan kenyamanan anak Anda.",
+            "register": "Daftar Sekarang!",
+            "items": {
+                "classrooms": {
+                    "title": "Ruang Kelas",
+                    "desc": "Ruang-ruang inspiratif tempat belajar menjadi hidup"
+                },
+                "playgrounds": {
+                    "title": "Taman Bermain",
+                    "desc": "Ruang aman dan terbuka untuk bermain bebas dan aktivitas fisik"
+                },
+                "laboratories": {
+                    "title": "Laboratorium",
+                    "desc": "Laboratorium ilmiah yang disederhanakan untuk siswa sekolah dasar"
+                },
+                "play_areas": {
+                    "title": "Area Bermain",
+                    "desc": "Tempat yang dilengkapi dengan permainan yang sesuai untuk berbagai usia"
+                },
+                "restrooms": {
+                    "title": "Toilet dan area luar ruangan",
+                    "desc": "Fasilitas bersih dan terorganisir yang dirancang sesuai dengan standar keamanan dan privasi"
+                },
+                "library": {
+                    "title": "Perpustakaan",
+                    "desc": "Sudut yang tenang dan disukai anak-anak, menampilkan cerita, buku-buku pendidikan"
+                }
+            }
+        },
+        "safety": {
+            "title": "Keselamatan Anak Anda Adalah Prioritas Kami Setiap Hari.",
+            "subtitle": "Kami berusaha menyediakan lingkungan sekolah yang aman di mana anak-anak merasa aman dan percaya diri.",
+            "points": {
+                "supervision": "Pengawasan guru terus menerus di kelas dan halaman.",
+                "entrance_exit": "Pintu masuk dan keluar yang terorganisir dan aman.",
+                "cctv": "Kamera pengintai yang mencakup area-area penting."
+            }
+        },
+        "transportation": {
+            "title": "Kenyamanan Dan Keamanan Untuk Anak Anda Dari Pintu Hingga Ruang Kelas.",
+            "subtitle": "Di Sekolah Arab Internasional, kami menyediakan sistem transportasi sekolah yang aman dan terorganisir yang memastikan siswa tiba dan meninggalkan sekolah tepat waktu, dengan pengawasan pendidikan dan perhatian penuh pada keselamatan.",
+            "points": {
+                "clean_buses": {
+                    "title": "Bus bersih yang dilengkapi dengan standar keselamatan dan kenyamanan."
+                },
+                "punctuality": {
+                    "title": "Komitmen terhadap ketepatan waktu untuk keberangkatan dan kepulangan."
+                },
+                "supervisor": {
+                    "title": "Seorang pengawas di setiap bus untuk memastikan keselamatan siswa selama perjalanan."
+                }
+            },
+            "register": "Persyaratan pendaftaran untuk layanan transportasi"
+        },
+        "meal": {
+            "title": "Makanan Sehat yang Mendorong Nilai-nilai.",
+            "subtitle": "Pada hari Jumat, siswa berpartisipasi dalam mengatur meja dan mendistribusikan makanan di bawah pengawasan pendidikan, yang bertujuan untuk menanamkan nilai-nilai tanggung jawab, kerja sama, dan rasa hormat.",
+            "points": {
+                "bring_plate": "Setiap siswa diharuskan membawa piring dan sendok yang bersih.",
+                "water_only": "Air adalah satu-satunya minuman yang diperbolehkan.",
+                "healthy_meal": "Makanan sehat mencakup protein, sayuran, karbohidrat, dan buah."
+            },
+            "friday_meal": {
+                "title": "Apa yang Termasuk dalam Makanan Jumat",
+                "subtitle": "Makanan seimbang dengan protein, sayuran, karbohidrat, buah, dan selalu air di sampingnya"
+            },
+            "rules": {
+                "title": "Aturan Partisipasi",
+                "points": {
+                    "bring_plate": "Setiap siswa diharuskan membawa piring dan sendok yang bersih.",
+                    "no_outside_food": "Tidak boleh membawa makanan dari luar.",
+                    "organize_week": "Siswa ditugaskan untuk mengatur setiap minggu."
+                }
+            }
+        }
+    },
+    "educational_programs": {
+        "hero": {
+            "title": "Kurikulum dan program pendidikan",
+            "subtitle": "Kurikulum pendidikan komprehensif yang menggabungkan nilai-nilai Islam dengan standar internasional untuk membangun kepribadian yang seimbang"
+        },
+        "safe_start": {
+            "title": "Awal yang Aman untuk Pembelajaran Aktif dan Seimbang",
+            "subtitle": "Kurikulum kami mengintegrasikan pendidikan nilai dengan keunggulan akademik, berfokus pada pengembangan siswa yang utuh yang unggul secara intelektual dan moral.",
+            "programs": {
+                "kindergarten": {
+                    "title": "Taman Kanak-kanak",
+                    "desc": "Lingkungan belajar berbasis bermain yang mengembangkan keterampilan sosial dan akademik"
+                },
+                "primary": {
+                    "title": "Sekolah Dasar",
+                    "desc": "Membangun fondasi dengan fokus pada mata pelajaran inti dan pengembangan karakter"
+                },
+                "intermediate": {
+                    "title": "Sekolah Menengah",
+                    "desc": "Pembelajaran lanjutan dengan mata pelajaran khusus dan peluang kepemimpinan"
+                }
+            }
+        },
+        "values": {
+            "title": "Pendidikan Nilai dan Moral",
+            "subtitle": "Nilai-nilai Islam terintegrasi dalam kegiatan pembelajaran harian dan program pembangunan karakter yang membentuk warga negara yang bertanggung jawab.",
+            "button": "Pelajari lebih lanjut"
+        },
+        "stages": {
+            "title": "Dari Taman Kanak-kanak ke Sekolah Dasar",
+            "subtitle": "Kegiatan seni dan fisik",
+            "kindergarten": {
+                "title": "Kegiatan linguistik, budaya, dan Alquran",
+                "activities": {
+                    "arts_physical": "Kegiatan seni dan fisik",
+                    "linguistic_cultural": "Kegiatan linguistik dan budaya",
+                    "music_arts": "Musik dan seni",
+                    "physical_education": "Pendidikan jasmani"
+                }
+            },
+            "elementary": {
+                "title": "Kegiatan seni dan fisik",
+                "activities": {
+                    "arts_4_12": "Seni untuk Usia 4-12",
+                    "creative_workshops": "Workshop kreatif",
+                    "physical_sports": "Pendidikan jasmani dan olahraga",
+                    "music_performance": "Musik dan seni pertunjukan"
+                }
+            }
+        },
+        "activities": {
+            "title": "Kegiatan Linguistik, Budaya, dan Alquran",
+            "programs": {
+                "quranic": {
+                    "title": "Pendidikan Alquran",
+                    "desc": "Program menghafal dan memahami Alquran secara komprehensif"
+                },
+                "cultural": {
+                    "title": "Kegiatan Budaya",
+                    "desc": "Merayakan keberagaman melalui pertukaran budaya dan pembelajaran"
+                },
+                "linguistic": {
+                    "title": "Pengembangan Bahasa",
+                    "desc": "Kemahiran multibahasa dalam bahasa Arab, Inggris, dan Indonesia"
+                }
+            },
+            "button": "Pelajari lebih lanjut"
+        },
+        "language_system": {
+            "title": "Sistem Bahasa Sekolah",
+            "subtitle": "Sistem pendidikan trilingual mempersiapkan siswa untuk peluang global",
+            "languages": {
+                "arabic": {
+                    "title": "Bahasa Arab",
+                    "desc": "Pengembangan bahasa ibu dan apresiasi sastra"
+                },
+                "english": {
+                    "title": "Bahasa Inggris",
+                    "desc": "Komunikasi internasional dan akses kurikulum global"
+                },
+                "indonesian": {
+                    "title": "Bahasa Indonesia",
+                    "desc": "Kemahiran bahasa lokal dan integrasi budaya"
+                }
+            },
+            "button": "Berbicara Bahasa Inggris"
+        },
+        "monitoring": {
+            "title": "Pemantauan Komprehensif Kinerja Akademik dan Perilaku",
+            "subtitle": "Kami melacak kemajuan setiap siswa melalui penilaian terperinci dan sistem dukungan yang dipersonalisasi.",
+            "features": {
+                "reports": {
+                    "title": "Laporan",
+                    "desc": "Laporan kemajuan terperinci untuk orang tua dan siswa"
+                },
+                "meetings": {
+                    "title": "Pertemuan rutin dengan orang tua",
+                    "desc": "Konferensi terjadwal untuk membahas perkembangan siswa"
+                },
+                "tools": {
+                    "title": "Alat penilaian",
+                    "desc": "Metode evaluasi modern untuk penilaian komprehensif"
+                }
+            }
+        },
+        "contact": {
+            "title": "Hubungi kami dengan mudah",
+            "desc": "Apakah Anda memiliki pertanyaan tentang program pendidikan kami? Kami di sini untuk membantu Anda memilih jalur terbaik untuk pendidikan anak Anda.",
+            "button": "Hubungi kami"
+        }
+    },
+    "contact": {
+        "title": "Hubungi kami dengan mudah",
+        "desc": "Apakah Anda punya pertanyaan atau pertanyaan? Kami senang mendengar dari Anda dan akan merespons sesegera mungkin.",
+        "button": "Hubungi kami"
+    },
+    "about_us": {
+        "hero": {
+            "title": "Tentang Sekolah Arab Internasional",
+            "subtitle": "Membina keunggulan melalui pendidikan berbasis nilai dan perspektif global"
+        },
+        "vision": {
+            "title": "Visi Kami",
+            "desc": "Menjadi model terdepan dalam pendidikan Islam Arab internasional yang menyediakan pengalaman pendidikan berkualitas tinggi yang memelihara pikiran anak, memperbaiki perilaku mereka, dan meningkatkan kepercayaan diri mereka."
+        },
+        "mission": {
+            "title": "Misi Kami",
+            "desc": "Kami menyediakan lingkungan pendidikan yang hangat dan merangsang menggunakan metode pengajaran inovatif dalam bahasa Arab - Inggris - Indonesia dalam kerangka nilai-nilai Islam yang mempromosikan rasa hormat dan keterbukaan terhadap keberagaman."
+        },
+        "values": {
+            "title": "Nilai-Nilai Inti Kami",
+            "subtitle": "Fondasi yang kami bangun untuk segalanya",
+            "excellence": {
+                "title": "Keunggulan",
+                "desc": "Kami mendorong setiap siswa untuk berusaha mencapai keunggulan akademik, menjadikannya jalan menuju pertumbuhan pribadi dan kesuksesan."
+            },
+            "integrity": {
+                "title": "Integritas",
+                "desc": "Kami mempromosikan nilai-nilai etis dan kejujuran dalam setiap aspek pembelajaran dan interaksi pribadi dengan semua orang."
+            },
+            "respect": {
+                "title": "Rasa Hormat",
+                "desc": "Kami menanamkan rasa hormat dan menghargai orang lain, dan mempromosikan lingkungan inklusif yang menghargai semua orang."
+            },
+            "collaboration": {
+                "title": "Kolaborasi",
+                "desc": "Kami menumbuhkan semangat kerjasama di antara siswa, guru, dan orang tua menuju tujuan bersama dalam pembelajaran dan pertumbuhan."
+            }
+        },
+        "history": {
+            "title": "Cerita Kami",
+            "subtitle": "Membangun pemimpin masa depan sejak didirikan",
+            "desc": "Sekolah Arab Internasional didirikan dengan visi untuk menyediakan pendidikan kelas dunia yang menggabungkan nilai-nilai Islam dengan standar internasional. Selama bertahun-tahun, kami telah berkembang menjadi institusi pendidikan komprehensif yang melayani siswa dari taman kanak-kanak hingga sekolah menengah.",
+            "founding": {
+                "title": "Pendirian Kami",
+                "desc": "Didirikan dengan misi menjembatani pendidikan Islam dengan keunggulan akademik global"
+            },
+            "growth": {
+                "title": "Pertumbuhan Berkelanjutan",
+                "desc": "Memperluas program dan fasilitas kami untuk melayani komunitas pelajar yang berkembang"
+            },
+            "future": {
+                "title": "Melihat ke Depan",
+                "desc": "Berkomitmen pada inovasi dan keunggulan dalam mempersiapkan siswa untuk tantangan masa depan"
+            }
+        },
+        "team": {
+            "title": "Kenali Tim Kepemimpinan Kami",
+            "subtitle": "Profesional berdedikasi yang berkomitmen pada keunggulan pendidikan",
+            "principal": {
+                "title": "Kepala Sekolah",
+                "desc": "Memimpin visi pendidikan kami dengan pengalaman bertahun-tahun dalam pendidikan internasional"
+            },
+            "academic_director": {
+                "title": "Direktur Akademik",
+                "desc": "Mengawasi pengembangan kurikulum dan standar akademik di semua tingkatan"
+            },
+            "student_affairs": {
+                "title": "Direktur Urusan Siswa",
+                "desc": "Memastikan kesejahteraan siswa dan menciptakan lingkungan belajar yang mendukung"
+            }
+        },
+        "achievements": {
+            "title": "Pencapaian Kami",
+            "subtitle": "Pengakuan atas komitmen kami terhadap keunggulan pendidikan",
+            "accreditation": {
+                "title": "Akreditasi Internasional",
+                "desc": "Diakui oleh badan-badan pendidikan terkemuka untuk standar tinggi kami"
+            },
+            "awards": {
+                "title": "Penghargaan Pendidikan",
+                "desc": "Dihormati karena inovasi dalam pendidikan multibahasa dan berbasis nilai"
+            },
+            "graduates": {
+                "title": "Lulusan Sukses",
+                "desc": "Alumni kami terus berprestasi di universitas dan karier di seluruh dunia"
+            }
+        },
+        "community": {
+            "title": "Komunitas Sekolah Kami",
+            "subtitle": "Membangun hubungan yang kuat antara siswa, keluarga, dan pendidik",
+            "parents": {
+                "title": "Kemitraan Orang Tua",
+                "desc": "Bekerja sama erat dengan keluarga untuk mendukung perjalanan pendidikan setiap anak"
+            },
+            "students": {
+                "title": "Badan Siswa",
+                "desc": "Komunitas pelajar yang beragam dari berbagai latar belakang budaya"
+            },
+            "staff": {
+                "title": "Staf Berdedikasi",
+                "desc": "Pendidik yang berkualitas dan bersemangat yang berkomitmen pada kesuksesan siswa"
+            }
+        }
+    },
+    "news": {
+        "hero": {
+            "title": "Pendaftaran Dibuka Sekarang untuk Tahun Akademik 2025-2026!",
+            "subtitle": "Kami sekarang menerima aplikasi untuk tahun ajaran mendatang. Amankan tempat anak Anda di lingkungan pendidikan yang berkualitas tinggi berdasarkan standar global dan nilai-nilai yang kuat.",
+            "button": "Daftar Sekarang",
+            "badge": "2025/2026"
+        },
+        "announcements": {
+            "title": "Pengumuman Terbaru Dan Sorotan Sekolah",
+            "subtitle": "Tetap terinformasi dengan berita, acara, dan pencapaian terbaru dari komunitas sekolah kami",
+            "search_placeholder": "Pencarian",
+            "filters": {
+                "notices": "Pemberitahuan",
+                "events": "Acara",
+                "awards": "Penghargaan",
+                "moments": "Momen"
+            }
+        },
+        "cards": {
+            "midterm_exam": {
+                "title": "Tanggal Ujian Tengah Semester Diperbarui",
+                "description": "Ujian tengah semester untuk Tingkat Dasar sekarang akan dimulai pada 30 September 2025, bukan 16 September.",
+                "date": "25 Juni 2025"
+            },
+            "science_day": {
+                "title": "Siswa Kami Bersinar di Hari Sains!",
+                "description": "Sekolah Arab Internasional dengan bangga mengadakan acara sains tahunannya, menampilkan kreativitas dan inovasi pada 18 Juni.",
+                "date": "25 Juni 2025"
+            }
+        },
+        "load_more": "Muat Lebih Banyak",
+        "no_results": "Tidak ada hasil ditemukan",
+        "contact_cta": {
+            "title": "Hubungi kami dengan mudah",
+            "subtitle": "Apakah Anda punya pertanyaan atau pertanyaan? Kami senang mendengar dari Anda dan akan merespons sesegera mungkin.",
+            "button": "Hubungi kami"
+        }
+    },
+    "contact_us": {
+        "hero": {
+            "title": "Karena Kami Percaya Setiap Perjalanan Dimulai dengan Percakapan",
+            "subtitle": "Punya pertanyaan atau ingin bertanya? Tim kami siap menjawab dengan perhatian — jangan ragu untuk menghubungi kami"
+        },
+        "contact_info": {
+            "phone": {
+                "title": "Nomor telepon - WhatsApp",
+                "subtitle": "Untuk kontak cepat kapan saja 6 pagi hingga 24 malam Senin-Jumat",
+                "number": "+620 905 088"
+            },
+            "email": {
+                "title": "Email",
+                "subtitle": "Untuk PM Senin-Jumat",
+                "address": "info@arabglobalschool.com"
+            },
+            "hours": {
+                "title": "Jam kerja",
+                "subtitle": "Senin hingga Jumat untuk jam sekolah",
+                "time": "Dari 8:00 pagi hingga 3:00 sore"
+            }
+        },
+        "faq": {
+            "title": "Pertanyaan Anda Dijawab dengan Perhatian",
+            "questions": {
+                "q1": {
+                    "question": "Bagaimana sekolah memperhatikan pengajaran nilai-nilai Islam?",
+                    "answer": "Kami menekankan nilai-nilai Islam di seluruh proses pendidikan kami. Kurikulum kami mencakup program ICO internasional untuk studi Islam dan umum, bersama dengan kelas menghafal Quran untuk semua usia. Kami juga menggabungkan etika dan adab Islam ke dalam pelajaran harian, dipandu oleh guru yang mencontohkan nilai-nilai ini melalui contoh praktis."
+                },
+                "q2": {
+                    "question": "Berapa jumlah siswa di setiap kelas atau lingkungan tiga bahasa?",
+                    "answer": "Ukuran kelas bervariasi berdasarkan tingkat untuk memastikan pendidikan berkualitas dan perhatian individual untuk setiap siswa."
+                },
+                "q3": {
+                    "question": "Apakah ada kegiatan ekstrakurikuler di sekolah?",
+                    "answer": "Ya, kami menawarkan berbagai kegiatan ekstrakurikuler termasuk olahraga, seni, program budaya, dan studi Quran untuk mendukung pengembangan siswa secara holistik."
+                },
+                "q4": {
+                    "question": "Bagaimana cara mendaftarkan anak saya? Apa langkah-langkah yang diperlukan?",
+                    "answer": "Pendaftaran mudah! Hubungi kami melalui telepon, WhatsApp, atau email untuk menjadwalkan kunjungan sekolah dan mempelajari persyaratan penerimaan kami."
+                },
+                "q5": {
+                    "question": "Apakah anak perlu mahir dalam salah satu dari tiga lingkungan bahasa?",
+                    "answer": "Tidak diperlukan kemahiran bahasa sebelumnya. Program trilingual kami dirancang untuk membantu siswa mengembangkan keterampilan dalam bahasa Arab, Inggris, dan Indonesia secara bertahap."
+                }
+            }
+        },
+        "location": {
+            "title": "Lokasi Kami, Rumah Kedua Mereka",
+            "subtitle": "Di lokasi yang tenang dan aman, kami menawarkan anak-anak Anda ruang belajar yang dekat dengan Anda — dan dekat di hati mereka."
+        },
+        "cta": {
+            "title": "Hubungi kami dengan mudah",
+            "subtitle": "Apakah Anda punya pertanyaan atau pertanyaan? Kami senang mendengar dari Anda dan akan merespons sesegera mungkin.",
+            "button": "Hubungi kami"
+        }
+    },
+    "footer": {
+        "slogan": "Dunia Senyum & Pengetahuan",
+        "desc": "Mulailah perjalanan penuh warna untuk tumbuh dan bernilai.",
+        "about": {
+            "title": "Tentang Sekolah",
+            "links": {
+                "who_we_are": "Siapa Kami",
+                "what_sets_us_apart": "Yang Membedakan Kami",
+                "board_of_trustees": "Dewan Pengawas"
+            }
+        },
+        "facilities": {
+            "title": "Fasilitas dan Layanan",
+            "links": {
+                "classrooms": "Ruang Kelas",
+                "playgrounds": "Lapangan Bermain",
+                "laboratories": "Laboratorium",
+                "library": "Perpustakaan",
+                "restrooms": "Kamar Mandi",
+                "transportation_services": "Layanan Transportasi"
+            }
+        },
+        "curricula": {
+            "title": "Kurikulum",
+            "links": {
+                "preparatory": "Persiapan",
+                "elementary_stage": "Tahap Sekolah Dasar",
+                "montessori": "Montessori",
+                "light_of_the_statement": "Cahaya Pernyataan",
+                "cambridge": "Cambridge",
+                "trilingual_education": "Pendidikan Trilingual",
+                "ico": "ICO",
+                "merdeka_curriculum": "Kurikulum Merdeka"
+            }
+        },
+        "newsletter": {
+            "title": "Berlangganan buletin",
+            "placeholder": "Masukkan alamat email Anda di sini",
+            "button": "Berlangganan",
+            "privacy_text": "Dengan mendaftar, Anda menyetujui kebijakan privasi kami dan menyetujui untuk menerima pembaruan dari perusahaan kami."
+        },
+        "contact": {
+            "title": "Hubungi kami",
+            "phone": "+964 56 004 167",
+            "email": "Global@ArabicGlobalSchool.com",
+            "address": "Indonesia/Al-Nuzha, Jalan Sekolah Al-Alamiya"
+        },
+        "copyright": "Semua hak dilindungi © untuk Duzu Creative Digital Marketing Company."
+    },
+    "register": {
+        "title": "Pendaftaran di Sekolah Internasional Arab – 2025/2026",
+        "welcomeMessage": "Orang Tua Yang Terhormat,",
+        "welcomeText": "Kami dengan hangat menyambut Anda terlebih dahulu ke keluarga sekolah kami dan berterima kasih atas kepercayaan Anda dalam memilih kami.",
+        "instructionText": "Setelah memilih sekolah dan tahap pendidikan yang sesuai untuk anak Anda, Anda dapat melanjutkan ke halaman pra-pendaftaran dengan mengklik tombol yang ditentukan.",
+        "processText": "Harap ikuti langkah-langkah yang dijelaskan setelah mengklik tombol \"Daftar\", dan baca petunjuknya dengan cermat sampai prosesnya selesai. Jika Anda memiliki pertanyaan atau mengalami kesulitan selama proses pendaftaran, tim dukungan sekolah akan sepenuhnya siap membantu Anda di setiap tahap.",
+        "wishText": "Kami senang Anda bergabung dengan kami dan berharap anak-anak kami memiliki tahun ajaran yang penuh dengan kesuksesan dan kemajuan.",
+        "schoolSelection": "Pilih sekolah anak Anda untuk tahun depan.",
+        "classSelection": "Silakan pilih kelas berikutnya untuk anak Anda.",
+        "primarySchool": "Sekolah dasar",
+        "one": "Satu",
+        "backToHome": "Kembali ke beranda",
+        "continue": "lanjutkan",
+        "steps": {
+            "studentInfo": "Informasi Siswa",
+            "familyInfo": "Informasi Keluarga",
+            "educationHealth": "Latar Belakang Pendidikan dan Kesehatan",
+            "attachments": "Lampiran yang Diperlukan"
+        },
+        "studentInformation": {
+            "title": "Info tentang Pelajar",
+            "subtitle": "Berikan detail pribadi dasar siswa seperti nama lengkap, tanggal lahir, kebangsaan, dan kelas saat ini.",
+            "fullName": "Nama lengkap siswa",
+            "fullNamePlaceholder": "Mohammad rasheed alfarogh",
+            "placeOfBirth": "Tempat lahir",
+            "placeOfBirthPlaceholder": "Masukkan tempat lahir siswa",
+            "nationalId": "KTP/Paspor",
+            "nationalIdPlaceholder": "94853976-978",
+            "surname": "Nama keluarga",
+            "surnamePlaceholder": "Masukkan nama keluarga",
+            "religion": "Agama",
+            "religionPlaceholder": "Masukkan agama siswa",
+            "dateOfBirth": "Tanggal lahir",
+            "dateOfBirthPlaceholder": "Pilih tanggal lahir siswa",
+            "studentAge": "Usia siswa per Juli",
+            "ageNumber": "8",
+            "gender": "Jenis kelamin",
+            "genderPlaceholder": "Pilih jenis kelamin",
+            "siblingPosition": "Posisi anak di antara saudara kandung",
+            "siblingPlaceholder": "Pilih posisi anak",
+            "primaryLanguage": "Bahasa utama yang digunakan di rumah",
+            "languagePlaceholder": "Pilih bahasa"
+        },
+        "familyInformation": {
+            "title": "Informasi Keluarga Terkait Siswa",
+            "subtitle": "Berikan detail akurat tentang orang tua siswa atau wali yang sah, termasuk kontak dan informasi hubungan.",
+            "fatherName": "Nama lengkap ayah",
+            "fatherNamePlaceholder": "Masukkan nama lengkap ayah",
+            "motherName": "Nama lengkap ibu",
+            "motherNamePlaceholder": "Masukkan nama lengkap ibu",
+            "nationalIdNumber": "Nomor KTP/Paspor",
+            "nationalIdPlaceholder": "Masukkan nomor KTP atau paspor",
+            "monthlyIncome": "Pendapatan bulanan",
+            "monthlyIncomePlaceholder": "Masukkan pendapatan bulanan",
+            "phoneNumber": "Nomor telepon",
+            "phoneNumberPlaceholder": "Masukkan nomor telepon",
+            "emailAddress": "Alamat email",
+            "emailPlaceholder": "Masukkan alamat email",
+            "guardianName": "Nama wali (jika berlaku)",
+            "guardianNamePlaceholder": "Masukkan nama wali",
+            "guardianRelationship": "Hubungan wali dengan siswa",
+            "guardianRelationshipPlaceholder": "Tentukan hubungan wali dengan siswa",
+            "parentAge": "Usia orang tua/wali",
+            "parentAgePlaceholder": "Masukkan usia orang tua/wali",
+            "occupation": "Pekerjaan",
+            "occupationPlaceholder": "Masukkan pekerjaan",
+            "workPlace": "Tempat kerja",
+            "workPlacePlaceholder": "Masukkan nama tempat kerja",
+            "officeAddress": "Alamat kantor",
+            "officeAddressPlaceholder": "Masukkan alamat kantor",
+            "landlinePhone": "Telepon rumah",
+            "landlinePhonePlaceholder": "Masukkan nomor telepon rumah"
+        },
+        "educationHealth": {
+            "title": "Perjalanan Pendidikan dan Kesehatan Siswa",
+            "subtitle": "Bagikan riwayat akademik siswa dan informasi kesehatan penting yang dapat mendukung pembelajaran dan kesejahteraan mereka.",
+            "previousSchool": "Nama sekolah sebelumnya",
+            "previousSchoolPlaceholder": "Masukkan nama sekolah/TK sebelumnya",
+            "schoolAddress": "Alamat sekolah",
+            "schoolAddressPlaceholder": "Masukkan alamat sekolah",
+            "fieldOfStudy": "Bidang studi",
+            "fieldOfStudyPlaceholder": "Masukkan bidang studi",
+            "enrollmentYear": "Tahun pendaftaran",
+            "enrollmentYearPlaceholder": "Masukkan tahun pendaftaran",
+            "graduationYear": "Tahun kelulusan",
+            "graduationYearPlaceholder": "Masukkan tahun kelulusan",
+            "medicalHistory": "Riwayat medis",
+            "medicalHistoryPlaceholder": "Masukkan penyakit sebelumnya atau kronis",
+            "futureAspiration": "Aspirasi masa depan siswa",
+            "futureAspirationPlaceholder": "Pilih aspirasi masa depan siswa",
+            "vision": "Penglihatan",
+            "visionPlaceholder": "Pilih kondisi visual",
+            "hearing": "Pendengaran",
+            "hearingPlaceholder": "Pilih kondisi pendengaran"
+        },
+        "attachments": {
+            "title": "Perjalanan Pendidikan dan Kesehatan Siswa",
+            "subtitle": "Bagikan riwayat akademik siswa dan informasi kesehatan penting yang dapat mendukung pembelajaran dan kesejahteraan mereka.",
+            "parentsId": "Salinan KTP kedua orang tua.",
+            "parentsIdSubtitle": "Mulai mengetik untuk menyaring hasil",
+            "birthCertificate": "Salinan akta kelahiran siswa",
+            "birthCertificateSubtitle": "Unggah sertifikat dalam format PNG atau PDF",
+            "studentPhotos": "Dua foto siswa",
+            "studentPhotosSubtitle": "Dua foto 3x4 dengan latar belakang berwarna",
+            "familyCard": "Salinan kartu keluarga",
+            "familyCardSubtitle": "Unggah sertifikat dalam format PNG atau PDF",
+            "dragImages": "Seret gambar ke sini atau",
+            "selectFile": "pilih file dari perangkat Anda",
+            "uploadCard": "Unggah kartu dalam format PNG atau PDF",
+            "uploadImage": "Unggah gambar dalam format PNG atau JPG",
+            "maxFileSize": "Ukuran file maksimum adalah 5MB",
+            "notes": "Harap baca catatan ini sebelum menyelesaikan pendaftaran.",
+            "note1": "Siswa dan wali harus mengenakan pakaian Islami saat menghadiri sekolah.",
+            "note2": "Biaya pendaftaran tidak dapat dikembalikan jika terjadi penarikan.",
+            "note3": "Diskon pendaftaran awal (hanya untuk tahap 1, 2, 3):",
+            "stage1": "Tahap 1 - Diskon 50%",
+            "stage2": "Tahap 2 - Diskon 30%",
+            "stage3": "Tahap 3 - Diskon 20%"
+        },
+        "thankYou": {
+            "title": "Terima kasih telah mendaftarkan putra Anda di Sekolah Internasional Arab.",
+            "message": "Kami telah menerima aplikasi Anda dan akan meninjau segera. Kami akan menghubungi Anda untuk mengatur wawancara pribadi untuk menyelesaikan proses pendaftaran.",
+            "returnHome": "Kembali ke beranda"
+        }
+    },
+    "image_alt": {
+        "default": "Sekolah Internasional Arab"
+    }
+}
