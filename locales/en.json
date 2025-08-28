@@ -1,0 +1,729 @@
+{
+    "navbar": {
+        "navigation": {
+            "about": "About us",
+            "activities": "Activities",
+            "curricula": "Curricula",
+            "news": "News",
+            "contact": "Contact us"
+        },
+        "registration": "Register"
+    },
+    "home": {
+        "hero": {
+            "paragraph": "child become the best version of themselves.",
+            "title": "Where Young Minds Grow",
+            "subtitle": "with Knowledge, Values, and Confidence",
+            "registration": "Register Now",
+            "discover": "Discover Our School"
+        },
+        "step": {
+            "title": {
+                "part1": "The Step That Makes",
+                "part2": "A Difference In Your Child's Life"
+            },
+            "paragraph": "The Arab International School in Jakarta is a distinguished international school that combines excellent academic education with authentic Islamic values.",
+            "env": "An environment that inspires young leaders.",
+            "envParagraph": "We care for nurturing and developing each child's personality to be confident and creative.",
+            "education": "Education in three languages",
+            "educationParagraph": "Arabic, English, and Indonesian, to build a strong and diverse foundation for your child.",
+            "balance": "A balance between values and academic excellence",
+            "balanceParagraph": "A curriculum that combines authentic Islamic values with modern education.",
+            "team": "Professional teaching team",
+            "teamParagraph": "Arabic, English, and Indonesian, to build a strong and diverse foundation for your child."
+        },
+        "curricula": {
+            "title": "Our Integrated Educational Curricula",
+            "desc": "The Arab International School in Jakarta is a distinguished international school that combines excellent academic education with authentic Islamic values.",
+            "kindergarten": "Kindergarten",
+            "primary": "Primary Stage",
+            "intermediate": "Intermediate Stage",
+            "secondary": "Secondary Stage",
+            "quran": "Light of the Quran",
+            "montessori": "Montessori Curriculum",
+            "cambridge": "Cambridge EYFS",
+            "ico": "ICO",
+            "kindergartenStages": {
+                "0": {
+                    "title": "Light of the Quran",
+                    "desc": "Teaching reading and the Quran in a phonetic and gradual manner."
+                },
+                "1": {
+                    "title": "Montessori Curriculum",
+                    "desc": "self-directed learning, independence, and sensory skills."
+                },
+                "2": {
+                    "title": "Cambridge EYFS",
+                    "desc": "To strengthen language skills, science, and early thinking."
+                },
+                "3": {
+                    "title": "ICO",
+                    "desc": "Teach Arabic language and Islamic values in a simplified manner."
+                }
+            }
+        },
+        "language": {
+            "title": "Language System Of School",
+            "arabic": "Arabic language",
+            "english": "English language",
+            "indonesian": "Indonesian language",
+            "langs": {
+                "arabic": {
+                    "title": {
+                        "part1": "Arabic",
+                        "part2": "language"
+                    },
+                    "desc": "Teaching Arabic language, religion, and Quran recitation with mastery."
+                },
+                "english": {
+                    "title": {
+                        "part1": "English",
+                        "part2": "language"
+                    },
+                    "desc": "For sciences, mathematics, and global communication with fluency and confidence."
+                },
+                "indonesian": {
+                    "title": {
+                        "part1": "Indonesian",
+                        "part2": "language"
+                    },
+                    "desc": "Learning national curricula, arts, and local culture."
+                }
+            }
+        },
+
+        "activities": {
+            "age": "4-12 years old",
+            "title": "School Activities",
+            "paragraph": "We enrich each day with engaging experiences that build character and skills.",
+            "value": "Value-Based & Creative Activities",
+            "quran": "Qur'an & Reflection Circles",
+            "recreational": "Educational & Recreational Competitions",
+            "sports": "Sports & Physical Programs",
+            "registerNow": "Register now!",
+
+            "cards": {
+                "0": {
+                    "title": "Values-Based & Creative Activities",
+                    "desc": "Encourage imagination while reinforcing core values."
+                },
+                "1": {
+                    "title": "Qur’an & Reflection Circles",
+                    "desc": "Cultivate spiritual growth in a calm, inspiring space."
+                },
+                "2": {
+                    "title": "Educational & Recreational Competitions",
+                    "desc": "Blend learning with fun, and foster healthy challenge."
+                },
+                "3": {
+                    "title": "Sports & Physical Programs",
+                    "desc": "Support physical health, balance, and energy."
+                }
+            }
+        },
+
+        "artistic": {
+            "title": "School Life That Sparks Growth, Inside And Out",
+            "desc": "At our school, we believe that learning goes beyond books. We offer a rich school life filled with events that develop the children’s personality and enhance their self-confidence.",
+            "art": "Artistic and Creative Activities"
+        },
+
+        "announcements": {
+            "title": "Stay Informed With The Latest School Announcements",
+            "exam": "Midterm Exam Dates Updated"
+        },
+        "faq": {
+            "title": "Your Questions Answered With Care",
+            "q1": "How does the school care for teaching Islamic values?",
+            "q2": "What are the procedures if students are absent from school?",
+            "q3": "Are there extracurricular activities in school?",
+            "q4": "How are learning plans? What are the strategies used?",
+            "q5": "Does the school offer guidance services as part of their programs?",
+            "answer": "How does the school care for teaching Islamic values? Our school provides a comprehensive Islamic education program that integrates values into daily learning and activities."
+        }
+    },
+    "footer": {
+        "slogan": "A World of Smiles & Knowledge",
+        "desc": "Begin a colorful journey of growth and values.",
+        "about": {
+            "title": "About the School",
+            "links": {
+                "who_we_are": "Who We Are",
+                "what_sets_us_apart": "What Sets Us Apart",
+                "board_of_trustees": "Board of Trustees"
+            }
+        },
+        "facilities": {
+            "title": "Facilities and Services",
+            "links": {
+                "classrooms": "Classrooms",
+                "playgrounds": "Playgrounds",
+                "laboratories": "Laboratories",
+                "library": "Library",
+                "restrooms": "Restrooms",
+                "transportation_services": "Transportation Services"
+            }
+        },
+        "curricula": {
+            "title": "Curricula",
+            "links": {
+                "preparatory": "Preparatory",
+                "elementary_stage": "Elementary Stage",
+                "montessori": "Montessori",
+                "light_of_the_statement": "Light of the Statement",
+                "cambridge": "Cambridge",
+                "trilingual_education": "Trilingual Education",
+                "ico": "ICO",
+                "merdeka_curriculum": "Merdeka Curriculum"
+            }
+        },
+        "newsletter": {
+            "title": "Subscribe to the newsletter",
+            "placeholder": "Enter your email address here",
+            "button": "Subscribe",
+            "privacy_text": "By registering, you agree to our privacy policy and consent to receive updates from our company."
+        },
+        "contact": {
+            "title": "Contact us",
+            "phone": "+964 56 004 167",
+            "email": "Global@ArabicGlobalSchool.com",
+            "address": "Indonesia/Al-Nuzha, Al-Alamiya School Road"
+        },
+        "copyright": "All rights reserved © to Duzu Creative Digital Marketing Company."
+    },
+    "services": {
+        "hero": {
+            "title": "A Complete Learning Environment For Your Child's Growth And Comfort.",
+            "subtitle": "We offer a balanced education in three languages, combining Islamic values with global standards in a safe and stimulating environment."
+        },
+        "stats": {
+            "students": "+154K Students are here"
+        },
+        "facilities": {
+            "title": "School Facilities And Spaces",
+            "subtitle": "Safe, creative, and inspiring environments for your child's growth and comfort.",
+            "register": "Register Now!",
+            "items": {
+                "classrooms": {
+                    "title": "Classrooms",
+                    "desc": "Inspiring spaces where learning comes to life"
+                },
+                "playgrounds": {
+                    "title": "Playgrounds",
+                    "desc": "Safe and open spaces for free play and physical activities"
+                },
+                "laboratories": {
+                    "title": "Laboratories",
+                    "desc": "Simplified scientific laboratories for elementary school students"
+                },
+                "play_areas": {
+                    "title": "Play Areas",
+                    "desc": "Places equipped with games suitable for various ages"
+                },
+                "restrooms": {
+                    "title": "Restrooms and outdoor areas",
+                    "desc": "Clean and organized facilities designed according to safety and privacy standards"
+                },
+                "library": {
+                    "title": "The library",
+                    "desc": "A quiet and beloved corner for children, featuring stories, educational books"
+                }
+            }
+        },
+        "safety": {
+            "title": "Your Child's Safety Is Our Priority Every Day.",
+            "subtitle": "We strive to provide a safe school environment where children feel secure and confident.",
+            "points": {
+                "supervision": "Continuous teacher supervision in class and yard.",
+                "entry_exit": "Organized and secure entry and exit doors.",
+                "cameras": "Surveillance cameras covering key areas."
+            }
+        },
+        "transportation": {
+            "title": "Comfort And Safety For Your Child From The Door To The Classroom.",
+            "subtitle": "At the International Arab School, we provide a safe and organized school transportation system that ensures students arrive at and leave school on time, with educational supervision and full attention to safety.",
+            "points": {
+                "clean_buses": {
+                    "title": "Clean buses equipped with safety and comfort standards."
+                },
+                "punctuality": {
+                    "title": "Commitment to punctuality for departures and returns."
+                },
+                "supervisor": {
+                    "title": "A supervisor on every bus to ensure student safety during the trip."
+                }
+            },
+            "register": "Registration requirements for the transportation service"
+        },
+        "meal": {
+            "title": "A Healthy Meal That Promotes Values.",
+            "subtitle": "On Friday, students participate in organizing the table and distributing food under educational supervision, aiming to instill values of responsibility, cooperation, and respect.",
+            "points": {
+                "bring_plate": "Each student is required to bring a clean plate and spoon.",
+                "water_only": "Water is the only beverage allowed.",
+                "healthy_meal": "A healthy meal includes protein, vegetables, carbohydrates, and fruit."
+            },
+            "friday_meal": {
+                "title": "What The Friday Meal Includes",
+                "subtitle": "A balanced meal with protein, vegetables, carbs, fruit and always water on the side"
+            },
+            "rules": {
+                "title": "Participation Rules",
+                "points": {
+                    "bring_plate": "Each student is required to bring a clean plate and spoon.",
+                    "no_outside_food": "No outside food is allowed.",
+                    "organize_week": "Students are assigned to organize each week."
+                }
+            }
+        }
+    },
+    "educational_programs": {
+        "hero": {
+            "title": "Curricula and educational programs",
+            "subtitle": "Comprehensive educational curricula that combine Islamic values with international standards to build a balanced personality"
+        },
+        "safe_start": {
+            "title": "A Safe Start For Active And Balanced Learning",
+            "subtitle": "Our curriculum integrates values education with academic excellence, focusing on developing well-rounded students who excel both intellectually and morally.",
+            "programs": {
+                "kindergarten": {
+                    "title": "Kindergarten",
+                    "desc": "Play-based learning environment that develops social and academic skills"
+                },
+                "primary": {
+                    "title": "Primary School",
+                    "desc": "Foundation building with focus on core subjects and character development"
+                },
+                "intermediate": {
+                    "title": "Intermediate School",
+                    "desc": "Advanced learning with specialized subjects and leadership opportunities"
+                }
+            }
+        },
+        "values": {
+            "title": "Value And Moral Education",
+            "subtitle": "Islamic values integrated into daily learning activities and character building programs that shape responsible citizens.",
+            "button": "Learn more"
+        },
+        "stages": {
+            "title": "From Kindergarten To Elementary School",
+            "subtitle": "Art and physical activities",
+            "kindergarten": {
+                "title": "Linguistic, cultural, and Quranic activities",
+                "activities": {
+                    "art_physical": "Art and physical activities",
+                    "linguistic_cultural": "Linguistic and cultural activities",
+                    "music_arts": "Music and arts",
+                    "physical_education": "Physical education"
+                }
+            },
+            "elementary": {
+                "title": "Art and physical activities",
+                "activities": {
+                    "art_ages": "Art for Ages 4-12",
+                    "creative_workshops": "Creative workshops",
+                    "physical_sports": "Physical education and sports",
+                    "music_performance": "Music and performance arts"
+                }
+            }
+        },
+        "activities": {
+            "title": "Linguistic, Cultural, And Quranic Activities",
+            "programs": {
+                "quranic": {
+                    "title": "Quranic Education",
+                    "desc": "Comprehensive Quran memorization and understanding program"
+                },
+                "cultural": {
+                    "title": "Cultural Activities",
+                    "desc": "Celebrating diversity through cultural exchange and learning"
+                },
+                "linguistic": {
+                    "title": "Language Development",
+                    "desc": "Multi-language proficiency in Arabic, English, and Indonesian"
+                }
+            },
+            "button": "Learn more"
+        },
+        "language_system": {
+            "title": "Language System Of School",
+            "subtitle": "Trilingual education system preparing students for global opportunities",
+            "languages": {
+                "arabic": {
+                    "title": "Arabic Language",
+                    "desc": "Native language development and literature appreciation"
+                },
+                "english": {
+                    "title": "English Language",
+                    "desc": "International communication and global curriculum access"
+                },
+                "indonesian": {
+                    "title": "Indonesian Language",
+                    "desc": "Local language proficiency and cultural integration"
+                }
+            },
+            "button": "Speak English"
+        },
+        "monitoring": {
+            "title": "Comprehensive Monitoring Of Academic And Behavioral Performance",
+            "subtitle": "We track every student's progress through detailed assessment and personalized support systems.",
+            "features": {
+                "reports": {
+                    "title": "Reports",
+                    "desc": "Detailed progress reports for parents and students"
+                },
+                "meetings": {
+                    "title": "Regular meetings with parents",
+                    "desc": "Scheduled conferences to discuss student development"
+                },
+                "tools": {
+                    "title": "Assessment tools",
+                    "desc": "Modern evaluation methods for comprehensive assessment"
+                }
+            }
+        },
+        "contact": {
+            "title": "Contact us easily",
+            "desc": "Do you have questions about our educational programs? We're here to help you choose the best path for your child's education.",
+            "button": "Contact us"
+        }
+    },
+    "contact": {
+        "title": "Contact us easily",
+        "desc": "Do you have a question or inquiry? We are happy to hear from you and will respond as soon as possible.",
+        "button": "Contact us"
+    },
+    "about_us": {
+        "hero": {
+            "title": "About Arab International School",
+            "subtitle": "Nurturing excellence through values-based education and global perspectives"
+        },
+        "vision": {
+            "title": "Our Vision",
+            "desc": "To be a leading model in international Arab Islamic education providing a high-quality educational experience that nurtures the child's mind, refines their behavior and enhances their self-confidence."
+        },
+        "mission": {
+            "title": "Our Mission",
+            "desc": "We provide a warm and stimulating educational environment using innovative teaching methods in Arabic - English - Indonesian within an Islamic values framework that promotes respect and openness to diversity."
+        },
+        "values": {
+            "title": "Our Core Values",
+            "subtitle": "The foundation upon which we build everything",
+            "excellence": {
+                "title": "Excellence",
+                "desc": "We encourage every student to strive for academic, making it a pathway to personal growth and success."
+            },
+            "integrity": {
+                "title": "Integrity",
+                "desc": "We promote ethical values and honesty in every aspect of learning and personal interaction with everyone."
+            },
+            "respect": {
+                "title": "Respect",
+                "desc": "We instill with respect and respect for others, and promote an inclusive environment that values everyone."
+            },
+            "collaboration": {
+                "title": "Collaboration",
+                "desc": "We cultivate the spirit of cooperation among students, teachers and parents towards common goals in learning and growth."
+            }
+        },
+        "history": {
+            "title": "Our Story",
+            "subtitle": "Building tomorrow's leaders since our founding",
+            "desc": "Arab International School was established with a vision to provide world-class education that combines Islamic values with international standards. Over the years, we have grown into a comprehensive educational institution serving students from kindergarten through secondary school.",
+            "founding": {
+                "title": "Our Founding",
+                "desc": "Established with the mission to bridge Islamic education with global academic excellence"
+            },
+            "growth": {
+                "title": "Continuous Growth",
+                "desc": "Expanding our programs and facilities to serve our growing community of learners"
+            },
+            "future": {
+                "title": "Looking Forward",
+                "desc": "Committed to innovation and excellence in preparing students for future challenges"
+            }
+        },
+        "team": {
+            "title": "Meet Our Leadership Team",
+            "subtitle": "Dedicated professionals committed to educational excellence",
+            "principal": {
+                "title": "Principal",
+                "desc": "Leading our educational vision with years of experience in international education"
+            },
+            "academic_director": {
+                "title": "Academic Director",
+                "desc": "Overseeing curriculum development and academic standards across all levels"
+            },
+            "student_affairs": {
+                "title": "Student Affairs Director",
+                "desc": "Ensuring student well-being and creating a supportive learning environment"
+            }
+        },
+        "achievements": {
+            "title": "Our Achievements",
+            "subtitle": "Recognition of our commitment to educational excellence",
+            "accreditation": {
+                "title": "International Accreditation",
+                "desc": "Recognized by leading educational bodies for our high standards"
+            },
+            "awards": {
+                "title": "Educational Awards",
+                "desc": "Honored for innovation in multilingual and values-based education"
+            },
+            "graduates": {
+                "title": "Successful Graduates",
+                "desc": "Our alumni continue to excel in universities and careers worldwide"
+            }
+        },
+        "community": {
+            "title": "Our School Community",
+            "subtitle": "Building strong relationships between students, families, and educators",
+            "parents": {
+                "title": "Parent Partnership",
+                "desc": "Working closely with families to support each child's educational journey"
+            },
+            "students": {
+                "title": "Student Body",
+                "desc": "A diverse community of learners from various cultural backgrounds"
+            },
+            "staff": {
+                "title": "Dedicated Staff",
+                "desc": "Qualified and passionate educators committed to student success"
+            }
+        }
+    },
+    "news": {
+        "hero": {
+            "title": "Enrollment Now Open for the 2025-2026 Academic Year!",
+            "subtitle": "We are now accepting applications for the upcoming school year. Reserve your child's place in a nurturing, high-quality educational environment rooted in global standards and strong values.",
+            "button": "Register Now",
+            "badge": "2025/2026"
+        },
+        "announcements": {
+            "title": "Latest Announcements And School Highlights",
+            "subtitle": "Stay informed with the latest news, events, and achievements from our school community",
+            "search_placeholder": "Search",
+            "filters": {
+                "notices": "Notices",
+                "events": "Events",
+                "awards": "Awards",
+                "moments": "Moments"
+            }
+        },
+        "cards": {
+            "midterm_exam": {
+                "title": "Midterm Exam Dates Updated",
+                "description": "Midterm exams for the Primary Level will now begin on September 30, 2025, instead of September 16.",
+                "date": "June 25, 2025"
+            },
+            "science_day": {
+                "title": "Our Students Shine on Science Day!",
+                "description": "The Arab International School proudly hosted its annual science event, showcasing creativity and innovation on June 18.",
+                "date": "June 25, 2025"
+            }
+        },
+        "load_more": "Load More",
+        "no_results": "No results found",
+        "contact_cta": {
+            "title": "Contact us easily",
+            "subtitle": "Do you have a question or inquiry? We are happy to hear from you and will respond as soon as possible.",
+            "button": "Contact us"
+        }
+    },
+    "contact_us": {
+        "hero": {
+            "title": "Because We Believe Every Journey Begins with a Conversation",
+            "subtitle": "Have a question or inquiry? Our team is ready to answer with care — don't hesitate to reach out to us"
+        },
+        "contact_info": {
+            "phone": {
+                "title": "Phone number - WhatsApp",
+                "subtitle": "For quick contact anytime 6 AM to 24 PM Monday-Friday",
+                "number": "+620 905 088"
+            },
+            "email": {
+                "title": "Email",
+                "subtitle": "For PM Monday-Friday",
+                "address": "info@arabglobalschool.com"
+            },
+            "hours": {
+                "title": "Working hours",
+                "subtitle": "Monday to Friday for school hours",
+                "time": "From 8:00 AM to 3:00 PM"
+            }
+        },
+        "faq": {
+            "title": "Your Questions Answered With Care",
+            "questions": {
+                "q1": {
+                    "question": "How does the school care for teaching Islamic values?",
+                    "answer": "We emphasize Islamic values throughout our educational process. Our curriculum includes the international ICO program for Islamic and general studies, along with Quran memorization classes for all ages. We also incorporate ethics and Islamic manners into daily lessons, guided by teachers who exemplify these values through practical examples."
+                },
+                "q2": {
+                    "question": "What is the number of students in each class or three languages environment?",
+                    "answer": "Class sizes vary by level to ensure quality education and individual attention for each student."
+                },
+                "q3": {
+                    "question": "Are there extracurricular activities in school?",
+                    "answer": "Yes, we offer various extracurricular activities including sports, arts, cultural programs, and Quranic studies to support holistic student development."
+                },
+                "q4": {
+                    "question": "How can I enroll my child? What are the required steps?",
+                    "answer": "Enrollment is easy! Contact us through phone, WhatsApp, or email to schedule a school visit and learn about our admission requirements."
+                },
+                "q5": {
+                    "question": "Does the child need to be proficient in one of the three languages environment?",
+                    "answer": "No prior language proficiency is required. Our trilingual program is designed to help students develop skills in Arabic, English, and Indonesian progressively."
+                }
+            }
+        },
+        "location": {
+            "title": "Our Location, Their Second Home",
+            "subtitle": "In a calm and secure location, we offer your children a learning space that's close to you — and close to their hearts."
+        },
+        "cta": {
+            "title": "Contact us easily",
+            "subtitle": "Do you have a question or inquiry? We are happy to hear from you and will respond as soon as possible.",
+            "button": "Contact us"
+        }
+    },
+    "register": {
+        "title": "Registration At The International Arab School – 2025/2026",
+        "welcomeMessage": "Dear Parent,",
+        "welcomeText": "We warmly welcome you in advance to our school family and thank you for your trust in choosing us.",
+        "instructionText": "After selecting the appropriate school and educational stage for your child, you can proceed to the pre-registration page by clicking the designated button.",
+        "processText": "Please follow the steps outlined after clicking the \"Register\" button, and read the instructions carefully until the process is complete. If you have any questions or encounter any difficulties during the registration process, the school's support team will be fully prepared to assist you at every stage.",
+        "wishText": "We are delighted to have you join us and wish our children a school year filled with success and progress.",
+        "schoolSelection": "Choose your child's school for next year.",
+        "classSelection": "Please select your child's next class.",
+        "primarySchool": "Primary school",
+        "one": "One",
+        "backToHome": "Back to home",
+        "continue": "continue",
+        "steps": {
+            "studentInfo": "Student Information",
+            "familyInfo": "Family Information",
+            "educationHealth": "Educational and Health Background",
+            "attachments": "Required Attachments"
+        },
+        "studentInformation": {
+            "title": "Info about the Learner",
+            "subtitle": "Provide the student's basic personal details such as full name, date of birth, nationality, and current grade.",
+            "fullName": "Full name of the student",
+            "fullNamePlaceholder": "Mohammad rasheed alfarogh",
+            "placeOfBirth": "Place of birth",
+            "placeOfBirthPlaceholder": "Enter the student's place of birth",
+            "nationalId": "National ID/Passport",
+            "nationalIdPlaceholder": "94853976-978",
+            "surname": "Surname",
+            "surnamePlaceholder": "Enter the surname",
+            "religion": "Religion",
+            "religionPlaceholder": "Enter the student's religion",
+            "dateOfBirth": "Date of birth",
+            "dateOfBirthPlaceholder": "Select the student's date of birth",
+            "studentAge": "Student's age as of July",
+            "ageNumber": "8",
+            "gender": "Gender",
+            "genderPlaceholder": "Select gender",
+            "siblingPosition": "Child's position among siblings",
+            "siblingPlaceholder": "Select child's position",
+            "primaryLanguage": "Primary language spoken at home",
+            "languagePlaceholder": "Select language"
+        },
+        "familyInformation": {
+            "title": "Family Information Related to the Student",
+            "subtitle": "Provide accurate details about the student's parents or legal guardians, including contact and relationship information.",
+            "fatherName": "Full name of the father",
+            "fatherNamePlaceholder": "Enter the full name of the father",
+            "motherName": "Full name of the mother",
+            "motherNamePlaceholder": "Enter the full name of the mother",
+            "nationalIdNumber": "National ID/Passport number",
+            "nationalIdPlaceholder": "Enter the national ID or passport number",
+            "monthlyIncome": "Monthly income",
+            "monthlyIncomePlaceholder": "Enter the monthly income",
+            "phoneNumber": "Phone number",
+            "phoneNumberPlaceholder": "Enter the phone number",
+            "emailAddress": "Email address",
+            "emailPlaceholder": "Enter the email address",
+            "guardianName": "Guardian's name (if applicable)",
+            "guardianNamePlaceholder": "Enter the guardian's name",
+            "guardianRelationship": "Relationship of the guardian to the student",
+            "guardianRelationshipPlaceholder": "Specify the guardian's relationship to the student",
+            "parentAge": "Age of the parent/guardian",
+            "parentAgePlaceholder": "Enter the age of the parent/guardian",
+            "occupation": "Occupation",
+            "occupationPlaceholder": "Enter the occupation",
+            "workPlace": "Place of work",
+            "workPlacePlaceholder": "Enter the name of the place of work",
+            "officeAddress": "Office address",
+            "officeAddressPlaceholder": "Enter the office address",
+            "landlinePhone": "Landline phone",
+            "landlinePhonePlaceholder": "Enter the home phone number"
+        },
+        "educationHealth": {
+            "title": "Student Education and Health Journey",
+            "subtitle": "Share the student's academic history and any important health information that may support their learning and well-being.",
+            "previousSchool": "Name of the previous school",
+            "previousSchoolPlaceholder": "Enter the name of the previous school/kindergarten",
+            "schoolAddress": "School address",
+            "schoolAddressPlaceholder": "Enter the school address",
+            "fieldOfStudy": "Field of study",
+            "fieldOfStudyPlaceholder": "Enter field of study",
+            "enrollmentYear": "Year of enrollment",
+            "enrollmentYearPlaceholder": "Enter year of enrollment",
+            "graduationYear": "Year of graduation",
+            "graduationYearPlaceholder": "Enter year of graduation",
+            "medicalHistory": "Medical history",
+            "medicalHistoryPlaceholder": "Enter previous or chronic illnesses",
+            "futureAspiration": "Student's future aspiration",
+            "futureAspirationPlaceholder": "Select the student's future aspiration",
+            "vision": "Vision",
+            "visionPlaceholder": "Select visual condition",
+            "hearing": "Hearing",
+            "hearingPlaceholder": "Select hearing condition"
+        },
+        "attachments": {
+            "title": "Student Education and Health Journey",
+            "subtitle": "Share the student's academic history and any important health information that may support their learning and well-being.",
+            "parentsId": "Copies of both parents' ID cards.",
+            "parentsIdSubtitle": "Start typing to filter results",
+            "birthCertificate": "A copy of the student's birth certificate",
+            "birthCertificateSubtitle": "Upload the certificate in PNG or PDF format",
+            "studentPhotos": "Two photos of the student",
+            "studentPhotosSubtitle": "Two 3x4 photos with a colored background",
+            "familyCard": "A copy of the family card",
+            "familyCardSubtitle": "Upload the certificate in PNG or PDF format",
+            "dragImages": "Drag the images here or",
+            "selectFile": "select a file from your device",
+            "uploadCard": "Upload the card in PNG or PDF format",
+            "uploadImage": "Upload the image in PNG or JPG format",
+            "maxFileSize": "Maximum file size is 5MB",
+            "notes": "Please read these notes before completing the registration.",
+            "note1": "Students and guardians must wear Islamic attire when attending school.",
+            "note2": "Registration fees are non-refundable in case of withdrawal.",
+            "note3": "Early registration discounts (for stages 1, 2, 3 only):",
+            "stage1": "Stage 1 - 50% discount",
+            "stage2": "Stage 2 - 30% discount",
+            "stage3": "Stage 3 - 20% discount"
+        },
+        "thankYou": {
+            "title": "Thank you for enrolling your son with the International Arab School.",
+            "message": "We have received your application and will review it shortly. We will contact you to arrange a personal interview to complete the registration process.",
+            "returnHome": "Return to the homepage"
+        }
+    },
+    "common": {
+        "learnMore": "Learn more",
+        "readMore": "Read more",
+        "seeMore": "See more",
+        "seeAll": "See all",
+        "registerNow": "Register now",
+        "next": "Next",
+        "prev": "Previous",
+        "play": "Play",
+        "pause": "Pause"
+    },
+    "image_alt": {
+        "default": "International Arab School"
+    }
+}
