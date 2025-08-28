@@ -3,8 +3,9 @@ import { useTranslations } from "next-intl";
 import AppImage from "./app-image";
 import Link from "next/link";
 import { Button } from "./ui/button";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "./ui/accordion";
 
-function Footer() {
+function TabletFooter() {
     const t = useTranslations("footer");
 
     const FOOTER_LINKS = {
@@ -47,9 +48,9 @@ function Footer() {
     ];
 
     return (
-        <footer className="bg-background-container pt-16 pb-4 w-full hidden lg:block">
-            <div className="px-4 md:px-8 max-w-8xl mx-auto">
-                <div className="flex gap-4">
+        <footer className="bg-background-container pt-16 pb-6 w-full hidden md:block lg:hidden">
+            <div className="space-y-4 px-4 md:px-8 max-w-8xl mx-auto">
+                <div className="flex items-center gap-4">
                     <div className="flex flex-col gap-5 flex-2">
                         <div className="rounded-full w-fit" style={{ boxShadow: "0 0 24px 0 rgba(0, 100, 226, 0.40)" }}>
                             <AppImage optimized width={75} height={75} src={"/images/logo-school.png"} />
@@ -60,40 +61,20 @@ function Footer() {
                                 {t("desc")}
                             </p>
                         </div>
-                    </div>
 
-                    {Object.entries(FOOTER_LINKS).map(([key, val], index) => (
-                        <div className="flex flex-col flex-1" key={key}>
-                            <h3 className="text-base md:text-[18px] lg:text-[20px] font-bold text-center md:text-left font-sf-pro">
-                                {t(`${key}.title`)}
-                            </h3>
-
-                            <div className="flex flex-col gap-3 mt-6">
-                                {val.map((link) => (
-                                    <Link className="text-natural-tertiary font-normal leading-[140%]" href={link.href} key={link.href}>
-                                        {t(`${key}.links.${link.key}`)}
-                                    </Link>
-                                ))}
-                            </div>
+                        <div className="mt-auto flex items-center gap-4">
+                            {SOCIAL_LINKS.map((link, idx) => (
+                                <Link
+                                    key={idx}
+                                    href={link.href}
+                                    className="rounded-[20px] p-2 transition-colors bg-white w-12 h-12 md:w-16 md:h-16 flex items-center justify-center"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    {link.icon}
+                                </Link>
+                            ))}
                         </div>
-                    ))}
-                </div>
-
-                <div className="flex justify-between">
-                    <div className="space-y-4">
-                        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6">{t("newsletter.title")}</h1>
-
-                        <div className="flex items-stretch gap-4">
-                            <div className="bg-white flex items-center h-[52px] px-4 pr-8 gap-4 rounded-full w-full md:max-w-[320px]">
-                                <EmailIcon2 />
-                                <input type="text" className="!outline-none !border-none flex-1" placeholder={t("newsletter.placeholder")} />
-                            </div>
-
-                            <Button shadow="default" className="rounded-full h-[unset]">
-                                {t("newsletter.button")}
-                            </Button>
-                        </div>
-                        <p>{t("newsletter.privacy_text")}</p>
                     </div>
 
                     <div className="space-y-4 flex flex-col">
@@ -108,26 +89,45 @@ function Footer() {
                             ))}
                         </div>
                     </div>
+                </div>
 
-                    <div className="mt-auto flex items-center gap-4">
-                        {SOCIAL_LINKS.map((link, idx) => (
-                            <Link
-                                key={idx}
-                                href={link.href}
-                                className="rounded-[20px] p-2 transition-colors bg-white w-12 h-12 md:w-16 md:h-16 flex items-center justify-center"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                {link.icon}
-                            </Link>
-                        ))}
+                <Accordion type="single" collapsible>
+                    {Object.entries(FOOTER_LINKS).map(([key, val]) => (
+                        <AccordionItem value={key} key={key}>
+                            <AccordionTrigger className="text-lg">{t(`${key}.title`)}</AccordionTrigger>
+
+                            <AccordionContent className="flex flex-col gap-2">
+                                {val.map((link) => (
+                                    <Link className="text-natural-tertiary font-normal leading-[140%]" href={link.href} key={link.href}>
+                                        {t(`${key}.links.${link.key}`)}
+                                    </Link>
+                                ))}
+                            </AccordionContent>
+                        </AccordionItem>
+                    ))}
+                </Accordion>
+
+                <div className="">
+                    <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6">{t("newsletter.title")}</h1>
+
+                    <div className="flex items-stretch gap-4">
+                        <div className="bg-white flex items-center h-[52px] px-4 pr-8 gap-4 rounded-full w-full">
+                            <EmailIcon2 />
+                            <input type="text" className="!outline-none !border-none flex-1" placeholder={t("newsletter.placeholder")} />
+                        </div>
+
+                        <Button shadow="default" className="rounded-full h-[unset]">
+                            {t("newsletter.button")}
+                        </Button>
                     </div>
                 </div>
 
-                <div className="mt-12 text-[14px] text-center font-sf-pro font-normal leading-[140%]">{t("copyright")}</div>
+                <p>{t("newsletter.privacy_text")}</p>
+
+                {/* <div className="mt-12 text-[14px] text-center font-sf-pro font-normal leading-[140%]">{t("copyright")}</div> */}
             </div>
         </footer>
     );
 }
 
-export default Footer;
+export default TabletFooter;

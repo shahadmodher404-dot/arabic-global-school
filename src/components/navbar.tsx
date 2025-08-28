@@ -7,9 +7,10 @@ import LangSwitcher from "./lang-switcher";
 import { Button } from "./ui/button";
 import { useNavbarToggler } from "@/hooks/use-navbar-toggler";
 import { BurgerMenu } from "@/assets/icons";
+import BergerMenu from "./BergerMenu";
 
 function Navbar() {
-    const { toggle } = useNavbarToggler();
+    const { toggle, isOpen, close } = useNavbarToggler();
     const t = useTranslations("navbar");
 
     return (
@@ -39,6 +40,9 @@ function Navbar() {
                     <BurgerMenu />
                 </button>
             </aside>
+
+            {/* Mobile Burger Menu */}
+            <BergerMenu isOpen={isOpen} onClose={close} />
         </nav>
     );
 }

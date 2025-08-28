@@ -1,9 +1,8 @@
 import { useTranslations } from "next-intl";
-import AppImage from "../app-image";
-import Section from "../ui/section";
-import CustomLink from "../ui/Link";
-import { Card, CardContent } from "../ui/card";
 import Link from "next/link";
+import AppImage from "../app-image";
+import { Card, CardContent } from "../ui/card";
+import Section from "../ui/section";
 
 function HomeActivities() {
     const t = useTranslations("home.activities");
@@ -16,9 +15,9 @@ function HomeActivities() {
     ];
 
     return (
-        <Section className="relative bg-white md:px-8" size="screen">
+        <Section className="relative bg-white px-4 lg:px-8" size="screen">
             <div className="bg-[url('/svg/activities-bg.svg')] bg-center bg-cover bg-no-repeat p-8 md:p-16 ">
-                <div className="px-0 md:px-8 space-y-4">
+                <div className="px-0 lg:px-8 space-y-4">
                     <div className="flex items-center gap-2 py-2 pr-4 pl-2 bg-background-container w-fit rounded-full">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
                             <circle cx="8" cy="8.49878" r="8" fill="#FFFDC2" />
