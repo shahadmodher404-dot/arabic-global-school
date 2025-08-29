@@ -24,7 +24,7 @@ function LangSwitcher() {
 
     return (
         <Select value={locale} onValueChange={handleLocaleChange} disabled={isPending}>
-            <SelectTrigger className="rounded-full border-border-primary border max-h-[auto] !h-12 py-3 px-6 uppercase">
+            <SelectTrigger className="rounded-full border-border-primary border max-h-[auto] !h-12 py-3 px-3 uppercase">
                 <EarthIcon />
                 <SelectValue>{localeNames[locales.indexOf(locale)]}</SelectValue>
             </SelectTrigger>

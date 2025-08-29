@@ -1,4 +1,6 @@
 {
+    "lang": "en",
+
     "navbar": {
         "navigation": {
             "about": "About us",
@@ -126,6 +128,7 @@
             "title": "School Life That Sparks Growth, Inside And Out",
             "desc": "At our school, we believe that learning goes beyond books. We offer a rich school life filled with events that develop the children’s personality and enhance their self-confidence.",
             "art": "Artistic and Creative Activities",
+            "explore": "Explore activities",
             "video": {
                 "title": "Experience Our Dynamic Learning Environment",
                 "description": "Watch how our students engage in creative activities, build lasting friendships, and develop essential life skills through our comprehensive educational programs."

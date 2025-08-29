@@ -3,6 +3,7 @@ import HomeArtistic from "@/components/home/home-artistic";
 import HomeCurricula from "@/components/home/home-curricula";
 import HomeHero from "@/components/home/home-hero";
 import HomeLanguage from "@/components/home/home-language";
+import HomeNews from "@/components/home/home-news";
 import HomeStep from "@/components/home/home-step";
 
 export default function Home() {
@@ -19,6 +20,8 @@ export default function Home() {
             <HomeActivities />
 
             <HomeArtistic />
+
+            <HomeNews />
         </main>
     );
 }
