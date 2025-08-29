@@ -49,7 +49,7 @@ function BergerMenu({ isOpen, onClose }: BurgerMenuProps) {
                     animate={{ x: 0, opacity: 1, scale: 1 }}
                     exit={{ x: "100%", opacity: 0, scale: 0.98 }}
                     transition={{ type: "spring", stiffness: 400, damping: 32, duration: 0.35 }}
-                    className="fixed top-0 right-0 h-full w-full bg-white z-50 shadow-xl"
+                    className="fixed top-0 right-0 h-full w-full bg-white z-50 shadow-xl w-full"
                 >
                     {/* Header with Close Button */}
                     <div className="flex justify-end p-6">

@@ -64,7 +64,7 @@ function Footer() {
 
                     {Object.entries(FOOTER_LINKS).map(([key, val], index) => (
                         <div className="flex flex-col flex-1" key={key}>
-                            <h3 className="text-base md:text-[18px] lg:text-[20px] font-bold text-center md:text-left font-sf-pro">
+                            <h3 className="lg:text-[20px] font-bold font-sf-pro">
                                 {t(`${key}.title`)}
                             </h3>
 
@@ -81,23 +81,23 @@ function Footer() {
 
                 <div className="flex justify-between">
                     <div className="space-y-4">
-                        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6">{t("newsletter.title")}</h1>
+                        <h1 className="text-2xl md:text-3xl lg:text-4xl mb-6">{t("newsletter.title")}</h1>
 
                         <div className="flex items-stretch gap-4">
                             <div className="bg-white flex items-center h-[52px] px-4 pr-8 gap-4 rounded-full w-full md:max-w-[320px]">
                                 <EmailIcon2 />
-                                <input type="text" className="!outline-none !border-none flex-1" placeholder={t("newsletter.placeholder")} />
+                                <input type="text" className="!outline-none !border-none flex-1 placeholder:text-[#2F4674]/30" placeholder={t("newsletter.placeholder")} />
                             </div>
 
                             <Button shadow="default" className="rounded-full h-[unset]">
                                 {t("newsletter.button")}
                             </Button>
                         </div>
-                        <p>{t("newsletter.privacy_text")}</p>
+                        <p className="max-w-[300px]">{t("newsletter.privacy_text")}</p>
                     </div>
 
                     <div className="space-y-4 flex flex-col">
-                        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6">{t("contact.title")}</h1>
+                        <h1 className="text-xl md:text-2xl lg:text-3xl font-bold mb-6">{t("contact.title")}</h1>
 
                         <div className="space-y-3 flex flex-col">
                             {CONTACTS.map((contact) => (
@@ -109,7 +109,7 @@ function Footer() {
                         </div>
                     </div>
 
-                    <div className="mt-auto flex items-center gap-4">
+                    <div className="mt-auto mb-6 flex items-center gap-4">
                         {SOCIAL_LINKS.map((link, idx) => (
                             <Link
                                 key={idx}

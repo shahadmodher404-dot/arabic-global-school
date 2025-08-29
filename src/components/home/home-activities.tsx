@@ -16,8 +16,10 @@ function HomeActivities() {
 
     return (
         <Section className="relative bg-white px-4 lg:px-8" size="screen">
-            <div className="bg-[url('/svg/activities-bg.svg')] bg-center bg-cover bg-no-repeat p-8 md:p-16 ">
-                <div className="px-0 lg:px-8 space-y-4">
+            <div className="p-8 md:p-16 h-full relative">
+                <img src="/images/activities-bg.png" className="absolute scale-x-125 lg:scale-x-100 w-screen lg:w-full h-full left-0 top-0 object-fill" alt="" />
+
+                <div className="px-0 lg:px-8 space-y-4 relative z-10">
                     <div className="flex items-center gap-2 py-2 pr-4 pl-2 bg-background-container w-fit rounded-full">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
                             <circle cx="8" cy="8.49878" r="8" fill="#FFFDC2" />
@@ -43,7 +45,7 @@ function HomeActivities() {
                         </Link>
                     </div>
 
-                    <div className="overflow-auto">
+                    <div className="overflow-auto relative z-10 mt-8">
                         <div className="grid grid-cols-4 md:grid-cols-2 gap-4 sm:-me-8 md:me-0 w-[calc(500px*4+(1rem*3))] md:w-auto">
                             {Array.from({ length: 4 }).map((_, index) => (
                                 <Card key={index} className="rounded-lg gap-4 bg-transparent border-none py-0 size-full w-full md:w-auto">

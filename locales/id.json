@@ -125,7 +125,11 @@
         "artistic": {
             "title": "Kehidupan Sekolah yang Memicu Pertumbuhan, di Dalam dan Luar Kelas",
             "desc": "Di sekolah kami, kami percaya bahwa pembelajaran melampaui buku. Kami menawarkan kehidupan sekolah yang kaya dengan acara yang mengembangkan kepribadian anak dan meningkatkan kepercayaan dirinya.",
-            "art": "Kegiatan Seni dan Kreatif"
+            "art": "Kegiatan Seni dan Kreatif",
+            "video": {
+                "title": "Rasakan Lingkungan Pembelajaran Dinamis Kami",
+                "description": "Tonton bagaimana siswa kami terlibat dalam kegiatan kreatif, membangun persahabatan yang langgeng, dan mengembangkan keterampilan hidup esensial melalui program pendidikan komprehensif kami."
+            }
         },
 
         "announcements": {

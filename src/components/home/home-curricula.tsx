@@ -65,7 +65,7 @@ function HomeCurricula() {
                     <h2 className="font-bold text-[48px] leading-[120%] capitalize max-w-xl md:text-[48px] sm:text-[36px] xs:text-[28px]">
                         {t("title")}
                     </h2>
-                    <p className="mt-2 max-w-xl text-content-natural-secondary font-[400] not-italic text-base md:text-[18px] lg:text-[20px] leading-[130%] tracking-[0]">
+                    <p className="mt-2 max-w-xl text-content-natural-secondary font-normal not-italic text-base md:text-[18px] lg:text-[20px] leading-[130%]">
                         {t("desc")}
                     </p>
                 </div>
@@ -90,7 +90,11 @@ function HomeCurricula() {
                                     </motion.div>
                                 )}
 
-                                <span className="font-medium not-italic text md:text-[18px] text-[20px] leading-[100%] tracking-[0]">
+                                <span
+                                    className={`md:text-[18px] text-[20px] leading-[100%] ${
+                                        currentStage === index ? "font-medium" : "font-light text-natural-tertiary"
+                                    }`}
+                                >
                                     {stage.title}
                                 </span>
                             </div>
@@ -130,7 +134,7 @@ function HomeCurricula() {
                                     </div>
 
                                     <div className="px-3 mt-10 w-full">
-                                        <h3 className="font-bold text-[24px] leading-[100%] tracking-[0] mb-2">{card.title}</h3>
+                                        <h3 className="font-bold text-[24px] leading-[100%] mb-2">{card.title}</h3>
                                         <p className="text-content-natural-secondary text-sm mt-1">{card.description}</p>
                                     </div>
                                 </CardContent>

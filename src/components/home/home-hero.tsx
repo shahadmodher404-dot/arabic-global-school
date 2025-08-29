@@ -9,7 +9,7 @@ function HomeHero() {
     const t = useTranslations("home.hero");
 
     return (
-        <Section>
+        <Section className="bg-[url('/svg/hero-background.svg')] bg-no-repeat bg-cover">
             <p className="bg-solid-light py-[6px] px-6 w-fit rounded-full text-natural-tertiary mx-auto mb-10">{t("paragraph")}</p>
 
             <div className="px-4">
@@ -26,7 +26,7 @@ function HomeHero() {
                 className="px-6 py-3 flex items-stretch gap-4 w-fit rounded-full mx-auto translate-y-1/2"
                 style={{ background: "linear-gradient(180deg, #FFFEED 0%, #FFFFFF 100%)" }}
             >
-                <CustomLink href={"/about"} className="text-natural-primary px-3 py-2 border rounded-full">
+                <CustomLink shadow="default" href={"/about"} className="text-natural-primary px-3 py-2 border rounded-full">
                     {t("registration")}
                 </CustomLink>
 

@@ -34,9 +34,9 @@ function AccordionTrigger({ className, children, ...props }: React.ComponentProp
                         <path
                             d="M6.5 12H18.5"
                             stroke="#2F4674"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
                             className="transition-transform duration-200"
                             id="target-path-2"
                         />
@@ -44,9 +44,9 @@ function AccordionTrigger({ className, children, ...props }: React.ComponentProp
                     <path
                         d="M12.5 6V18"
                         stroke="#2F4674"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                         className="transition-transform duration-200"
                         id="target-path"
                         style={{ transformOrigin: "center" }}

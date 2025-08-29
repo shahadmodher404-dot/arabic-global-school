@@ -1,6 +1,6 @@
-import { SVGProps } from "react";
+import { SVGAttributes } from "react";
 
-export const EarthIcon = (props: SVGProps<SVGSVGElement>) => {
+export const EarthIcon = (props: SVGAttributes<SVGSVGElement>) => {
     return (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
             <path
@@ -31,7 +31,7 @@ export const EarthIcon = (props: SVGProps<SVGSVGElement>) => {
     );
 };
 
-export const BurgerMenu = (props: SVGProps<SVGSVGElement>) => {
+export const BurgerMenu = (props: SVGAttributes<SVGSVGElement>) => {
     return (
         <svg width="24" height="24" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
             <path d="M4.5 20.2656H20.5" stroke="#4C6492" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -41,7 +41,7 @@ export const BurgerMenu = (props: SVGProps<SVGSVGElement>) => {
     );
 };
 
-export const CircleIcon = (props: SVGProps<SVGSVGElement>) => {
+export const CircleIcon = (props: SVGAttributes<SVGSVGElement>) => {
     return (
         <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
             <circle cx="8" cy="8.49878" r="8" fill="#6BAFFF" />
@@ -72,7 +72,7 @@ export const CircleIcon = (props: SVGProps<SVGSVGElement>) => {
     );
 };
 
-interface LanguageArrowIconProps extends SVGProps<SVGSVGElement> {
+interface LanguageArrowIconProps extends SVGAttributes<SVGSVGElement> {
     centerColor?: string;
     outerColor?: string;
 }
@@ -95,7 +95,7 @@ export const LanguageArrowIcon = ({ centerColor, outerColor, ...props }: Languag
 };
 
 // Contact Icons
-export const PhoneIcon = (props: SVGProps<SVGSVGElement>) => {
+export const PhoneIcon = (props: SVGAttributes<SVGSVGElement>) => {
     return (
         <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
             <path
@@ -106,7 +106,7 @@ export const PhoneIcon = (props: SVGProps<SVGSVGElement>) => {
     );
 };
 
-export const EmailIcon = (props: SVGProps<SVGSVGElement>) => {
+export const EmailIcon = (props: SVGAttributes<SVGSVGElement>) => {
     return (
         <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
             <path
@@ -121,7 +121,7 @@ export const EmailIcon = (props: SVGProps<SVGSVGElement>) => {
     );
 };
 
-export const LocationIcon = (props: SVGProps<SVGSVGElement>) => {
+export const LocationIcon = (props: SVGAttributes<SVGSVGElement>) => {
     return (
         <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
             <path
@@ -137,7 +137,7 @@ export const LocationIcon = (props: SVGProps<SVGSVGElement>) => {
 };
 
 // Social Media Icons
-export const FacebookIcon = (props: SVGProps<SVGSVGElement>) => {
+export const FacebookIcon = (props: SVGAttributes<SVGSVGElement>) => {
     return (
         <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
             <path
@@ -148,7 +148,7 @@ export const FacebookIcon = (props: SVGProps<SVGSVGElement>) => {
     );
 };
 
-export const TwitterIcon = (props: SVGProps<SVGSVGElement>) => {
+export const TwitterIcon = (props: SVGAttributes<SVGSVGElement>) => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none" {...props}>
             <path
@@ -159,7 +159,7 @@ export const TwitterIcon = (props: SVGProps<SVGSVGElement>) => {
     );
 };
 
-export const InstagramIcon = (props: SVGProps<SVGSVGElement>) => {
+export const InstagramIcon = (props: SVGAttributes<SVGSVGElement>) => {
     return (
         <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0_1571_26589)">
@@ -185,7 +185,7 @@ export const InstagramIcon = (props: SVGProps<SVGSVGElement>) => {
     );
 };
 
-export const YouTubeIcon = (props: SVGProps<SVGSVGElement>) => {
+export const YouTubeIcon = (props: SVGAttributes<SVGSVGElement>) => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18" fill="none" {...props}>
             <path
@@ -196,7 +196,7 @@ export const YouTubeIcon = (props: SVGProps<SVGSVGElement>) => {
     );
 };
 
-export const EmailIcon2 = (props: SVGProps<SVGSVGElement>) => {
+export const EmailIcon2 = (props: SVGAttributes<SVGSVGElement>) => {
     return (
         <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -214,6 +214,38 @@ export const EmailIcon2 = (props: SVGProps<SVGSVGElement>) => {
             <path
                 d="M5 13.7861H2C1.59 13.7861 1.25 13.4461 1.25 13.0361C1.25 12.6261 1.59 12.2861 2 12.2861H5C5.41 12.2861 5.75 12.6261 5.75 13.0361C5.75 13.4461 5.41 13.7861 5 13.7861Z"
                 fill="#020409"
+            />
+        </svg>
+    );
+};
+
+export const PauseIcon = (props: SVGAttributes<SVGSVGElement>) => {
+    return (
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+            <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M11.2438 4.66553C9.29051 4.66553 7.70117 6.25486 7.70117 8.20819V23.7895C7.70117 25.7429 9.29051 27.3322 11.2438 27.3322C13.1972 27.3322 14.7865 25.7429 14.7865 23.7895V8.20819C14.7865 6.25486 13.1972 4.66553 11.2438 4.66553Z"
+                fill="white"
+            />
+            <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M20.9958 4.66553C19.0425 4.66553 17.4531 6.25486 17.4531 8.20819V23.7895C17.4531 25.7429 19.0425 27.3322 20.9958 27.3322C22.9491 27.3322 24.5385 25.7429 24.5385 23.7895V8.20819C24.5385 6.25486 22.9491 4.66553 20.9958 4.66553Z"
+                fill="white"
+            />
+        </svg>
+    );
+};
+
+export const PlayIcon = (props: SVGAttributes<SVGSVGElement>) => {
+    return (
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+            <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M9.33203 6.66797C9.33203 5.43531 10.6886 4.7277 11.719 5.34636L23.9787 12.6784C25.009 13.297 25.009 14.7123 23.9787 15.3309L11.719 22.6629C10.6886 23.2816 9.33203 22.574 9.33203 21.3413V6.66797Z"
+                fill="white"
             />
         </svg>
     );
