@@ -10,11 +10,11 @@ function HomeStep() {
     return (
         <Section>
             <div className="px-4">
-                <h1 className="font-semibold text-3xl sm:text-5xl md:text-6xl lg:text-[62px] md:leading-[100%] tracking-[-0.06em] text-center align-middle">
+                <h1 className="section-header">
                     {t("title.part1")} <br /> {t("title.part2")}
                 </h1>
 
-                <h3 className="text-[20px] leading-[130%] text-center text-content-natural-secondary sm:text-[16px] md:text-[18px] lg:text-[20px] max-w-2xl mx-auto mt-4 lg:mt-8 md:mt-6 px-4">
+                <h3 className="section-description mx-auto mt-4 lg:mt-8 md:mt-6 px-4">
                     {t("paragraph")}
                 </h3>
             </div>

@@ -2,6 +2,7 @@
 @import "tw-animate-css";
 @import "../assets/utils.css";
 @import "../assets/fonts.css";
+@import "../assets/typography.css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -102,7 +103,7 @@
     --font-sf-pro-display: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
 
     --xs-mobile: 360px;
-    --space-8xl: 1640px;
+    --space-8xl: 1440px;
     --screen-fhd: 1920px;
     --border-primary: oklch(89.952% 0.0279 265.469);
     --solid-light: oklch(96.166% 0.13521 105.531);

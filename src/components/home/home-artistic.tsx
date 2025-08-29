@@ -12,9 +12,10 @@ export default function HomeArtistic() {
             <div className="space-y-16">
                 <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
                     <div className="">
-                        <h1 className="font-bold text-3xl md:text-[40px] lg:text-[48px] max-w-2xl">{t("title")}</h1>
+                        <h1 className="section-header max-w-2xl">{t("title")}</h1>
                     </div>
-                    <p className="text-content-natural-secondary md:text-xl max-w-xl">{t("desc")}</p>
+                    
+                    <p className="section-description max-w-xl">{t("desc")}</p>
                 </div>
 
                 <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">

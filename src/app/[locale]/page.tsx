@@ -1,6 +1,7 @@
 import HomeActivities from "@/components/home/home-activities";
 import HomeArtistic from "@/components/home/home-artistic";
 import HomeCurricula from "@/components/home/home-curricula";
+import HomeFAQ from "@/components/home/home-faq";
 import HomeHero from "@/components/home/home-hero";
 import HomeLanguage from "@/components/home/home-language";
 import HomeNews from "@/components/home/home-news";
@@ -22,6 +23,8 @@ export default function Home() {
             <HomeArtistic />
 
             <HomeNews />
+
+            <HomeFAQ />
         </main>
     );
 }

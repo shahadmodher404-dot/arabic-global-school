@@ -48,7 +48,7 @@ function HomeLanguage() {
                 </div>
 
                 <div className="max-w-4xl w-full mx-auto my-16 md:my-32">
-                    <h1 className="mx-auto text-2xl sm:text-3xl md:text-4xl lg:text-[48px] font-bold leading-[120%] capitalize text-center mb-4 max-w-lg">
+                    <h1 className="mx-auto section-header capitalize text-center mb-4 max-w-lg">
                         {t("title")}
                     </h1>
 

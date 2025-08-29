@@ -62,10 +62,10 @@ function HomeCurricula() {
         <Section className="bg-background-main" size="screen">
             <div className="flex flex-col w-full overflow-hidden">
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-                    <h2 className="font-bold text-[48px] leading-[120%] capitalize max-w-xl md:text-[48px] sm:text-[36px] xs:text-[28px]">
+                    <h1 className="section-header">
                         {t("title")}
-                    </h2>
-                    <p className="mt-2 max-w-xl text-content-natural-secondary font-normal not-italic text-base md:text-[18px] lg:text-[20px] leading-[130%]">
+                    </h1>
+                    <p className="mt-2 max-w-xl section-description">
                         {t("desc")}
                     </p>
                 </div>

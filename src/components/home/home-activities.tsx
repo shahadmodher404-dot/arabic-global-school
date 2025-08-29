@@ -17,7 +17,11 @@ function HomeActivities() {
     return (
         <Section className="relative bg-white px-4 lg:px-8" size="screen">
             <div className="p-8 md:p-16 h-full relative">
-                <img src="/images/activities-bg.png" className="absolute scale-x-125 lg:scale-x-100 w-screen lg:w-full h-full left-0 top-0 object-fill" alt="" />
+                <img
+                    src="/images/activities-bg.png"
+                    className="absolute scale-x-125 lg:scale-x-100 w-screen lg:w-full h-full left-0 top-0 object-fill"
+                    alt=""
+                />
 
                 <div className="px-0 lg:px-8 space-y-4 relative z-10">
                     <div className="flex items-center gap-2 py-2 pr-4 pl-2 bg-background-container w-fit rounded-full">
@@ -29,11 +33,9 @@ function HomeActivities() {
                     </div>
 
                     <div className="flex flex-col md:flex-row md:items-center justify-between">
-                        <h1 className="text-2xl md:text-4xl lg:text-[48px] font-bold leading-[120%] capitalize text-natural-primary">{t("title")}</h1>
+                        <h1 className="section-header">{t("title")}</h1>
 
-                        <p className="md:max-w-md lg:max-w-lg text-base md:text-lg lg:text-[20px] font-normal leading-[130%] text-natural-secondary text-natural-tertiary">
-                            {t("paragraph")}
-                        </p>
+                        <p className="md:max-w-md lg:max-w-lg section-description">{t("paragraph")}</p>
                     </div>
 
                     <div className="flex">

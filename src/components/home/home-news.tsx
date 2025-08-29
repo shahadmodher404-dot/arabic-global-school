@@ -74,7 +74,7 @@ export default function HomeNews() {
             <div className="space-y-12">
                 {/* Section Header */}
                 <div className="text-center max-w-4xl mx-auto">
-                    <h2 className="font-bold text-3xl md:text-[40px] lg:text-[48px] mb-4">{t("title")}</h2>
+                    <h1 className="section-header mb-4">{t("title")}</h1>
                 </div>
 
                 {/* News Carousel */}
@@ -95,10 +95,6 @@ export default function HomeNews() {
                                     slidesPerView: 1,
                                     spaceBetween: 30,
                                 },
-                                768: {
-                                    slidesPerView: 2,
-                                    spaceBetween: 30,
-                                },
                                 1024: {
                                     slidesPerView: 3,
                                     spaceBetween: 30,
@@ -107,7 +103,7 @@ export default function HomeNews() {
                         >
                             {newsData.map((news, i) => (
                                 <SwiperSlide key={news.id + news.title + i} className="pb-16">
-                                    <NewsCard {...news} className={`mb-8 mx-4 ${i - 1 === activeIndex ? "md:translate-y-16 md:rotate-2" : ""}`} />
+                                    <NewsCard {...news} className={`mb-8 mx-4 ${i - 1 === activeIndex ? "lg:translate-y-16 lg:rotate-2" : ""}`} />
                                 </SwiperSlide>
                             ))}
                         </Swiper>

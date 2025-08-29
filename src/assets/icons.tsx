@@ -278,3 +278,36 @@ export const HappyCalenderIcon = (props: SVGAttributes<SVGSVGElement>) => {
         </svg>
     );
 };
+
+export const QuestionMarkIcon = (props: SVGAttributes<SVGSVGElement>) => {
+    return (
+        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M11.5898 18.4844C11.0378 18.4844 10.5898 18.9314 10.5898 19.4844V19.5544C10.5898 20.1074 11.0378 20.5194 11.5898 20.5194C12.1418 20.5194 12.5898 20.0374 12.5898 19.4844C12.5898 18.9314 12.1418 18.4844 11.5898 18.4844Z"
+                fill="white"
+            />
+            <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M12.0007 4.55371C9.24972 4.55371 7.01172 6.79071 7.01172 9.54171C7.01172 10.0947 7.45972 10.5417 8.01172 10.5417C8.56372 10.5417 9.01172 10.0947 9.01172 9.54171C9.01172 7.89471 10.3527 6.55371 12.0007 6.55371C13.6487 6.55371 14.9887 7.89471 14.9887 9.54171C14.9887 10.5517 14.4707 11.3497 13.4377 11.9207L13.2097 12.0487C12.1577 12.6367 10.5667 13.5247 10.5917 15.4937C10.5997 16.0417 11.0457 16.4817 11.5917 16.4817H11.6047C12.1567 16.4747 12.5987 16.0207 12.5917 15.4687C12.5827 14.7417 13.1877 14.3517 14.1847 13.7947L14.4157 13.6647C16.0747 12.7487 16.9887 11.2837 16.9887 9.54171C16.9887 6.79071 14.7507 4.55371 12.0007 4.55371Z"
+                fill="white"
+            />
+        </svg>
+    );
+};
+
+export const ArrowRightIcon = (props: SVGAttributes<SVGSVGElement>) => {
+    return (
+        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M4 12.5361H20M20 12.5361L14 6.53613M20 12.5361L14 18.5361"
+                stroke="#020409"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+            />
+        </svg>
+    );
+};

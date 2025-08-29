@@ -30,3 +30,7 @@ export function generateGuid(): string {
         return v.toString(16);
     });
 }
+
+export function formateClasses(...classes:string[]){
+    return classes.join(" ").trim();
+}
