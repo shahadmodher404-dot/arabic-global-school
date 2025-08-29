@@ -12,7 +12,6 @@ interface NewsCardProps {
     imageAlt?: string;
     date?: string;
     className?: string;
-    isRotated?: boolean;
 }
 
 const defaultData = {
@@ -32,16 +31,16 @@ export default function NewsCard({
     imageAlt = defaultData.imageAlt,
     date = defaultData.date,
     className,
-    isRotated = false,
 }: NewsCardProps) {
     const t = useTranslations();
 
     return (
-        <article className={twMerge(
-            "p-6 bg-white border-s-4 border-primary flex flex-col gap-6 relative translate-16 transition-transform duration-300",
-            isRotated && "lg:rotate-2",
-            className
-        )}>
+        <article
+            className={twMerge(
+                "p-6 bg-white border-s-4 border-primary flex flex-col gap-6 relative transition-transform duration-300",
+                className
+            )}
+        >
             <div>
                 <Image src={image} alt={imageAlt} width={500} height={300} className="w-full h-auto min-h-[354px] object-center object-cover" />
             </div>

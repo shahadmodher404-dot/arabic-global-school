@@ -1,20 +1,21 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
 import { useState } from "react";
-import Section from "../ui/section";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
 import NewsCard from "../news-card";
+import Section from "../ui/section";
 
 // Import Swiper styles
+import useTextDirection from "@/hooks/use-text-direction";
 import "swiper/css";
 import "swiper/css/navigation";
-import "swiper/css/pagination";
 
 export default function HomeNews() {
     const t = useTranslations("home.announcements");
     const [activeIndex, setActiveIndex] = useState(0);
+    const { dir } = useTextDirection();
 
     // Sample news data - replace with actual data
     const newsData = [
@@ -78,47 +79,39 @@ export default function HomeNews() {
 
                 {/* News Carousel */}
                 <div className="relative">
-                    <Swiper
-                        modules={[Navigation, Pagination]}
-                        spaceBetween={24}
-                        slidesPerView={1}
-                        centeredSlides={true}
-                        onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
-                        navigation={{
-                            nextEl: ".swiper-button-next-custom",
-                            prevEl: ".swiper-button-prev-custom",
-                        }}
-                        pagination={{
-                            clickable: true,
-                            el: ".swiper-pagination-custom",
-                        }}
-                        breakpoints={{
-                            640: {
-                                slidesPerView: 1,
-                                spaceBetween: 20,
-                                centeredSlides: true,
-                            },
-                            768: {
-                                slidesPerView: 2,
-                                spaceBetween: 24,
-                                centeredSlides: false,
-                            },
-                            1024: {
-                                slidesPerView: 3,
-                                spaceBetween: 24,
-                                centeredSlides: true,
-                            },
-                        }}
-                        className="!overflow-visible"
-                    >
-                        {newsData.map((news, i) => (
-                            <SwiperSlide key={news.id + news.title + i} className="pb-32">
-                                <NewsCard {...news} className={
-                                    i - 1 === activeIndex ? "translate-y-24 rotate-2" :""
-                                } />
-                            </SwiperSlide>
-                        ))}
-                    </Swiper>
+                    <div className="overflow-hidden">
+                        <Swiper
+                            modules={[Navigation]}
+                            spaceBetween={0}
+                            slidesPerView={1}
+                            dir={dir}
+                            onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
+                            navigation={{
+                                nextEl: ".swiper-button-next-custom",
+                                prevEl: ".swiper-button-prev-custom",
+                            }}
+                            breakpoints={{
+                                640: {
+                                    slidesPerView: 1,
+                                    spaceBetween: 30,
+                                },
+                                768: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 30,
+                                },
+                                1024: {
+                                    slidesPerView: 3,
+                                    spaceBetween: 30,
+                                },
+                            }}
+                        >
+                            {newsData.map((news, i) => (
+                                <SwiperSlide key={news.id + news.title + i} className="pb-16">
+                                    <NewsCard {...news} className={`mb-8 mx-4 ${i - 1 === activeIndex ? "md:translate-y-16 md:rotate-2" : ""}`} />
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
+                    </div>
 
                     {/* Custom Navigation Buttons */}
                     <button className="swiper-button-prev-custom absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-50 transition-colors">
