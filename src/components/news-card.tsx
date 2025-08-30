@@ -10,7 +10,7 @@ interface NewsCardProps {
     description?: string;
     image?: string;
     imageAlt?: string;
-    date?: string;
+    created_at?: string;
     className?: string;
 }
 
@@ -24,12 +24,11 @@ const defaultData = {
 };
 
 export default function NewsCard({
-    id = defaultData.id,
     title = defaultData.title,
     description = defaultData.description,
     image = defaultData.image,
     imageAlt = defaultData.imageAlt,
-    date = defaultData.date,
+    created_at = defaultData.date,
     className,
 }: NewsCardProps) {
     const t = useTranslations();
@@ -52,7 +51,7 @@ export default function NewsCard({
 
             <div className="flex items-center gap-2 text-primary">
                 <HappyCalenderIcon />
-                <span>{formatDate(new Date(date), t)}</span>
+                <span>{formatDate(new Date(created_at), t)}</span>
             </div>
 
             <img src="/svg/news-card-bottom-icon.svg" className="absolute end-0 bottom-0 translate-4" alt="" />

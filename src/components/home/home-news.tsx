@@ -8,66 +8,27 @@ import NewsCard from "../news-card";
 import Section from "../ui/section";
 
 // Import Swiper styles
-import useTextDirection from "@/hooks/use-text-direction";
 import "swiper/css";
 import "swiper/css/navigation";
 
+import useTextDirection from "@/hooks/use-text-direction";
+import { useQuery } from "@tanstack/react-query";
+import { APIKeys } from "@/services/api-keys";
+import { ApiService } from "@/services/api.service";
+import { useParams } from "next/navigation";
+import { Locale } from "@/i18n/routing";
+
 export default function HomeNews() {
+    const { locale } = useParams();
+
     const t = useTranslations("home.announcements");
     const [activeIndex, setActiveIndex] = useState(0);
     const { dir } = useTextDirection();
 
-    // Sample news data - replace with actual data
-    const newsData = [
-        {
-            id: "1",
-            title: t("exam"),
-            description: "Midterm exams for the Primary Level will now begin on September 20, 2025, instead of September 18,...",
-            image: "/images/hero-image.jpg",
-            imageAlt: "School playground",
-            date: "2025-06-25",
-        },
-        {
-            id: "2",
-            title: t("exam"),
-            description: "Midterm exams for the Primary Level will now begin on September 20, 2025, instead of September 18,...",
-            image: "/images/hero-image.jpg",
-            imageAlt: "School playground",
-            date: "2025-06-25",
-        },
-        {
-            id: "3",
-            title: t("exam"),
-            description: "Midterm exams for the Primary Level will now begin on September 20, 2025, instead of September 18,...",
-            image: "/images/hero-image.jpg",
-            imageAlt: "School playground",
-            date: "2025-06-25",
-        },
-        {
-            id: "1",
-            title: t("exam"),
-            description: "Midterm exams for the Primary Level will now begin on September 20, 2025, instead of September 18,...",
-            image: "/images/hero-image.jpg",
-            imageAlt: "School playground",
-            date: "2025-06-25",
-        },
-        {
-            id: "2",
-            title: t("exam"),
-            description: "Midterm exams for the Primary Level will now begin on September 20, 2025, instead of September 18,...",
-            image: "/images/hero-image.jpg",
-            imageAlt: "School playground",
-            date: "2025-06-25",
-        },
-        {
-            id: "3",
-            title: t("exam"),
-            description: "Midterm exams for the Primary Level will now begin on September 20, 2025, instead of September 18,...",
-            image: "/images/hero-image.jpg",
-            imageAlt: "School playground",
-            date: "2025-06-25",
-        },
-    ];
+    const { data = { items: [] } } = useQuery({
+        queryKey: [APIKeys.NEWS_API_KEY, locale],
+        queryFn: () => ApiService.getNews(locale as Locale),
+    });
 
     return (
         <Section size="screen" className="bg-[#F7F7E4]">
@@ -101,7 +62,7 @@ export default function HomeNews() {
                                 },
                             }}
                         >
-                            {newsData.map((news, i) => (
+                            {data.items.map((news, i) => (
                                 <SwiperSlide key={news.id + news.title + i} className="pb-16">
                                     <NewsCard {...news} className={`mb-8 mx-4 ${i - 1 === activeIndex ? "lg:translate-y-16 lg:rotate-2" : ""}`} />
                                 </SwiperSlide>

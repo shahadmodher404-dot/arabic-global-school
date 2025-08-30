@@ -7,6 +7,12 @@ import { useState } from "react";
 import { formateClasses } from "@/lib/utils";
 import Image from "next/image";
 import { motion, AnimatePresence } from "motion/react";
+import { APIKeys } from "@/services/api-keys";
+import { ApiService } from "@/services/api.service";
+import { useQuery } from "@tanstack/react-query";
+import { useParams } from "next/navigation";
+import { Locale } from "@/i18n/routing";
+import { Loader2 } from "lucide-react";
 
 const faqs = Array.from({ length: 5 }).map((_, index) => ({
     title: `How does the school care for teaching Islamic values?`,
@@ -14,8 +20,15 @@ const faqs = Array.from({ length: 5 }).map((_, index) => ({
 }));
 
 export default function HomeFAQ() {
+    const { locale } = useParams();
     const t = useTranslations("home.faq");
     const [currentFAQ, setCurrentFaq] = useState(0);
+    const [imageLoading, setImageLoading] = useState(true);
+
+    const { data = { items: [] } } = useQuery({
+        queryKey: [APIKeys.FAQ_API_KEY, locale],
+        queryFn: () => ApiService.getFAQs(locale as Locale),
+    });
 
     return (
         <Section size="screen" className="bg-white">
@@ -24,14 +37,17 @@ export default function HomeFAQ() {
 
                 <div className="flex lg:items-center lg:flex-row flex-col gap-8 mt-8">
                     <div className="flex-1 space-y-4">
-                        {faqs.map((faq, index) => (
+                        {data.items.map((faq, index) => (
                             <button
                                 className={formateClasses(
                                     "px-6 py-4 border rounded-full flex items-center gap-4 w-full text-left lg:max-w-[545px] transition-all duration-300 cursor-pointer",
                                     currentFAQ === index ? "bg-[#F2F6FC] border-transparent" : "bg-transparent border-[#D5DEF1]"
                                 )}
-                                key={index + faq.title}
-                                onClick={() => setCurrentFaq(index)}
+                                key={index + faq.question}
+                                onClick={() => {
+                                    setCurrentFaq(index);
+                                    setImageLoading(true); // Reset loading state when FAQ changes
+                                }}
                             >
                                 <span
                                     className={formateClasses(
@@ -43,7 +59,7 @@ export default function HomeFAQ() {
                                     <QuestionMarkIcon />
                                 </span>
 
-                                <p className="font-medium">{faq.title}</p>
+                                <p className="font-medium">{faq.question}</p>
 
                                 <div className="ms-auto">
                                     <ArrowRightIcon />
@@ -67,17 +83,33 @@ export default function HomeFAQ() {
                             >
                                 <motion.div
                                     layout
-                                    className="overflow-hidden rounded-3xl"
+                                    className="overflow-hidden rounded-3xl relative w-full"
                                     initial={{ scale: 0.9, opacity: 0 }}
                                     animate={{ scale: 1, opacity: 1 }}
                                     transition={{ delay: 0.1, duration: 0.3 }}
                                 >
+                                    {/* Loading Skeleton */}
+                                    {imageLoading && (
+                                        <div className="absolute size-full inset-0 bg-gradient-to-r from-gray-200 via-gray-100 to-gray-200 animate-pulse w-full">
+                                            <div className="w-full h-[300px] bg-gray-300 rounded-3xl">
+                                                <div className="flex items-center justify-center h-full">
+                                                    <Loader2 className="text-white animate-spin size-6" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    )}
+
                                     <Image
                                         width={500}
                                         height={300}
-                                        className="w-full h-auto transition-transform duration-500 hover:scale-105"
-                                        src={"/images/news/news-placeholder.jpg"}
-                                        alt={faqs[currentFAQ].title}
+                                        className={`w-full h-64 object-cover object-center transition-all duration-500 hover:scale-105 ${
+                                            imageLoading ? "opacity-0" : "opacity-100"
+                                        }`}
+                                        src={data.items[currentFAQ].image}
+                                        alt={data.items[currentFAQ].question}
+                                        onLoad={() => setImageLoading(false)}
+                                        onLoadStart={() => setImageLoading(true)}
+                                        onError={() => setImageLoading(false)}
                                     />
                                 </motion.div>
 
@@ -87,7 +119,7 @@ export default function HomeFAQ() {
                                     animate={{ opacity: 1, x: 0 }}
                                     transition={{ delay: 0.2, duration: 0.3 }}
                                 >
-                                    {faqs[currentFAQ].title}
+                                    {data.items[currentFAQ].question}
                                 </motion.h1>
 
                                 <motion.p
@@ -96,7 +128,7 @@ export default function HomeFAQ() {
                                     animate={{ opacity: 1, x: 0 }}
                                     transition={{ delay: 0.3, duration: 0.3 }}
                                 >
-                                    {faqs[currentFAQ].answer}
+                                    {data.items[currentFAQ].answer}
                                 </motion.p>
                             </motion.div>
                         </AnimatePresence>

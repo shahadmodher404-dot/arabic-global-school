@@ -5,7 +5,13 @@ const withNextIntl = createNextIntlPlugin();
 
 const nextConfig: NextConfig = {
     images: {
-        remotePatterns: [],
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'main-website-api.arabicglobalschool.com',
+                pathname: '/uploads/**',
+            },
+        ],
     },
 };
 

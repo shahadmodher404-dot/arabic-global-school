@@ -6,25 +6,29 @@ import HomeHero from "@/components/home/home-hero";
 import HomeLanguage from "@/components/home/home-language";
 import HomeNews from "@/components/home/home-news";
 import HomeStep from "@/components/home/home-step";
+import PrefetchData from "@/components/prefetch-data";
+import { Locale } from "@/i18n/routing";
 
-export default function Home() {
+export default function Home({ params }: { params: Promise<{ locale: Locale }> }) {
     return (
         <main className="min-h-screen bg-[url('/svg/background-grid.svg')] bg-center w-full overflow-x-hidden">
-            <HomeHero />
+            <PrefetchData params={params}>
+                <HomeHero />
 
-            <HomeStep />
+                <HomeStep />
 
-            <HomeCurricula />
+                <HomeCurricula />
 
-            <HomeLanguage />
+                <HomeLanguage />
 
-            <HomeActivities />
+                <HomeActivities />
 
-            <HomeArtistic />
+                <HomeArtistic />
 
-            <HomeNews />
+                <HomeNews />
 
-            <HomeFAQ />
+                <HomeFAQ />
+            </PrefetchData>
         </main>
     );
 }
