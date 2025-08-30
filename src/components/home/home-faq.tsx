@@ -20,7 +20,7 @@ export default function HomeFAQ() {
     return (
         <Section size="screen" className="bg-white">
             <div className="">
-                <h1 className="section-header">{t("title")}</h1>
+                <h1 className="section-header max-w-lg">{t("title")}</h1>
 
                 <div className="flex lg:items-center lg:flex-row flex-col gap-8 mt-8">
                     <div className="flex-1 space-y-4">

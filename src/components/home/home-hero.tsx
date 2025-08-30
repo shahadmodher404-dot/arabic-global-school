@@ -13,11 +13,11 @@ function HomeHero() {
             <p className="bg-solid-light py-[6px] px-6 w-fit rounded-full text-natural-tertiary mx-auto mb-10">{t("paragraph")}</p>
 
             <div className="px-4">
-                <h1 className="section-header">
+                <h1 className="font-bold text-3xl sm:text-5xl md:text-6xl lg:text-[62px] md:leading-[100%] tracking-[-0.06em] text-center align-middle">
                     {t("title")}
                 </h1>
 
-                <h2 className="section-description">
+                <h2 className="sm:font-medium text-[32px] sm:text-[40px] md:text-[48px] lg:text-[62px] leading-[110%] tracking-[-0.06em] text-center align-middle">
                     {t("subtitle")}
                 </h2>
             </div>
