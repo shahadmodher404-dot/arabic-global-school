@@ -9,33 +9,39 @@ function HomeHero() {
     const t = useTranslations("home.hero");
 
     return (
-        <Section className="bg-[url('/svg/hero-background.svg')] bg-no-repeat bg-cover">
-            <p className="bg-solid-light py-[6px] px-6 w-fit rounded-full text-natural-tertiary mx-auto mb-10">{t("paragraph")}</p>
+        <Section className="relative">
+            <div
+                className="absolute left-1/2 -translate-x-1/2 top-[14%] h-[350px] w-[500px] md:h-[550px] md:w-[800px] blur-[88px] rounded-full opacity-60"
+                style={{ backgroundImage: "linear-gradient(180deg, #FFEA00 0%, rgba(255, 234, 0, 0) 75%)" }}
+            ></div>
 
-            <div className="px-4">
+            <div className="absolute top-1/6 -translate-y-1/2 left-[-40%] md:left-[-10%] lg:left-0 w-[180%] md:w-[120%] lg:w-full flex items-center">
+                <img src="/svg/hero/arrow-in-2.svg" className="me-auto" alt="" />
+                <img src="/svg/hero/arrow-in-1.svg" alt="" />
+            </div>
+
+            <p className="bg-solid-light py-[6px] px-6 w-fit rounded-full text-natural-tertiary mx-auto mb-10 relative z-10">{t("paragraph")}</p>
+            <div className="px-4 relative z-10">
                 <h1 className="font-bold text-3xl sm:text-5xl md:text-6xl lg:text-[62px] md:leading-[100%] tracking-[-0.06em] text-center align-middle">
                     {t("title")}
                 </h1>
-
                 <h2 className="sm:font-medium text-[32px] sm:text-[40px] md:text-[48px] lg:text-[62px] leading-[110%] tracking-[-0.06em] text-center align-middle">
                     {t("subtitle")}
                 </h2>
             </div>
 
             <div
-                className="px-6 py-3 flex items-stretch gap-4 w-fit rounded-full mx-auto translate-y-1/2"
+                className="px-6 py-3 flex items-stretch gap-4 w-fit rounded-full mx-auto translate-y-1/2 relative z-20"
                 style={{ background: "linear-gradient(180deg, #FFFEED 0%, #FFFFFF 100%)" }}
             >
                 <CustomLink shadow="default" href={"/about"} className="text-natural-primary px-3 py-2 border rounded-full">
                     {t("registration")}
                 </CustomLink>
-
                 <CustomLink href={"/contact"} shadow={"none"} variant={"outline"} className="text-natural-primary px-6 py-3 border rounded-full">
                     {t("discover")}
                 </CustomLink>
             </div>
-
-            <div className="w-full grid place-items-center mx-auto">
+            <div className="w-full grid place-items-center mx-auto relative z-10">
                 <AppImage
                     width={1800}
                     height={800}

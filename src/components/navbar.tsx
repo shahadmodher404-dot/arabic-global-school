@@ -14,7 +14,7 @@ function Navbar() {
     const t = useTranslations("navbar");
 
     return (
-        <nav className="flex items-stretch justify-between p-4 w-full max-w-8xl mx-auto overflow-hidden">
+        <nav className="flex items-stretch justify-between p-4 w-full max-w-8xl mx-auto overflow-hidden bg-transparent">
             <aside className="border-border-primary border p-2 pe-4 hidden lg:flex items-center gap-4 rounded-full ">
                 <div className="flex items-center gap-2">
                     <AppImage className="size-10" optimized width={200} height={200} src={"/images/logo-school.png"} />

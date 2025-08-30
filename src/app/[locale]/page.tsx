@@ -1,3 +1,4 @@
+import ContactSection from "@/components/contact-section";
 import HomeActivities from "@/components/home/home-activities";
 import HomeArtistic from "@/components/home/home-artistic";
 import HomeCurricula from "@/components/home/home-curricula";
@@ -28,6 +29,8 @@ export default function Home({ params }: { params: Promise<{ locale: Locale }> }
                 <HomeNews />
 
                 <HomeFAQ />
+
+                <ContactSection />
             </PrefetchData>
         </main>
     );
