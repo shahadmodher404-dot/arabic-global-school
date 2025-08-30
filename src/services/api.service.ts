@@ -4,7 +4,7 @@ import { Faq, News, RootResponse } from "./response.types";
 
 export class ApiService {
     static async getFAQs(lang: Locale) {
-        const response = await API.get<RootResponse<Faq>>("/questions/?is_visible=1", {
+        const response = await API.get<RootResponse<Faq>>("/questions?is_visible=1", {
             headers: { lang },
         });
         return response.data;

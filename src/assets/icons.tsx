@@ -311,3 +311,21 @@ export const ArrowRightIcon = (props: SVGAttributes<SVGSVGElement>) => {
         </svg>
     );
 };
+
+export const ChevronLeftIcon = (props: SVGAttributes<SVGSVGElement>) => {
+    return (
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+            <path d="M14.5 6L8.5 12" stroke="#0064E2" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            <path opacity="0.4" d="M8.5 12L14.5 18" stroke="#0064E2" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+    );
+};
+
+export const ChevronRightIcon = (props: SVGAttributes<SVGSVGElement>) => {
+    return (
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+            <path d="M9.5 6L15.5 12" stroke="#2F4674" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            <path opacity="0.4" d="M15.5 12L9.5 18" stroke="#2F4674" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+    );
+};

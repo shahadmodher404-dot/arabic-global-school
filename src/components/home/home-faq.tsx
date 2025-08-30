@@ -90,7 +90,7 @@ export default function HomeFAQ() {
                                 >
                                     {/* Loading Skeleton */}
                                     {imageLoading && (
-                                        <div className="absolute size-full inset-0 bg-gradient-to-r from-gray-200 via-gray-100 to-gray-200 animate-pulse w-full">
+                                        <div className="absolute size-full inset-0 bg-gradient-to-r from-gray-200 via-gray-100 to-gray-200 animate-pulse w-full lg:w-[545px]">
                                             <div className="w-full h-[300px] bg-gray-300 rounded-3xl">
                                                 <div className="flex items-center justify-center h-full">
                                                     <Loader2 className="text-white animate-spin size-6" />
@@ -101,12 +101,12 @@ export default function HomeFAQ() {
 
                                     <Image
                                         width={500}
-                                        height={300}
-                                        className={`w-full h-64 object-cover object-center transition-all duration-500 hover:scale-105 ${
+                                        height={350}
+                                        className={`w-full lg:w-[545px] h-72 object-cover object-center transition-all duration-500 hover:scale-105 ${
                                             imageLoading ? "opacity-0" : "opacity-100"
                                         }`}
-                                        src={data.items[currentFAQ].image}
-                                        alt={data.items[currentFAQ].question}
+                                        src={data.items[currentFAQ]?.image}
+                                        alt={data.items[currentFAQ]?.question}
                                         onLoad={() => setImageLoading(false)}
                                         onLoadStart={() => setImageLoading(true)}
                                         onError={() => setImageLoading(false)}
@@ -119,7 +119,7 @@ export default function HomeFAQ() {
                                     animate={{ opacity: 1, x: 0 }}
                                     transition={{ delay: 0.2, duration: 0.3 }}
                                 >
-                                    {data.items[currentFAQ].question}
+                                    {data.items[currentFAQ]?.question}
                                 </motion.h1>
 
                                 <motion.p
@@ -128,7 +128,7 @@ export default function HomeFAQ() {
                                     animate={{ opacity: 1, x: 0 }}
                                     transition={{ delay: 0.3, duration: 0.3 }}
                                 >
-                                    {data.items[currentFAQ].answer}
+                                    {data.items[currentFAQ]?.answer}
                                 </motion.p>
                             </motion.div>
                         </AnimatePresence>

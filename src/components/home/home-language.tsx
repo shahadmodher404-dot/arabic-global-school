@@ -12,7 +12,7 @@ function HomeLanguage() {
         <Section size={"screen"} className="bg-white mt-16">
             <div className="relative">
                 <div className="" dir="ltr">
-                    <div className="absolute scale-75 md:scale-100 top-[55%] md:top-32 left-5 md:left-1/4 -translate-x-1/5 md:-translate-x-1/2 -translate-y-1/2 hidden min-[375px]:flex flex-col">
+                    <div className="absolute scale-75 md:scale-90 lg:scale-100 top-[55%] md:top-1/6 lg:top-32 left-5 md:left-1/6 lg:left-1/4 -translate-x-1/5 md:-translate-x-1/3 lg:-translate-x-1/2 -translate-y-1/2 hidden min-[400px]:flex flex-col">
                         <div
                             className="px-6 py-3 justify-center items-center gap-2 bg-danger-solid text-white rounded-full font-medium"
                             style={{ boxShadow: "0 7px 16px 0 rgba(240, 93, 37, 0.30), 0 2px 7.4px 0 rgba(255, 255, 255, 0.25) inset" }}
@@ -20,24 +20,24 @@ function HomeLanguage() {
                             Membentuk Pemimpin!
                         </div>
                         <LanguageArrowIcon
-                            className="ms-auto -rotate-[120deg] md:-rotate-[75deg] mt-2 md:translate-x-8"
+                            className="ms-auto -rotate-[120deg] md:-rotate-[40deg] lg:-rotate-[75deg] mt-2 md:translate-x-4 lg:translate-x-8"
                             centerColor="#fff"
                             outerColor="#F37C44"
                         />
                     </div>
 
-                    <div className="absolute scale-75 md:scale-100 top-1/3 md:top-[25%] left-[75%] -translate-x-1/2 -translate-y-1/2 min-[350px]:flex flex-col hidden">
+                    <div className="absolute scale-75 md:scale-90 lg:scale-100 top-1/3 md:top-[30%] lg:top-[25%] left-[75%] md:left-[90%] lg:left-[75%] -translate-x-1/2 -translate-y-1/2 min-[400px]:flex flex-col hidden">
                         <div
                             className="px-6 py-3 justify-center items-center gap-2 bg-primary-solid text-white rounded-full font-medium"
                             style={{ boxShadow: "0 7px 16px 0 rgba(0, 100, 226, 0.30), 0 2px 7.4px 0 rgba(255, 255, 255, 0.25) inset" }}
                         >
                             عربيه!
                         </div>
-                        <LanguageArrowIcon className="me-auto mt-2 rotate-45 md:rotate-0 -translate-x-8" outerColor="#66A2EE" centerColor="#fff" />
+                        <LanguageArrowIcon className="me-auto mt-2 rotate-45 md:rotate-30 lg:rotate-0 -translate-x-8 md:-translate-x-6 lg:-translate-x-8" outerColor="#66A2EE" centerColor="#fff" />
                     </div>
 
-                    <div className="absolute scale-75 md:scale-100 bottom-0 md:bottom-8 left-[85%] md:left-[80%] -translate-x-1/2 -translate-y-1/2 min-[375px]:flex flex-col hidden">
-                        <LanguageArrowIcon className="me-auto mt-2 -translate-x-12 rotate-120" outerColor="#FFDE22" centerColor="#000" />
+                    <div className="absolute scale-75 md:scale-90 lg:scale-100 bottom-0 md:bottom-4 lg:bottom-8 left-[85%] md:left-[82%] lg:left-[80%] -translate-x-1/2 -translate-y-1/2 min-[400px]:flex flex-col hidden">
+                        <LanguageArrowIcon className="me-auto mt-2 -translate-x-12 md:-translate-x-10 lg:-translate-x-12 rotate-120" outerColor="#FFDE22" centerColor="#000" />
                         <div
                             className="px-6 py-3 justify-center items-center gap-2 bg-secondary-solid rounded-full font-medium min-w-max"
                             style={{ boxShadow: "0 7px 16px 0 rgba(255, 222, 34, 0.30), 0 -4px 10.9px 0 rgba(255, 255, 255, 0.80) inset" }}
@@ -48,9 +48,7 @@ function HomeLanguage() {
                 </div>
 
                 <div className="max-w-4xl w-full mx-auto my-16 md:my-32">
-                    <h1 className="mx-auto section-header capitalize text-center mb-4 max-w-lg">
-                        {t("title")}
-                    </h1>
+                    <h1 className="mx-auto section-header capitalize text-center mb-4 max-w-lg">{t("title")}</h1>
 
                     <div className="flex flex-col md:flex-row *:flex-1 gap-4 mt-16">
                         <Card className="max-w-[230px] md:max-w-[285px] bg-background-container border-none relative md:py-8">

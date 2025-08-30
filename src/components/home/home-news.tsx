@@ -17,12 +17,15 @@ import { APIKeys } from "@/services/api-keys";
 import { ApiService } from "@/services/api.service";
 import { useParams } from "next/navigation";
 import { Locale } from "@/i18n/routing";
+import { ChevronLeftIcon, ChevronRightIcon } from "@/assets/icons";
 
 export default function HomeNews() {
     const { locale } = useParams();
 
     const t = useTranslations("home.announcements");
     const [activeIndex, setActiveIndex] = useState(0);
+    const [isBeginning, setIsBeginning] = useState(true);
+    const [isEnd, setIsEnd] = useState(false);
     const { dir } = useTextDirection();
 
     const { data = { items: [] } } = useQuery({
@@ -42,11 +45,19 @@ export default function HomeNews() {
                 <div className="relative">
                     <div className="overflow-hidden">
                         <Swiper
-                            modules={[Navigation]}
+                            dir={dir}
                             spaceBetween={0}
                             slidesPerView={1}
-                            dir={dir}
-                            onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
+                            modules={[Navigation]}
+                            onSlideChange={(swiper) => {
+                                setActiveIndex(swiper.activeIndex);
+                                setIsBeginning(swiper.isBeginning);
+                                setIsEnd(swiper.isEnd);
+                            }}
+                            onSwiper={(swiper) => {
+                                setIsBeginning(swiper.isBeginning);
+                                setIsEnd(swiper.isEnd);
+                            }}
                             navigation={{
                                 nextEl: ".swiper-button-next-custom",
                                 prevEl: ".swiper-button-prev-custom",
@@ -63,24 +74,33 @@ export default function HomeNews() {
                             }}
                         >
                             {data.items.map((news, i) => (
-                                <SwiperSlide key={news.id + news.title + i} className="pb-16">
-                                    <NewsCard {...news} className={`mb-8 mx-4 ${i - 1 === activeIndex ? "lg:translate-y-16 lg:rotate-2" : ""}`} />
+                                <SwiperSlide key={news.id + news.title + i} className="pb-16 h-full">
+                                    <NewsCard
+                                        {...news}
+                                        className={`mb-8 mx-4 h-full ${i - 1 === activeIndex ? "lg:translate-y-16 lg:rotate-2" : ""}`}
+                                    />
                                 </SwiperSlide>
                             ))}
                         </Swiper>
                     </div>
 
                     {/* Custom Navigation Buttons */}
-                    <button className="swiper-button-prev-custom absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-50 transition-colors">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12.5 15L7.5 10L12.5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                        </svg>
+                    <button
+                        className={`swiper-button-prev-custom absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-12 h-12 bg-white rounded-2xl shadow-lg flex items-center justify-center transition-all duration-300 border border-natural-tertiary ${
+                            isBeginning ? "opacity-50 cursor-not-allowed" : "hover:bg-gray-50 opacity-100 cursor-pointer"
+                        }`}
+                        disabled={isBeginning}
+                    >
+                        <ChevronLeftIcon className="rtl:-scale-x-100" />
                     </button>
 
-                    <button className="swiper-button-next-custom absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-50 transition-colors">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                        </svg>
+                    <button
+                        className={`swiper-button-next-custom absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 w-12 h-12 bg-white rounded-2xl shadow-lg flex items-center justify-center transition-all duration-300 border border-natural-tertiary ${
+                            isEnd ? "opacity-50 cursor-not-allowed" : "hover:bg-gray-50 opacity-100 cursor-pointer"
+                        }`}
+                        disabled={isEnd}
+                    >
+                        <ChevronRightIcon className="rtl:-scale-x-100" />
                     </button>
 
                     {/* Custom Pagination */}

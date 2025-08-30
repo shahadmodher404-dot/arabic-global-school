@@ -20,18 +20,19 @@ function HomeStep() {
             </div>
 
             <div className="flex items-stretch flex-col-reverse lg:flex-row gap-4 mt-8">
-                <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:flex lg:flex-col gap-4 w-full lg:max-w-md">
-                    <Card className="bg-background-container flex-row lg:min-h-[220px] flex-1">
+                <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:flex lg:flex-col gap-4 w-full lg:max-w-md overflow-hidden">
+                    <Card className="bg-background-container flex-row lg:min-h-[220px] flex-1 overflow-hidden">
                         <div className="flex flex-col gap-4 ps-4 md:ps-6">
                             <h3 className="font-bold sm:text-[24px] leading-[100%] tracking-[0] pt-4">{t("env")}</h3>
-                            <p className="text-natural-tertiary">{t("envParagraph")}</p>
+                            <p className="text-natural-tertiary break-words">{t("envParagraph")}</p>
                         </div>
+
                         <div className="w-72">
                             <AppImage className="size-full scale-[1.75]" src={"/svg/step-cards/env-svg.svg"} />
                         </div>
                     </Card>
 
-                    <Card className="bg-background-container flex-row lg:min-h-[220px] flex-1">
+                    <Card className="bg-background-container flex-row lg:min-h-[220px] flex-1 overflow-hidden">
                         <div className="flex flex-col gap-4 ps-4 md:ps-6 w-fit">
                             <h3 className="font-bold sm:text-[24px] leading-[100%] tracking-[0]">{t("education")}</h3>
                             <p className="mt-auto text-natural-tertiary">{t("educationParagraph")}</p>
