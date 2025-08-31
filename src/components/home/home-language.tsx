@@ -10,7 +10,7 @@ function HomeLanguage() {
 
     return (
         <Section size={"screen"} className="bg-white mt-16">
-            <div className="relative">
+            <Section.Inner className="relative">
                 <div className="" dir="ltr">
                     <div className="absolute scale-75 md:scale-90 lg:scale-100 top-[55%] md:top-1/6 lg:top-32 left-5 md:left-1/6 lg:left-1/4 -translate-x-1/5 md:-translate-x-1/3 lg:-translate-x-1/2 -translate-y-1/2 hidden min-[400px]:flex flex-col">
                         <div
@@ -33,11 +33,19 @@ function HomeLanguage() {
                         >
                             عربيه!
                         </div>
-                        <LanguageArrowIcon className="me-auto mt-2 rotate-45 md:rotate-30 lg:rotate-0 -translate-x-8 md:-translate-x-6 lg:-translate-x-8" outerColor="#66A2EE" centerColor="#fff" />
+                        <LanguageArrowIcon
+                            className="me-auto mt-2 rotate-45 md:rotate-30 lg:rotate-0 -translate-x-8 md:-translate-x-6 lg:-translate-x-8"
+                            outerColor="#66A2EE"
+                            centerColor="#fff"
+                        />
                     </div>
 
                     <div className="absolute scale-75 md:scale-90 lg:scale-100 bottom-0 md:bottom-4 lg:bottom-8 left-[85%] md:left-[82%] lg:left-[80%] -translate-x-1/2 -translate-y-1/2 min-[400px]:flex flex-col hidden">
-                        <LanguageArrowIcon className="me-auto mt-2 -translate-x-12 md:-translate-x-10 lg:-translate-x-12 rotate-120" outerColor="#FFDE22" centerColor="#000" />
+                        <LanguageArrowIcon
+                            className="me-auto mt-2 -translate-x-12 md:-translate-x-10 lg:-translate-x-12 rotate-120"
+                            outerColor="#FFDE22"
+                            centerColor="#000"
+                        />
                         <div
                             className="px-6 py-3 justify-center items-center gap-2 bg-secondary-solid rounded-full font-medium min-w-max"
                             style={{ boxShadow: "0 7px 16px 0 rgba(255, 222, 34, 0.30), 0 -4px 10.9px 0 rgba(255, 255, 255, 0.80) inset" }}
@@ -89,7 +97,7 @@ function HomeLanguage() {
                         </Card>
                     </div>
                 </div>
-            </div>
+            </Section.Inner>
         </Section>
     );
 }

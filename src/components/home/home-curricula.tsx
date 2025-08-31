@@ -60,14 +60,10 @@ function HomeCurricula() {
 
     return (
         <Section className="bg-background-main" size="screen">
-            <div className="flex flex-col w-full overflow-hidden">
+            <Section.Inner className="flex flex-col w-full overflow-hidden">
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-                    <h1 className="section-header">
-                        {t("title")}
-                    </h1>
-                    <p className="mt-2 max-w-xl section-description">
-                        {t("desc")}
-                    </p>
+                    <h1 className="section-header">{t("title")}</h1>
+                    <p className="mt-2 max-w-xl section-description">{t("desc")}</p>
                 </div>
 
                 <div className="flex md:justify-center w-full overflow-auto mt-8 md:mt-16">
@@ -92,7 +88,7 @@ function HomeCurricula() {
 
                                 <span
                                     className={`md:text-[18px] text-[20px] leading-[100%] ${
-                                        currentStage === index ? "font-medium" : "font-light text-natural-tertiary"
+                                        currentStage === index ? "font-medium" : "text-natural-tertiary"
                                     }`}
                                 >
                                     {stage.title}
@@ -142,7 +138,7 @@ function HomeCurricula() {
                         </motion.div>
                     ))}
                 </div>
-            </div>
+            </Section.Inner>
         </Section>
     );
 }

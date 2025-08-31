@@ -27,10 +27,10 @@ export default function HomeFAQ() {
 
     return (
         <Section size="screen" className="bg-white">
-            <div className="">
+            <Section.Inner>
                 <h1 className="section-header max-w-lg">{t("title")}</h1>
 
-                <div className="flex lg:items-center lg:flex-row flex-col gap-8 mt-8">
+                <div className="flex lg:items-center lg:flex-row flex-col gap-8 mt-16">
                     <div className="flex-1 space-y-4">
                         {data.items.map((faq, index) => (
                             <button
@@ -57,7 +57,7 @@ export default function HomeFAQ() {
                                 <p className="font-medium">{faq.question}</p>
 
                                 <div className="ms-auto">
-                                    <ArrowRightIcon />
+                                    <ArrowRightIcon className="rtl:-scale-x-100" />
                                 </div>
                             </button>
                         ))}
@@ -129,7 +129,7 @@ export default function HomeFAQ() {
                         </AnimatePresence>
                     </div>
                 </div>
-            </div>
+            </Section.Inner>
         </Section>
     );
 }

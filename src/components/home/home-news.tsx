@@ -35,7 +35,7 @@ export default function HomeNews() {
 
     return (
         <Section size="screen" className="bg-[#F7F7E4]">
-            <div className="space-y-12">
+            <Section.Inner className="space-y-12">
                 {/* Section Header */}
                 <div className="text-center max-w-4xl mx-auto">
                     <h1 className="section-header mb-4">{t("title")}</h1>
@@ -91,7 +91,7 @@ export default function HomeNews() {
                         }`}
                         disabled={isBeginning}
                     >
-                        <ChevronLeftIcon className="rtl:-scale-x-100" />
+                        <ChevronLeftIcon />
                     </button>
 
                     <button
@@ -100,7 +100,7 @@ export default function HomeNews() {
                         }`}
                         disabled={isEnd}
                     >
-                        <ChevronRightIcon className="rtl:-scale-x-100" />
+                        <ChevronRightIcon />
                     </button>
 
                     {/* Custom Pagination */}
@@ -108,7 +108,7 @@ export default function HomeNews() {
                         {/* Pagination bullets will be inserted here by Swiper */}
                     </div>
                 </div>
-            </div>
+            </Section.Inner>
         </Section>
     );
 }

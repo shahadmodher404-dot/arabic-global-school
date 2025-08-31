@@ -12,7 +12,7 @@ import { Locale } from "@/i18n/routing";
 
 export default function Home({ params }: { params: Promise<{ locale: Locale }> }) {
     return (
-        <main className="min-h-screen bg-[url('/svg/background-grid.svg')] bg-center w-full overflow-x-hidden">
+        <main className="min-h-lvh bg-[url('/svg/background-grid.svg')] bg-center w-full overflow-hidden">
             <PrefetchData params={params}>
                 <HomeHero />
 

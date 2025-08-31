@@ -82,7 +82,7 @@ function Footer() {
                         <h1 className="text-2xl md:text-3xl lg:text-4xl mb-6">{t("newsletter.title")}</h1>
 
                         <div className="flex items-stretch gap-4">
-                            <div className="bg-white flex items-center h-[52px] px-4 pr-8 gap-4 rounded-full w-full md:max-w-[320px]">
+                            <div className="bg-white flex items-center h-[52px] px-4 gap-4 rounded-full w-full md:max-w-[420px]">
                                 <EmailIcon2 />
                                 <input
                                     type="text"
@@ -91,7 +91,7 @@ function Footer() {
                                 />
                             </div>
 
-                            <Button shadow="default" className="rounded-full h-[unset]">
+                            <Button shadow="default" className="rounded-full h-[unset] px-8">
                                 {t("newsletter.button")}
                             </Button>
                         </div>
