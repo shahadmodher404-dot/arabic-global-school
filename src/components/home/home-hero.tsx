@@ -3,8 +3,6 @@ import AppImage from "../app-image";
 import CustomLink from "../ui/Link";
 import Section from "../ui/section";
 
-// TODO: add the missing background stuff
-
 function HomeHero() {
     const t = useTranslations("home.hero");
 
