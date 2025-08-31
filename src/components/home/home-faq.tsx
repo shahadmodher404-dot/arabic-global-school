@@ -14,11 +14,6 @@ import { useParams } from "next/navigation";
 import { Locale } from "@/i18n/routing";
 import { Loader2 } from "lucide-react";
 
-const faqs = Array.from({ length: 5 }).map((_, index) => ({
-    title: `How does the school care for teaching Islamic values?`,
-    answer: `We emphasize Islamic values throughout our educational process. Our curriculum includes the international ICO program for Arabic and Islamic studies, along with Noor Al-Bayan for Quran memorization and simplified Tajweed instruction from an early age. We also incorporate ethics and Islamic manners into daily lessons, guided by teachers who exemplify these values, fostering a balanced generation confident in their identity.`,
-}));
-
 export default function HomeFAQ() {
     const { locale } = useParams();
     const t = useTranslations("home.faq");

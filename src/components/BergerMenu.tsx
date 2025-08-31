@@ -1,10 +1,10 @@
 "use client";
 
-import { useState } from "react";
-import { motion, AnimatePresence } from "motion/react";
+import { FacebookIcon, InstagramIcon, TwitterIcon, YouTubeIcon } from "@/assets/icons";
+import { AnimatePresence, motion } from "motion/react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
-import { FacebookIcon, InstagramIcon, TwitterIcon, YouTubeIcon } from "@/assets/icons";
+import { useState } from "react";
 import { Button } from "./ui/button";
 
 interface BurgerMenuProps {
@@ -49,7 +49,7 @@ function BergerMenu({ isOpen, onClose }: BurgerMenuProps) {
                     animate={{ x: 0, opacity: 1, scale: 1 }}
                     exit={{ x: "100%", opacity: 0, scale: 0.98 }}
                     transition={{ type: "spring", stiffness: 400, damping: 32, duration: 0.35 }}
-                    className="fixed top-0 right-0 h-full w-full bg-white z-50 shadow-xl w-full"
+                    className="fixed top-0 right-0 h-full w-full bg-white z-50 shadow-xl"
                 >
                     {/* Header with Close Button */}
                     <div className="flex justify-end p-6">
@@ -68,7 +68,7 @@ function BergerMenu({ isOpen, onClose }: BurgerMenuProps) {
                     {/* Navigation Items */}
                     <nav className="px-6 pb-6">
                         <ul className="space-y-8">
-                            {menuItems.map((item, index) => (
+                            {menuItems.map((item) => (
                                 <li key={item.title}>
                                     <div className="flex items-center justify-between">
                                         <Link
@@ -109,8 +109,9 @@ function BergerMenu({ isOpen, onClose }: BurgerMenuProps) {
                                                     transition={{ duration: 0.25, type: "spring", stiffness: 300, damping: 30 }}
                                                     className="overflow-hidden"
                                                 >
-                                                    {item.dropdownItems?.map((subItem) => (
+                                                    {item.dropdownItems?.map((subItem, i) => (
                                                         <Link
+                                                            key={subItem + i + "burger"}
                                                             href={`${item.href}/${subItem.toLowerCase().replace(/\s+/g, "-")}`}
                                                             className="text-lg text-gray-600 hover:text-blue-600 transition-colors block"
                                                             onClick={onClose}

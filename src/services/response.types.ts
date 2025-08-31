@@ -1,4 +1,4 @@
-export interface RootResponse<T = any> {
+export interface RootResponse<T = unknown> {
     items: T[];
     total_pages: number;
     per_page: number;

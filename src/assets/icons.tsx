@@ -161,7 +161,7 @@ export const TwitterIcon = (props: SVGAttributes<SVGSVGElement>) => {
 
 export const InstagramIcon = (props: SVGAttributes<SVGSVGElement>) => {
     return (
-        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
             <g clipPath="url(#clip0_1571_26589)">
                 <path
                     d="M16.4961 0.541016H7.49608C3.35459 0.541016 -0.00389954 3.89952 -0.00389127 8.04102L-0.00387329 17.041C-0.00386502 21.1825 3.35463 24.541 7.49612 24.541H16.4961C20.6376 24.541 23.9961 21.1825 23.9961 17.041L23.9961 8.04102C23.996 3.89952 20.6375 0.541016 16.4961 0.541016ZM21.7461 17.041C21.7461 19.936 19.3911 22.291 16.4961 22.291H7.49612C4.60113 22.291 2.24613 19.936 2.24612 17.041L2.2461 8.04102C2.2461 5.14602 4.60109 2.79102 7.49608 2.79102H16.4961C19.3911 2.79102 21.7461 5.14602 21.7461 8.04102L21.7461 17.041Z"
@@ -198,7 +198,7 @@ export const YouTubeIcon = (props: SVGAttributes<SVGSVGElement>) => {
 
 export const EmailIcon2 = (props: SVGAttributes<SVGSVGElement>) => {
     return (
-        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
             <path
                 d="M17 21.7861H7C6.59 21.7861 6.25 21.4461 6.25 21.0361C6.25 20.6261 6.59 20.2861 7 20.2861H17C19.86 20.2861 21.25 18.8961 21.25 16.0361V9.03613C21.25 6.17613 19.86 4.78613 17 4.78613H7C4.14 4.78613 2.75 6.17613 2.75 9.03613C2.75 9.44613 2.41 9.78613 2 9.78613C1.59 9.78613 1.25 9.44613 1.25 9.03613C1.25 5.38613 3.35 3.28613 7 3.28613H17C20.65 3.28613 22.75 5.38613 22.75 9.03613V16.0361C22.75 19.6861 20.65 21.7861 17 21.7861Z"
                 fill="#020409"
@@ -281,7 +281,7 @@ export const HappyCalenderIcon = (props: SVGAttributes<SVGSVGElement>) => {
 
 export const QuestionMarkIcon = (props: SVGAttributes<SVGSVGElement>) => {
     return (
-        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
             <path
                 fillRule="evenodd"
                 clipRule="evenodd"
@@ -300,7 +300,7 @@ export const QuestionMarkIcon = (props: SVGAttributes<SVGSVGElement>) => {
 
 export const ArrowRightIcon = (props: SVGAttributes<SVGSVGElement>) => {
     return (
-        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
             <path
                 d="M4 12.5361H20M20 12.5361L14 6.53613M20 12.5361L14 18.5361"
                 stroke="#020409"

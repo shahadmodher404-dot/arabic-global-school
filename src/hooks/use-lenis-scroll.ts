@@ -24,7 +24,7 @@ export function useLenisScroll(options: LenisOptions = {}) {
                 battery.addEventListener("chargingchange", () => {
                     setIsOnBattery(!battery.charging);
                 });
-            } catch (error) {
+            } catch {
                 // Battery API not supported or failed, default to false
                 setIsOnBattery(false);
             }

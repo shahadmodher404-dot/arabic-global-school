@@ -62,11 +62,9 @@ function Footer() {
                         </div>
                     </div>
 
-                    {Object.entries(FOOTER_LINKS).map(([key, val], index) => (
+                    {Object.entries(FOOTER_LINKS).map(([key, val]) => (
                         <div className="flex flex-col flex-1" key={key}>
-                            <h3 className="lg:text-[20px] font-bold font-sf-pro">
-                                {t(`${key}.title`)}
-                            </h3>
+                            <h3 className="lg:text-[20px] font-bold font-sf-pro">{t(`${key}.title`)}</h3>
 
                             <div className="flex flex-col gap-3 mt-6">
                                 {val.map((link) => (
@@ -86,7 +84,11 @@ function Footer() {
                         <div className="flex items-stretch gap-4">
                             <div className="bg-white flex items-center h-[52px] px-4 pr-8 gap-4 rounded-full w-full md:max-w-[320px]">
                                 <EmailIcon2 />
-                                <input type="text" className="!outline-none !border-none flex-1 placeholder:text-[#2F4674]/30" placeholder={t("newsletter.placeholder")} />
+                                <input
+                                    type="text"
+                                    className="!outline-none !border-none flex-1 placeholder:text-[#2F4674]/30"
+                                    placeholder={t("newsletter.placeholder")}
+                                />
                             </div>
 
                             <Button shadow="default" className="rounded-full h-[unset]">
