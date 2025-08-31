@@ -1,8 +1,7 @@
 "use client";
 
-import { useState, useRef, useMemo } from "react";
+import { useState, useRef, useEffect } from "react";
 import { PlayIcon, PauseIcon } from "@/assets/icons";
-import { generateGuid } from "@/lib/utils";
 
 interface VideoPlayerProps {
     src: string;
@@ -13,8 +12,12 @@ interface VideoPlayerProps {
 export default function VideoPlayer({ src, poster, className = "" }: VideoPlayerProps) {
     const [isPlaying, setIsPlaying] = useState(false);
     const [isHovered, setIsHovered] = useState(false);
+    const [isMounted, setIsMounted] = useState(false);
     const videoRef = useRef<HTMLVideoElement>(null);
-    const videoId = useMemo(generateGuid, []);
+
+    useEffect(() => {
+        setIsMounted(true);
+    }, []);
 
     const togglePlay = () => {
         if (videoRef.current) {
@@ -31,6 +34,8 @@ export default function VideoPlayer({ src, poster, className = "" }: VideoPlayer
         setIsPlaying(false);
     };
 
+    if (!isMounted) return null;
+
     return (
         <div
             className={`relative rounded-xl overflow-hidden cursor-pointer group ${className}`}
@@ -45,7 +50,6 @@ export default function VideoPlayer({ src, poster, className = "" }: VideoPlayer
                 onEnded={handleVideoEnd}
                 onPlay={() => setIsPlaying(true)}
                 onPause={() => setIsPlaying(false)}
-                data-video={videoId}
             >
                 <source src={src} type="video/mp4" />
                 Your browser does not support the video tag.
