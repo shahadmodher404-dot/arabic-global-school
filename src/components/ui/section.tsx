@@ -26,8 +26,10 @@ interface PropsInner extends PropsWithChildren {
     className?: string;
 }
 
-Section.Inner = ({ children, className }: PropsInner) => {
+Section.Inner = function ({ children, className }: PropsInner) {
     return <div className={sectionVariants({ className })}>{children}</div>;
-};
+} as React.FC<PropsInner>;
+
+Section.Inner.displayName = "Section.Inner";
 
 export default Section;
