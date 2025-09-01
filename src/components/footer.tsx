@@ -81,8 +81,8 @@ function Footer() {
                     <div className="space-y-4">
                         <h1 className="text-2xl md:text-3xl lg:text-4xl mb-6">{t("newsletter.title")}</h1>
 
-                        <div className="flex items-stretch gap-4">
-                            <div className="bg-white flex items-center h-[52px] px-4 gap-4 rounded-full w-full md:max-w-[420px]">
+                        <div className="flex items-stretch gap-4 min-w-md">
+                            <div className="bg-white flex items-center h-[52px] px-4 gap-4 rounded-full w-full md:max-w-[520px]">
                                 <EmailIcon2 />
                                 <input
                                     type="text"
