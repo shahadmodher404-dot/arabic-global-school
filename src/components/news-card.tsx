@@ -1,8 +1,8 @@
 import { HappyCalenderIcon } from "@/assets/icons";
 import { formatDate } from "@/lib/utils";
 import { useTranslations } from "next-intl";
-import Image from "next/image";
 import { twMerge } from "tailwind-merge";
+import AppImage from "./app-image";
 
 interface NewsCardProps {
     id?: string;
@@ -41,7 +41,16 @@ export default function NewsCard({
             )}
         >
             <div>
-                <Image src={image} alt={imageAlt} width={500} height={300} className="w-full h-auto min-h-[354px] object-center object-cover" />
+                <AppImage 
+                    src={image} 
+                    alt={imageAlt} 
+                    width={500} 
+                    height={300} 
+                    className="w-full h-auto min-h-[354px] object-center object-cover" 
+                    optimized={true}
+                    useProxy={true}
+                    fallbackSrc="/images/news/news-placeholder.jpg"
+                />
             </div>
 
             <div className="py-6">
