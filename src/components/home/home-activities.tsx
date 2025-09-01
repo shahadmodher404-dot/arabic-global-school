@@ -15,8 +15,8 @@ function HomeActivities() {
     ];
 
     return (
-        <Section className="relative bg-white px-4 lg:px-8" size="screen">
-            <Section className="p-8 md:p-16 h-full relative">
+        <Section className="relative bg-white px-4 lg:px-8 min-[400px]:px-0" size="screen">
+            <Section className="p-8 md:p-16 h-full relative  overflow-hidden">
                 <img
                     src="/images/activities-bg.png"
                     className="absolute scale-x-125 lg:scale-x-100 w-screen lg:w-full h-full left-0 top-0 object-fill"

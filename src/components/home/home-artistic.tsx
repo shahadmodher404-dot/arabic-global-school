@@ -35,7 +35,7 @@ export default function HomeArtistic() {
                         </Button>
                     </div>
 
-                    <div className="h-[568px] order-1 lg:order-2">
+                    <div className="h-[316px] md:h-[568px] order-1 lg:order-2">
                         <VideoPlayer
                             src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
                             poster="/images/artistic/video-cover.jpg"

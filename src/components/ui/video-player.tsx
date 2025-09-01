@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import { PlayIcon, PauseIcon } from "@/assets/icons";
+import { cn } from "@/lib/utils";
 
 interface VideoPlayerProps {
     src: string;
@@ -38,7 +39,7 @@ export default function VideoPlayer({ src, poster, className = "" }: VideoPlayer
 
     return (
         <div
-            className={`relative rounded-xl overflow-hidden cursor-pointer group ${className}`}
+            className={cn("relative rounded-[48px] overflow-hidden cursor-pointer group", className)}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
             onClick={togglePlay}

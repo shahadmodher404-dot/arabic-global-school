@@ -34,7 +34,7 @@ export default function HomeNews() {
     });
 
     return (
-        <Section size="screen" className="bg-background-secondary">
+        <Section size="screen" className="bg-background-secondary **:hide-scroll">
             <Section.Inner className="space-y-12">
                 {/* Section Header */}
                 <div className="text-center max-w-4xl mx-auto">
@@ -75,7 +75,7 @@ export default function HomeNews() {
                         >
                             {data.items.map((news, i) => (
                                 <SwiperSlide key={news.id + news.title + i} className="pb-16">
-                                    <NewsCard {...news} className={`mb-8 mx-4 ${activeIndex + 1 == i ? "bg-secondary-solid-light" : ""}`} />
+                                    <NewsCard {...news} className={`mb-8 ms-4 lg:mx-4 ${activeIndex + 1 == i ? "bg-secondary-solid-light" : ""}`} />
                                 </SwiperSlide>
                             ))}
                         </Swiper>
@@ -83,7 +83,7 @@ export default function HomeNews() {
 
                     {/* Custom Navigation Buttons */}
                     <button
-                        className={`swiper-button-prev-custom absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-12 h-12 bg-white rounded-2xl shadow-lg flex items-center justify-center transition-all duration-300 border border-natural-tertiary ${
+                        className={`swiper-button-prev-custom absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-12 h-12 bg-white rounded-2xl shadow-lg hidden lg:flex items-center justify-center transition-all duration-300 border border-natural-tertiary ${
                             isBeginning ? "opacity-50 cursor-not-allowed" : "hover:bg-gray-50 opacity-100 cursor-pointer"
                         }`}
                         disabled={isBeginning}
@@ -92,7 +92,7 @@ export default function HomeNews() {
                     </button>
 
                     <button
-                        className={`swiper-button-next-custom absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 w-12 h-12 bg-white rounded-2xl shadow-lg flex items-center justify-center transition-all duration-300 border border-natural-tertiary ${
+                        className={`swiper-button-next-custom absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 w-12 h-12 bg-white rounded-2xl shadow-lg hidden lg:flex items-center justify-center transition-all duration-300 border border-natural-tertiary ${
                             isEnd ? "opacity-50 cursor-not-allowed" : "hover:bg-gray-50 opacity-100 cursor-pointer"
                         }`}
                         disabled={isEnd}
