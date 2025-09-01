@@ -40,7 +40,7 @@ function MobileFooter() {
         { icon: <LocationIcon />, key: "contact.address" },
     ];
 
-   const SOCIAL_LINKS = [
+    const SOCIAL_LINKS = [
         { href: "#", icon: <FacebookIcon />, hoverColor: "bg-blue-600" },
         { href: "#", icon: <InstagramIcon />, hoverColor: "bg-blue-600" },
         { href: "#", icon: <TwitterIcon />, hoverColor: "bg-blue-600" },
@@ -49,13 +49,14 @@ function MobileFooter() {
 
     return (
         <footer className="bg-background-container pt-16 pb-6 w-full block md:hidden">
-            <div className="space-y-4 px-4 md:px-8 max-w-8xl mx-auto">
+            <div className="space-y-8 px-4 md:px-8 max-w-8xl mx-auto">
                 <div className="flex flex-col gap-5 flex-2">
                     <div className="rounded-full w-fit" style={{ boxShadow: "0 0 24px 0 rgba(0, 100, 226, 0.40)" }}>
                         <AppImage optimized width={75} height={75} src={"/images/logo-school.png"} />
                     </div>
+
                     <div className="space-y-4">
-                        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold md:max-w-sm">{t("slogan")}</h1>
+                        <h1 className="text-2xl font-bold max-w-48">{t("slogan")}</h1>
                         <p className="text-[20px] max-w-full text-natural-tertiary font-normal font-sans leading-[130%] md:text-[22px] lg:text-[24px]">
                             {t("desc")}
                         </p>
@@ -79,7 +80,7 @@ function MobileFooter() {
                 <Accordion type="single" collapsible>
                     {Object.entries(FOOTER_LINKS).map(([key, val]) => (
                         <AccordionItem value={key} key={key}>
-                            <AccordionTrigger className="text-lg">{t(`${key}.title`)}</AccordionTrigger>
+                            <AccordionTrigger className="text-lg last-of-type:border-b">{t(`${key}.title`)}</AccordionTrigger>
 
                             <AccordionContent className="flex flex-col gap-2">
                                 {val.map((link) => (
