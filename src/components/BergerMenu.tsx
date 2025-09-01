@@ -12,6 +12,18 @@ interface BurgerMenuProps {
     onClose: () => void;
 }
 
+interface DropdownItem {
+    title: string;
+    href: string;
+}
+
+interface MenuItem {
+    title: string;
+    href: string;
+    hasDropdown?: boolean;
+    dropdownItems?: DropdownItem[];
+}
+
 function BergerMenu({ isOpen, onClose }: BurgerMenuProps) {
     const [openDropdown, setOpenDropdown] = useState<string | null>(null);
     const t = useTranslations("navbar");
@@ -24,7 +36,12 @@ function BergerMenu({ isOpen, onClose }: BurgerMenuProps) {
             title: t("navigation.curricula"),
             href: "/curricula",
             hasDropdown: true,
-            dropdownItems: [tHome("curricula.quran"), tHome("curricula.montessori"), tHome("curricula.cambridge"), tHome("curricula.ico")],
+            dropdownItems: [
+                { title: tHome("curricula.quran"), href: "/curricula/light-of-the-quran" },
+                { title: tHome("curricula.montessori"), href: "/curricula/montessori-curriculum" },
+                { title: tHome("curricula.cambridge"), href: "/curricula/cambridge-eyfs" },
+                { title: tHome("curricula.ico"), href: "/curricula/ico" }
+            ],
         },
         { title: t("navigation.news"), href: "/news" },
         { title: t("navigation.contact"), href: "/contact" },
@@ -111,13 +128,13 @@ function BergerMenu({ isOpen, onClose }: BurgerMenuProps) {
                                                 >
                                                     {item.dropdownItems?.map((subItem, i) => (
                                                         <Link
-                                                            key={subItem + i + "burger"}
-                                                            href={`${item.href}/${subItem.toLowerCase().replace(/\s+/g, "-")}`}
+                                                            key={subItem.title + i + "burger"}
+                                                            href={subItem.href}
                                                             className="block text-[14px] font-normal not-italic leading-[100%] align-middle text-natural-tertiary max-w-[250px] mx-auto py-2"
                                                             style={{ fontFamily: "Font/font name", letterSpacing: "0%" }}
                                                             onClick={onClose}
                                                         >
-                                                            {subItem}
+                                                            {subItem.title}
                                                         </Link>
                                                     ))}
                                                 </motion.div>
@@ -133,8 +150,11 @@ function BergerMenu({ isOpen, onClose }: BurgerMenuProps) {
                             <Button
                                 className="w-full font-semibold py-4 px-6 rounded-full transition-colors border-2 border-border-primary"
                                 shadow="default"
+                                asChild
                             >
-                                {t("registration")}
+                                <Link href="/register" onClick={onClose}>
+                                    {t("registration")}
+                                </Link>
                             </Button>
                         </div>
 

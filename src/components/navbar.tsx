@@ -6,12 +6,21 @@ import { useTranslations } from "next-intl";
 import LangSwitcher from "./lang-switcher";
 import { Button } from "./ui/button";
 import { useNavbarToggler } from "@/hooks/use-navbar-toggler";
-import { BurgerMenu } from "@/assets/icons";
+import { BurgerMenu, ChevronRightIcon } from "@/assets/icons";
 import BergerMenu from "./BergerMenu";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "./ui/dropdown-menu";
 
 function Navbar() {
     const { toggle, isOpen, close } = useNavbarToggler();
     const t = useTranslations("navbar");
+    const tHome = useTranslations("home");
+
+    const curriculaItems = [
+        { title: tHome("curricula.quran"), href: "/curricula/light-of-the-quran" },
+        { title: tHome("curricula.montessori"), href: "/curricula/montessori-curriculum" },
+        { title: tHome("curricula.cambridge"), href: "/curricula/cambridge-eyfs" },
+        { title: tHome("curricula.ico"), href: "/curricula/ico" },
+    ];
 
     return (
         <nav className="flex items-stretch justify-between p-4 w-full max-w-8xl mx-auto overflow-hidden bg-transparent">
@@ -22,10 +31,39 @@ function Navbar() {
                 </div>
 
                 <div className="flex items-center gap-8 px-10">
-                    <Link href="/about">{t("navigation.about")}</Link>
-                    <Link href="/activities">{t("navigation.activities")}</Link>
-                    <button>{t("navigation.curricula")}</button>
-                    <Link href="/blog">{t("navigation.news")}</Link>
+                    <Link href="/about" className="hover:text-primary transition-colors">
+                        {t("navigation.about")}
+                    </Link>
+                    <Link href="/activities" className="hover:text-primary transition-colors">
+                        {t("navigation.activities")}
+                    </Link>
+
+                    <DropdownMenu>
+                        <DropdownMenuTrigger className="flex items-center gap-1 hover:text-primary transition-colors outline-none">
+                            {t("navigation.curricula")}
+                            <ChevronRightIcon className="w-4 h-4 rotate-90" />
+                        </DropdownMenuTrigger>
+
+                        <DropdownMenuContent className="w-44 bg-[#F2F6FC] border border-border-primary shadow-lg rounded-lg p-2">
+                            {curriculaItems.map((item) => (
+                                <DropdownMenuItem key={item.title} asChild>
+                                    <Link
+                                        href={item.href}
+                                        className="w-full px-3 py-2 text-sm text-natural-tertiary hover:bg-[#F2F6FC] hover:!text-natural-tertiary rounded-md transition-colors cursor-pointer"
+                                    >
+                                        {item.title}
+                                    </Link>
+                                </DropdownMenuItem>
+                            ))}
+                        </DropdownMenuContent>
+                    </DropdownMenu>
+
+                    <Link href="/news" className="hover:text-primary transition-colors">
+                        {t("navigation.news")}
+                    </Link>
+                    <Link href="/contact" className="hover:text-primary transition-colors">
+                        {t("navigation.contact")}
+                    </Link>
                 </div>
             </aside>
 
