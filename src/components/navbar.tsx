@@ -32,7 +32,9 @@ function Navbar() {
             <aside className="flex items-center gap-2">
                 <LangSwitcher />
 
-                <Button shadow="default" className="rounded-full py-3 px-6 h-12">{t("registration")}</Button>
+                <Button shadow="default" className="rounded-full py-3 px-6 h-12">
+                    {t("registration")}
+                </Button>
             </aside>
 
             <aside className="block lg:hidden">

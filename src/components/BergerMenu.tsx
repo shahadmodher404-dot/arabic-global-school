@@ -67,13 +67,13 @@ function BergerMenu({ isOpen, onClose }: BurgerMenuProps) {
 
                     {/* Navigation Items */}
                     <nav className="px-6 pb-6">
-                        <ul className="space-y-8">
+                        <ul className="space-y-4">
                             {menuItems.map((item) => (
                                 <li key={item.title}>
-                                    <div className="flex items-center justify-between">
+                                    <div className="flex items-center justify-center relative">
                                         <Link
                                             href={item.href}
-                                            className="text-xl font-medium text-gray-900 hover:text-blue-600 transition-colors"
+                                            className="text-lg font-medium text-gray-900 hover:text-blue-600 transition-colors"
                                             onClick={onClose}
                                         >
                                             {item.title}
@@ -81,11 +81,11 @@ function BergerMenu({ isOpen, onClose }: BurgerMenuProps) {
                                         {item.hasDropdown && (
                                             <button
                                                 onClick={() => toggleDropdown(item.title)}
-                                                className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
+                                                className="p-2 hover:bg-gray-100 rounded-lg transition-colors relative"
                                             >
                                                 {/* Dropdown Arrow Icon - Replace with your icon component */}
                                                 <svg
-                                                    className={`w-5 h-5 text-gray-600 transition-transform ${
+                                                    className={`w-4 h-4 text-gray-600 transition-transform${
                                                         openDropdown === item.title ? "rotate-180" : ""
                                                     }`}
                                                     fill="none"
@@ -104,16 +104,17 @@ function BergerMenu({ isOpen, onClose }: BurgerMenuProps) {
                                             {openDropdown === item.title && (
                                                 <motion.div
                                                     initial={{ height: 0, opacity: 0, y: -10 }}
-                                                    animate={{ height: "auto", opacity: 1, y: 0 }}
+                                                    animate={{ height: 136, opacity: 1, y: 0 }}
                                                     exit={{ height: 0, opacity: 0, y: -10 }}
                                                     transition={{ duration: 0.25, type: "spring", stiffness: 300, damping: 30 }}
-                                                    className="overflow-hidden"
+                                                    className="overflow-hidden bg-[#F2F6FC] flex flex-col items-center rounded-lg p-2"
                                                 >
                                                     {item.dropdownItems?.map((subItem, i) => (
                                                         <Link
                                                             key={subItem + i + "burger"}
                                                             href={`${item.href}/${subItem.toLowerCase().replace(/\s+/g, "-")}`}
-                                                            className="text-lg text-gray-600 hover:text-blue-600 transition-colors block"
+                                                            className="block text-[14px] font-normal not-italic leading-[100%] align-middle text-natural-tertiary max-w-[250px] mx-auto py-2"
+                                                            style={{ fontFamily: "Font/font name", letterSpacing: "0%" }}
                                                             onClick={onClose}
                                                         >
                                                             {subItem}
@@ -137,7 +138,7 @@ function BergerMenu({ isOpen, onClose }: BurgerMenuProps) {
                             </Button>
                         </div>
 
-                        <div className="mt-auto flex items-center justify-center gap-4">
+                        <div className="flex items-center justify-center gap-4 mt-6">
                             {SOCIAL_LINKS.map((link, idx) => (
                                 <Link
                                     key={idx}

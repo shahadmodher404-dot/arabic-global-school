@@ -24,7 +24,7 @@ function AppImage({
 }: Props) {
     const t = useTranslations("image_alt");
     const [error, setError] = useState(false);
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(optimized);
 
     // Check if the image is from external domain
     const srcString = typeof props.src === "string" ? props.src : "";

@@ -7,18 +7,19 @@ function HomeHero() {
     const t = useTranslations("home.hero");
 
     return (
-        <Section className="relative">
+        <Section className="relative overflow-hidden min-[400px]:px-0">
             <div
                 className="absolute left-1/2 -translate-x-1/2 top-[14%] h-[350px] w-[500px] md:h-[550px] md:w-[800px] blur-[88px] rounded-full opacity-60"
                 style={{ backgroundImage: "linear-gradient(180deg, #FFEA00 0%, rgba(255, 234, 0, 0) 75%)" }}
             ></div>
 
-            <div className="absolute top-1/6 -translate-y-1/2 left-[-40%] md:left-[-10%] lg:left-0 w-[180%] md:w-[120%] lg:w-full flex items-center">
-                <img src="/svg/hero/arrow-in-2.svg" className="me-auto rtl:-scale-x-100" alt="" />
-                <img src="/svg/hero/arrow-in-1.svg" className="rtl:-scale-x-100" alt="" />
+            <div className="absolute top-1/6 -translate-y-1/2 left-[-35%] md:left-[-10%] lg:left-0 w-[170%] md:w-[120%] lg:w-full flex items-center">
+                <img src="/svg/hero/arrow-in-2.svg" className="me-auto rtl:-scale-x-100 translate-y-28 md:translate-y-0" alt="" />
+                <img src="/svg/hero/arrow-in-1.svg" className="rtl:-scale-x-100 -translate-y-16 md:translate-y-0" alt="" />
             </div>
 
-            <p className="bg-solid-light py-[6px] px-6 w-fit rounded-full text-natural-tertiary mx-auto mb-10 relative z-10">{t("paragraph")}</p>
+            <p className="bg-solid-light py-[6px] px-6 w-fit rounded-full text-natural-tertiary mx-auto text-xs md:text-base mb-6 md:mb-10 relative z-10">{t("paragraph")}</p>
+
             <div className="px-4 relative z-10">
                 <h1 className="font-bold text-3xl sm:text-5xl md:text-6xl lg:text-[62px] md:leading-[100%] tracking-[-0.06em] text-center align-middle">
                     {t("title")}

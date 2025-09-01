@@ -36,7 +36,7 @@ export default function NewsCard({
     return (
         <article
             className={twMerge(
-                "p-6 bg-white border-s-4 border-primary flex flex-col gap-6 relative transition-transform duration-300",
+                "p-6 bg-white border-s-4 border-primary flex flex-col gap-6 relative transition-transform duration-300 h-[560px]",
                 className
             )}
         >
@@ -46,19 +46,19 @@ export default function NewsCard({
                     alt={imageAlt} 
                     width={500} 
                     height={300} 
-                    className="w-full h-auto min-h-[354px] object-center object-cover" 
+                    className="w-full h-80 object-center object-cover" 
                     optimized={true}
                     useProxy={true}
                     fallbackSrc="/images/news/news-placeholder.jpg"
                 />
             </div>
 
-            <div className="py-6">
+            <div className="py-4">
                 <h3 className="font-bold text-xl">{title}</h3>
-                <p className="text-[#020409] font-extralight mt-2">{description}</p>
+                <p className="text-[#020409] font-extralight mt-2 line-clamp-2">{description}</p>
             </div>
 
-            <div className="flex items-center gap-2 text-primary">
+            <div className="flex items-center gap-2 text-primary mt-auto">
                 <HappyCalenderIcon />
                 <span>{formatDate(new Date(created_at), t)}</span>
             </div>

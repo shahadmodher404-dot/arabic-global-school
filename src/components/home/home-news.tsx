@@ -42,8 +42,8 @@ export default function HomeNews() {
                 </div>
 
                 {/* News Carousel */}
-                <div className="relative">
-                    <div className="overflow-hidden">
+                <div className="relative w-full max-w-lg mx-auto lg:max-w-max lg:w-full">
+                    <div className="!overflow-visible lg:!overflow-hidden">
                         <Swiper
                             dir={dir}
                             spaceBetween={0}
@@ -65,23 +65,18 @@ export default function HomeNews() {
                             breakpoints={{
                                 640: {
                                     slidesPerView: 1,
-                                    spaceBetween: 30,
                                 },
                                 1024: {
                                     slidesPerView: 3,
-                                    spaceBetween: 30,
+                                    spaceBetween: 0,
                                 },
                             }}
+                            className="!overflow-visible lg:!overflow-hidden"
                         >
                             {data.items.map((news, i) => (
-                                <>
-                                    <SwiperSlide key={news.id + news.title + i} className="pb-16 h-full">
-                                        <NewsCard
-                                            {...news}
-                                            className={`mb-8 mx-4 h-full ${i - 1 === activeIndex ? "lg:translate-y-16 lg:rotate-2" : ""}`}
-                                        />
-                                    </SwiperSlide>
-                                </>
+                                <SwiperSlide key={news.id + news.title + i} className="pb-16">
+                                    <NewsCard {...news} className={`mb-8 mx-4 ${activeIndex + 1 == i ? "bg-secondary-solid-light" : ""}`} />
+                                </SwiperSlide>
                             ))}
                         </Swiper>
                     </div>

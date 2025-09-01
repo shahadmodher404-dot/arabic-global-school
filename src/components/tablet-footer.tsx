@@ -41,9 +41,9 @@ function TabletFooter() {
     ];
 
     const SOCIAL_LINKS = [
-        { href: "#", icon: <TwitterIcon />, hoverColor: "bg-blue-600" },
-        { href: "#", icon: <InstagramIcon />, hoverColor: "bg-blue-600" },
         { href: "#", icon: <FacebookIcon />, hoverColor: "bg-blue-600" },
+        { href: "#", icon: <InstagramIcon />, hoverColor: "bg-blue-600" },
+        { href: "#", icon: <TwitterIcon />, hoverColor: "bg-blue-600" },
         { href: "#", icon: <YouTubeIcon />, hoverColor: "bg-red-600" },
     ];
 
