@@ -34,7 +34,7 @@ export default function HomeNews() {
     });
 
     return (
-        <Section size="screen" className="bg-[#F7F7E4]">
+        <Section size="screen" className="bg-background-secondary">
             <Section.Inner className="space-y-12">
                 {/* Section Header */}
                 <div className="text-center max-w-4xl mx-auto">
@@ -74,12 +74,14 @@ export default function HomeNews() {
                             }}
                         >
                             {data.items.map((news, i) => (
-                                <SwiperSlide key={news.id + news.title + i} className="pb-16 h-full">
-                                    <NewsCard
-                                        {...news}
-                                        className={`mb-8 mx-4 h-full ${i - 1 === activeIndex ? "lg:translate-y-16 lg:rotate-2" : ""}`}
-                                    />
-                                </SwiperSlide>
+                                <>
+                                    <SwiperSlide key={news.id + news.title + i} className="pb-16 h-full">
+                                        <NewsCard
+                                            {...news}
+                                            className={`mb-8 mx-4 h-full ${i - 1 === activeIndex ? "lg:translate-y-16 lg:rotate-2" : ""}`}
+                                        />
+                                    </SwiperSlide>
+                                </>
                             ))}
                         </Swiper>
                     </div>

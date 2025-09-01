@@ -58,10 +58,12 @@
     --color-content-natural-secondary: var(--content-natural-secondary);
     --color-background-container: var(--background-container);
     --color-background-main: var(--background-main);
+    --color-background-secondary: var(--background-secondary);
     --color-danger-solid: var(--danger-solid);
     --color-primary-solid: var(--primary-solid);
     --color-secondary-solid: var(--secondary-solid);
     --color-border-primary: var(--border-primary);
+
 }
 
 :root {
@@ -114,6 +116,7 @@
     --content-natural-secondary: oklch(39.875% 0.08325 263.054);
     --background-container: oklch(97.184% 0.00919 258.495);
     --background-main: oklch(97.879% 0.00529 95.189);
+    --background-secondary: oklch(97.107% 0.02485 106.93);
     --danger-solid: oklch(66.271% 0.19263 39.074);
     --primary-solid: oklch(53.508% 0.20749 259.018);
     --secondary-solid: oklch(90.129% 0.18045 97.815);

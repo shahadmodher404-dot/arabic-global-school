@@ -12,7 +12,7 @@ function HomeLanguage() {
         <Section size={"screen"} className="bg-white mt-16">
             <Section.Inner className="relative">
                 <div className="" dir="ltr">
-                    <div className="absolute scale-75 md:scale-90 lg:scale-100 top-[55%] md:top-1/6 lg:top-32 left-5 md:left-1/6 lg:left-1/4 -translate-x-1/5 md:-translate-x-1/3 lg:-translate-x-1/2 -translate-y-1/2 hidden min-[400px]:flex flex-col">
+                    <div className="absolute scale-75 md:scale-90 lg:scale-100 top-[55%] md:top-1/6 lg:top-32 start-5 md:start-1/6 lg:start-1/4 -translate-x-1/5 md:-translate-x-1/3 lg:-translate-x-1/2 -translate-y-1/2 hidden min-[400px]:flex flex-col">
                         <div
                             className="px-6 py-3 justify-center items-center gap-2 bg-danger-solid text-white rounded-full font-medium"
                             style={{ boxShadow: "0 7px 16px 0 rgba(240, 93, 37, 0.30), 0 2px 7.4px 0 rgba(255, 255, 255, 0.25) inset" }}
@@ -26,7 +26,7 @@ function HomeLanguage() {
                         />
                     </div>
 
-                    <div className="absolute scale-75 md:scale-90 lg:scale-100 top-1/3 md:top-[30%] lg:top-[25%] left-[75%] md:left-[90%] lg:left-[75%] -translate-x-1/2 -translate-y-1/2 min-[400px]:flex flex-col hidden">
+                    <div className="absolute scale-75 md:scale-90 lg:scale-100 top-1/3 md:top-[30%] lg:top-[25%] start-[75%] md:start-[90%] lg:start-[75%] -translate-x-1/2 -translate-y-1/2 min-[400px]:flex flex-col hidden">
                         <div
                             className="px-6 py-3 justify-center items-center gap-2 bg-primary-solid text-white rounded-full font-medium"
                             style={{ boxShadow: "0 7px 16px 0 rgba(0, 100, 226, 0.30), 0 2px 7.4px 0 rgba(255, 255, 255, 0.25) inset" }}
@@ -40,7 +40,7 @@ function HomeLanguage() {
                         />
                     </div>
 
-                    <div className="absolute scale-75 md:scale-90 lg:scale-100 bottom-0 md:bottom-4 lg:bottom-8 left-[85%] md:left-[82%] lg:left-[80%] -translate-x-1/2 -translate-y-1/2 min-[400px]:flex flex-col hidden">
+                    <div className="absolute scale-75 md:scale-90 lg:scale-100 bottom-0 md:bottom-4 lg:bottom-8 start-[85%] md:start-[82%] lg:start-[80%] -translate-x-1/2 -translate-y-1/2 min-[400px]:flex flex-col hidden">
                         <LanguageArrowIcon
                             className="me-auto mt-2 -translate-x-12 md:-translate-x-10 lg:-translate-x-12 rotate-120"
                             outerColor="#FFDE22"

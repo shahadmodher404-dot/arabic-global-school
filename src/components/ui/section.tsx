@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import { cva, VariantProps } from "class-variance-authority";
 import React, { PropsWithChildren } from "react";
 
@@ -18,7 +19,7 @@ interface Props extends PropsWithChildren, VariantProps<typeof sectionVariants> 
 }
 
 function Section({ children, size, className }: Props) {
-    return <section className={sectionVariants({ className, size })}>{children}</section>;
+    return <section className={cn(sectionVariants({ className, size }))}>{children}</section>;
 }
 
 interface PropsInner extends PropsWithChildren {
