@@ -34,7 +34,7 @@ export default function HomeNews() {
     });
 
     return (
-        <Section size="screen" className="bg-background-secondary **:hide-scroll">
+         <Section size="screen" className="bg-background-secondary **:hide-scroll">
             <Section.Inner className="space-y-12">
                 {/* Section Header */}
                 <div className="text-center max-w-4xl mx-auto">
@@ -65,39 +65,55 @@ export default function HomeNews() {
                             breakpoints={{
                                 640: {
                                     slidesPerView: 1,
+                                    spaceBetween: 30,
                                 },
                                 1024: {
                                     slidesPerView: 3,
-                                    spaceBetween: 0,
+                                    spaceBetween: 30,
                                 },
                             }}
-                            className="!overflow-visible lg:!overflow-hidden"
                         >
-                            {data.items.map((news, i) => (
-                                <SwiperSlide key={news.id + news.title + i} className="pb-16">
-                                    <NewsCard {...news} className={`mb-8 ms-4 lg:mx-4 ${activeIndex + 1 == i ? "bg-secondary-solid-light" : ""}`} />
-                                </SwiperSlide>
-                            ))}
+                            {data.items.map((news, i) => {
+                                // Handle both old and new response formats
+                                const title = typeof news.title === "string" ? news.title : news.title?.[locale as Locale] || news.title?.en || "";
+                                const description =
+                                    typeof news.description === "string"
+                                        ? news.description
+                                        : news.description?.[locale as Locale] || news.description?.en || "";
+
+                                return (
+                                    <SwiperSlide key={news.id + title + i} className="pb-16 h-full">
+                                        <NewsCard
+                                            id={news.id}
+                                            title={title}
+                                            description={description}
+                                            image={news.image}
+                                            created_at={news.created_at}
+                                            className={`mb-8 ms-4 lg:mx-4 ${activeIndex + 1 == i ? "bg-secondary-solid" : ""}`}
+                                        />
+                                    </SwiperSlide>
+                                );
+                            })}
                         </Swiper>
                     </div>
 
                     {/* Custom Navigation Buttons */}
                     <button
-                        className={`swiper-button-prev-custom absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-12 h-12 bg-white rounded-2xl shadow-lg hidden lg:flex items-center justify-center transition-all duration-300 border border-natural-tertiary ${
+                        className={`swiper-button-prev-custom absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-12 h-12 bg-white rounded-2xl shadow-lg flex items-center justify-center transition-all duration-300 border border-natural-tertiary ${
                             isBeginning ? "opacity-50 cursor-not-allowed" : "hover:bg-gray-50 opacity-100 cursor-pointer"
                         }`}
                         disabled={isBeginning}
                     >
-                        <ChevronLeftIcon />
+                        <ChevronLeftIcon className="rtl:-scale-x-100" />
                     </button>
 
                     <button
-                        className={`swiper-button-next-custom absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 w-12 h-12 bg-white rounded-2xl shadow-lg hidden lg:flex items-center justify-center transition-all duration-300 border border-natural-tertiary ${
+                        className={`swiper-button-next-custom absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 w-12 h-12 bg-white rounded-2xl shadow-lg flex items-center justify-center transition-all duration-300 border border-natural-tertiary ${
                             isEnd ? "opacity-50 cursor-not-allowed" : "hover:bg-gray-50 opacity-100 cursor-pointer"
                         }`}
                         disabled={isEnd}
                     >
-                        <ChevronRightIcon />
+                        <ChevronRightIcon className="rtl:-scale-x-100" />
                     </button>
 
                     {/* Custom Pagination */}

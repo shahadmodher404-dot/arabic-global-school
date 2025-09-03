@@ -1,3 +1,5 @@
+// Core API response types aligned with backend contract
+
 export interface RootResponse<T = unknown> {
     items: T[];
     total_pages: number;
@@ -5,25 +7,57 @@ export interface RootResponse<T = unknown> {
     current_page: number;
 }
 
+// Multilingual text structure from backend
+export interface MultilingualText {
+    en: string;
+    ar: string;
+    id: string; // Indonesian
+}
+
+// Label with value structure from backend
+export interface LabelValue<T = number> {
+    value: T;
+    label: {
+        en: string;
+        ar: string;
+    };
+}
+
+// News Category with multilingual labels
+export interface NewsCategory {
+    value: number;
+    label: {
+        ar: string;
+        id: string;
+        en: string;
+    };
+}
+
+// Updated FAQ interface (Questions in backend)
 export interface Faq {
     id: string;
-    question: string;
-    answer: string;
-    image: string;
-    is_visible: Isvisible;
-    created_at: string;
+    question: MultilingualText;
+    answer: MultilingualText;
+    image: string; // Full URL
+    is_visible: LabelValue<0 | 1>;
+    created_at?: string;
+    updated_at?: string;
 }
 
+// Updated News interface
 export interface News {
     id: string;
-    title: string;
-    description: string;
-    image: string;
-    is_visible: Isvisible;
-    category: Isvisible;
-    created_at: string;
+    title: MultilingualText;
+    description: MultilingualText;
+    category: NewsCategory;
+    is_visible: LabelValue<0 | 1>;
+    image: string; // Full URL
+    date?: Date;
+    created_at?: string;
+    updated_at?: string;
 }
 
+// Legacy interface for backward compatibility (deprecated)
 interface Isvisible {
     value: number;
     label: string;
