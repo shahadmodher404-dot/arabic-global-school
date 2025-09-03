@@ -1,5 +1,7 @@
 import { ArrowRightIcon, QuestionMarkIcon } from "@/assets/icons";
 import { formateClasses } from "@/lib/utils";
+import { useParams } from "next/navigation";
+import { Locale } from "@/i18n/routing";
 
 interface FAQButtonProps {
     faq: any;
@@ -11,6 +13,13 @@ interface FAQButtonProps {
 }
 
 export default function FAQButton({ faq, index, isActive, isExpanded, onClick, isMobile = false }: FAQButtonProps) {
+    const { locale } = useParams();
+    
+    // Extract localized text
+    const question = typeof faq.question === 'string' 
+        ? faq.question 
+        : faq.question?.[locale as Locale] || faq.question?.en || '';
+
     return (
         <button
             className={formateClasses(
@@ -30,7 +39,7 @@ export default function FAQButton({ faq, index, isActive, isExpanded, onClick, i
                 <QuestionMarkIcon />
             </span>
 
-            <p className="font-medium">{faq.question}</p>
+            <p className="font-medium">{question}</p>
 
             <div className="ms-auto">
                 <ArrowRightIcon className="rtl:-scale-x-100 transition-transform duration-300" />

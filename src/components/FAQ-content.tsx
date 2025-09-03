@@ -1,6 +1,8 @@
 import { formateClasses } from "@/lib/utils";
 import { Loader2 } from "lucide-react";
 import Image from "next/image";
+import { useParams } from "next/navigation";
+import { Locale } from "@/i18n/routing";
 
 interface FAQContentProps {
     faq: any;
@@ -12,6 +14,17 @@ interface FAQContentProps {
 }
 
 export default function FAQContent({ faq, imageLoading, onImageLoad, onImageLoadStart, onImageError, isMobile = false }: FAQContentProps) {
+    const { locale } = useParams();
+    
+    // Extract localized text
+    const question = typeof faq.question === 'string' 
+        ? faq.question 
+        : faq.question?.[locale as Locale] || faq.question?.en || '';
+    
+    const answer = typeof faq.answer === 'string' 
+        ? faq.answer 
+        : faq.answer?.[locale as Locale] || faq.answer?.en || '';
+
     return (
         <div className={`space-y-${isMobile ? "4" : "6"}`}>
             <div className="overflow-hidden rounded-3xl relative w-full">
@@ -39,16 +52,16 @@ export default function FAQContent({ faq, imageLoading, onImageLoad, onImageLoad
                         imageLoading ? "opacity-0" : "opacity-100"
                     )}
                     src={faq.image}
-                    alt={faq.question}
+                    alt={question}
                     onLoad={onImageLoad}
                     onLoadStart={onImageLoadStart}
                     onError={onImageError}
                 />
             </div>
 
-            <h3 className={`font-semibold ${isMobile ? "text-lg" : "text-xl lg:text-2xl"}`}>{faq.question}</h3>
+            <h3 className={`font-semibold ${isMobile ? "text-lg" : "text-xl lg:text-2xl"}`}>{question}</h3>
 
-            <p className={`text-content-natural-secondary leading-relaxed ${isMobile ? "text-sm" : ""}`}>{faq.answer}</p>
+            <p className={`text-content-natural-secondary leading-relaxed ${isMobile ? "text-sm" : ""}`}>{answer}</p>
         </div>
     );
 }

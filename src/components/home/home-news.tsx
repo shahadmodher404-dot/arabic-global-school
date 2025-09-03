@@ -30,7 +30,7 @@ export default function HomeNews() {
 
     const { data = { items: [] } } = useQuery({
         queryKey: [APIKeys.NEWS_API_KEY, locale],
-        queryFn: () => ApiService.getNews(locale as Locale),
+        queryFn: ApiService.getNews,
     });
 
     return (

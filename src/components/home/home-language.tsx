@@ -40,7 +40,7 @@ function HomeLanguage() {
                         />
                     </div>
 
-                    <div className="absolute scale-75 md:scale-90 lg:scale-100 bottom-0 md:bottom-4 lg:bottom-8 start-[85%] md:start-[82%] lg:start-[80%] -translate-x-1/2 -translate-y-1/2 min-[400px]:flex flex-col hidden">
+                    <div className="absolute scale-75 md:scale-90 lg:scale-100 bottom-0 md:bottom-4 lg:-bottom-8 start-[85%] md:start-[82%] lg:start-[80%] -translate-x-1/2 -translate-y-1/2 min-[400px]:flex flex-col hidden">
                         <LanguageArrowIcon
                             className="me-auto mt-2 -translate-x-12 md:-translate-x-10 lg:-translate-x-12 rotate-120"
                             outerColor="#FFDE22"

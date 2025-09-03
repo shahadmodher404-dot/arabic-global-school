@@ -1,160 +1,152 @@
 "use client";
 
-import { useTranslations } from "next-intl";
-import Section from "../ui/section";
-import { ArrowRightIcon, QuestionMarkIcon } from "@/assets/icons";
-import { useState } from "react";
-import { formateClasses } from "@/lib/utils";
-import Image from "next/image";
-import { motion, AnimatePresence } from "motion/react";
+import { Locale } from "@/i18n/routing";
 import { APIKeys } from "@/services/api-keys";
 import { ApiService } from "@/services/api.service";
 import { useQuery } from "@tanstack/react-query";
+import { AnimatePresence, motion } from "motion/react";
+import { useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
-import { Locale } from "@/i18n/routing";
-import { Loader2 } from "lucide-react";
-
-const faqs = Array.from({ length: 5 }).map((_, index) => ({
-    title: `How does the school care for teaching Islamic values?`,
-    answer: `We emphasize Islamic values throughout our educational process. Our curriculum includes the international ICO program for Arabic and Islamic studies, along with Noor Al-Bayan for Quran memorization and simplified Tajweed instruction from an early age. We also incorporate ethics and Islamic manners into daily lessons, guided by teachers who exemplify these values, fostering a balanced generation confident in their identity.`,
-}));
+import { useState } from "react";
+import FAQButton from "../FAQ-button";
+import FAQContent from "../FAQ-content";
+import Section from "../ui/section";
 
 export default function HomeFAQ() {
     const { locale } = useParams();
     const t = useTranslations("home.faq");
     const [currentFAQ, setCurrentFaq] = useState(0);
-    const [imageLoading, setImageLoading] = useState(true);
+    const [imageLoadingStates, setImageLoadingStates] = useState<Record<number, boolean>>({});
 
     const { data = { items: [] } } = useQuery({
         queryKey: [APIKeys.FAQ_API_KEY, locale],
-        queryFn: () => ApiService.getFAQs(locale as Locale),
+        queryFn: ApiService.getFAQs,
     });
 
+    const handleImageLoadStart = (index: number) => {
+        setImageLoadingStates((prev) => ({ ...prev, [index]: true }));
+    };
+
+    const handleImageLoad = (index: number) => {
+        setImageLoadingStates((prev) => ({ ...prev, [index]: false }));
+    };
+
+    const handleImageError = (index: number) => {
+        setImageLoadingStates((prev) => ({ ...prev, [index]: false }));
+    };
+
     return (
-          <Section size="screen" className="bg-white">
+        <Section size="screen" className="bg-white">
             <Section.Inner>
                 <h1 className="section-header max-w-lg">{t("title")}</h1>
 
-                <div className="flex lg:items-center lg:flex-row flex-col gap-8 mt-8">
-                    <div className="flex-1 space-y-4">
-                        {data.items.map((faq, index) => {
-                            // Handle both old and new response formats
-                            const question = typeof faq.question === 'string'
-                                ? faq.question
-                                : faq.question?.[locale as Locale] || faq.question?.en || '';
-                            
-                            return (
-                                <button
-                                    className={formateClasses(
-                                        "px-6 py-4 border rounded-full flex items-center gap-4 w-full text-left lg:max-w-[545px] transition-all duration-300 cursor-pointer",
-                                        currentFAQ === index ? "bg-[#F2F6FC] border-transparent" : "bg-transparent border-[#D5DEF1]"
-                                    )}
-                                    key={index + question}
-                                    onClick={() => {
-                                        setCurrentFaq(index);
-                                        setImageLoading(true); // Reset loading state when FAQ changes
-                                    }}
-                                >
-                                    <span
-                                        className={formateClasses(
-                                            "size-[40px] rounded-full grid place-items-center transition-all duration-300",
-                                            currentFAQ === index ? "bg-[#020409]" : "bg-[#2F4674]"
-                                        )}
-                                        style={{ boxShadow: "0px 2px 8px 0px #FFFFFF4D inset" }}
-                                    >
-                                        <QuestionMarkIcon />
-                                    </span>
-
-                                    <p className="font-medium">{question}</p>
-
-                                    <div className="ms-auto">
-                                        <ArrowRightIcon />
-                                    </div>
-                                </button>
-                            );
-                        })}
+                <div className="flex lg:items-center lg:flex-row flex-col gap-8 mt-16">
+                    {/* Desktop Layout */}
+                    <div className="hidden lg:flex flex-col flex-1 space-y-4">
+                        {data.items.map((faq, index) => (
+                            <FAQButton
+                                key={
+                                    index +
+                                    (typeof faq.question === "string" ? faq.question : faq.question?.[locale as Locale] || faq.question?.en || "")
+                                }
+                                faq={faq}
+                                index={index}
+                                isActive={currentFAQ === index}
+                                onClick={() => {
+                                    setCurrentFaq(index);
+                                    handleImageLoadStart(index);
+                                }}
+                            />
+                        ))}
                     </div>
 
-                    <div className="lg:max-w-[545px] relative overflow-hidden">
-                        <AnimatePresence mode="wait">
-                            {data.items[currentFAQ] && (
-                                <motion.div
-                                    key={currentFAQ}
-                                    initial={{ opacity: 0, y: 20, scale: 0.95 }}
-                                    animate={{ opacity: 1, y: 0, scale: 1 }}
-                                    exit={{ opacity: 0, y: -20, scale: 0.95 }}
-                                    transition={{
-                                        duration: 0.4,
-                                        ease: [0.4, 0, 0.2, 1],
+                    {/* Mobile/Tablet Layout */}
+                    <div className="lg:hidden w-full space-y-4">
+                        {data.items.map((faq, index) => (
+                            <div
+                                key={
+                                    index +
+                                    (typeof faq.question === "string" ? faq.question : faq.question?.[locale as Locale] || faq.question?.en || "")
+                                }
+                                className="w-full"
+                            >
+                                <FAQButton
+                                    faq={faq}
+                                    index={index}
+                                    isActive={currentFAQ === index}
+                                    isExpanded={currentFAQ === index}
+                                    onClick={() => {
+                                        const newIndex = currentFAQ === index ? -1 : index;
+                                        setCurrentFaq(newIndex);
+                                        if (newIndex >= 0) {
+                                            handleImageLoadStart(index);
+                                        }
                                     }}
-                                    className="space-y-6"
+                                    isMobile
+                                />
+
+                                {/* Expandable Content for Mobile/Tablet */}
+                                <AnimatePresence>
+                                    {currentFAQ === index && (
+                                        <motion.div
+                                            initial={{ height: 0, opacity: 0 }}
+                                            animate={{ height: "auto", opacity: 1 }}
+                                            exit={{ height: 0, opacity: 0 }}
+                                            transition={{ duration: 0.3, ease: "easeInOut" }}
+                                            className="overflow-hidden"
+                                        >
+                                            <motion.div
+                                                initial={{ opacity: 0, y: 20 }}
+                                                animate={{ opacity: 1, y: 0 }}
+                                                exit={{ opacity: 0, y: -20 }}
+                                                transition={{ delay: 0.1, duration: 0.3 }}
+                                                className="pt-4 pb-2 px-2"
+                                            >
+                                                <FAQContent
+                                                    faq={faq}
+                                                    imageLoading={imageLoadingStates[index] || false}
+                                                    onImageLoad={() => handleImageLoad(index)}
+                                                    onImageLoadStart={() => handleImageLoadStart(index)}
+                                                    onImageError={() => handleImageError(index)}
+                                                    isMobile
+                                                />
+                                            </motion.div>
+                                        </motion.div>
+                                    )}
+                                </AnimatePresence>
+                            </div>
+                        ))}
+                    </div>
+
+                    {/* Desktop Content Display */}
+                    <div className="lg:max-w-[545px] relative overflow-hidden hidden lg:block">
+                        <AnimatePresence mode="wait">
+                            <motion.div
+                                key={currentFAQ}
+                                initial={{ opacity: 0, y: 20, scale: 0.95 }}
+                                animate={{ opacity: 1, y: 0, scale: 1 }}
+                                exit={{ opacity: 0, y: -20, scale: 0.95 }}
+                                transition={{
+                                    duration: 0.4,
+                                    ease: [0.4, 0, 0.2, 1],
+                                }}
+                            >
+                                <motion.div
+                                    initial={{ scale: 0.9, opacity: 0 }}
+                                    animate={{ scale: 1, opacity: 1 }}
+                                    transition={{ delay: 0.1, duration: 0.3 }}
                                 >
-                                    <motion.div
-                                        layout
-                                        className="overflow-hidden rounded-3xl relative w-full"
-                                        initial={{ scale: 0.9, opacity: 0 }}
-                                        animate={{ scale: 1, opacity: 1 }}
-                                        transition={{ delay: 0.1, duration: 0.3 }}
-                                    >
-                                        {/* Loading Skeleton */}
-                                        {imageLoading && (
-                                            <div className="absolute size-full inset-0 bg-gradient-to-r from-gray-200 via-gray-100 to-gray-200 animate-pulse w-full lg:w-[545px]">
-                                                <div className="w-full h-[300px] bg-gray-300 rounded-3xl">
-                                                    <div className="flex items-center justify-center h-full">
-                                                        <Loader2 className="text-white animate-spin size-6" />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        )}
-
-                                        <Image
-                                            width={500}
-                                            height={350}
-                                            className={`w-full lg:w-[545px] h-72 object-cover object-center transition-all duration-500 hover:scale-105 ${
-                                                imageLoading ? "opacity-0" : "opacity-100"
-                                            }`}
-                                            src={data.items[currentFAQ].image}
-                                            alt={(() => {
-                                                const faq = data.items[currentFAQ];
-                                                return typeof faq.question === 'string' 
-                                                    ? faq.question 
-                                                    : faq.question?.[locale as keyof typeof faq.question] || faq.question?.en || '';
-                                            })()}
-                                            onLoad={() => setImageLoading(false)}
-                                            onLoadStart={() => setImageLoading(true)}
-                                            onError={() => setImageLoading(false)}
+                                    {data.items[currentFAQ] && (
+                                        <FAQContent
+                                            faq={data.items[currentFAQ]}
+                                            imageLoading={imageLoadingStates[currentFAQ] || false}
+                                            onImageLoad={() => handleImageLoad(currentFAQ)}
+                                            onImageLoadStart={() => handleImageLoadStart(currentFAQ)}
+                                            onImageError={() => handleImageError(currentFAQ)}
                                         />
-                                    </motion.div>
-
-                                    <motion.h1
-                                        className="text-xl lg:text-2xl font-semibold"
-                                        initial={{ opacity: 0, x: -20 }}
-                                        animate={{ opacity: 1, x: 0 }}
-                                        transition={{ delay: 0.2, duration: 0.3 }}
-                                    >
-                                        {(() => {
-                                            const faq = data.items[currentFAQ];
-                                            return typeof faq.question === 'string'
-                                                ? faq.question
-                                                : faq.question?.[locale as keyof typeof faq.question] || faq.question?.en || '';
-                                        })()}
-                                    </motion.h1>
-
-                                    <motion.p
-                                        className="text-content-natural-secondary leading-relaxed"
-                                        initial={{ opacity: 0, x: -20 }}
-                                        animate={{ opacity: 1, x: 0 }}
-                                        transition={{ delay: 0.3, duration: 0.3 }}
-                                    >
-                                        {(() => {
-                                            const faq = data.items[currentFAQ];
-                                            return typeof faq.answer === 'string'
-                                                ? faq.answer
-                                                : faq.answer?.[locale as keyof typeof faq.answer] || faq.answer?.en || '';
-                                        })()}
-                                    </motion.p>
+                                    )}
                                 </motion.div>
-                            )}
+                            </motion.div>
                         </AnimatePresence>
                     </div>
                 </div>
