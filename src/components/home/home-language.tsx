@@ -12,7 +12,7 @@ function HomeLanguage() {
         <Section size={"screen"} className="bg-white mt-16">
             <Section.Inner className="relative">
                 <div className="" dir="ltr">
-                    <div className="absolute scale-75 md:scale-90 lg:scale-100 top-[55%] md:top-1/6 lg:top-32 start-5 md:start-1/6 lg:start-1/6 -translate-x-1/5 md:-translate-x-1/3 lg:-translate-x-1/2 -translate-y-1/2 hidden min-[400px]:flex flex-col">
+                    <div className="absolute scale-75 md:scale-90 lg:scale-100 top-[55%] md:top-1/6 lg:top-32 start-5 md:start-1/6 lg:start-1/4 -translate-x-1/5 md:-translate-x-1/3 lg:-translate-x-1/2 -translate-y-1/2 hidden min-[400px]:flex flex-col">
                         <div
                             className="px-6 py-3 justify-center items-center gap-2 bg-danger-solid text-white rounded-full font-medium"
                             style={{ boxShadow: "0 7px 16px 0 rgba(240, 93, 37, 0.30), 0 2px 7.4px 0 rgba(255, 255, 255, 0.25) inset" }}
