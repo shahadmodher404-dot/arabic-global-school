@@ -201,10 +201,10 @@
     "services": {
         "hero": {
             "title": "A Complete Learning Environment For Your Child's Growth And Comfort.",
-            "subtitle": "We offer a balanced education in three languages, combining Islamic values with global standards in a safe and stimulating environment."
-        },
-        "stats": {
-            "students": "+154K Students are here"
+            "subtitle": "We offer a balanced education in three languages, combining Islamic values with global standards in a safe and stimulating environment.",
+            "registration": "Register Now!",
+            "counter": "+154K",
+            "counter_label": "Students are here"
         },
         "facilities": {
             "title": "School Facilities And Spaces",

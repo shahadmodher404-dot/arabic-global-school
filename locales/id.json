@@ -159,10 +159,10 @@
     "services": {
         "hero": {
             "title": "Lingkungan Belajar Lengkap Untuk Pertumbuhan Dan Kenyamanan Anak Anda.",
-            "subtitle": "Kami menawarkan pendidikan seimbang dalam tiga bahasa, menggabungkan nilai-nilai Islam dengan standar global di lingkungan yang aman dan merangsang."
-        },
-        "stats": {
-            "students": "+154K Siswa ada di sini"
+            "subtitle": "Kami menawarkan pendidikan seimbang dalam tiga bahasa, menggabungkan nilai-nilai Islam dengan standar global di lingkungan yang aman dan merangsang.",
+            "registration": "Daftar Sekarang!",
+            "counter": "+154K",
+            "counter_label": "Siswa ada di sini"
         },
         "facilities": {
             "title": "Fasilitas dan Ruang Sekolah",
