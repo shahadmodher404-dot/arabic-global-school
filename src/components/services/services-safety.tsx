@@ -27,7 +27,7 @@ export default function ServicesSafety() {
                 />
             </div>
 
-            <div className="flex flex-col gap-4 max-w-lg lg:max-w-none">
+            <div className="flex flex-col gap-4 mx-auto max-w-lg lg:max-w-none">
                 <h1 className="section-header text-center lg:text-start">{t("title")}</h1>
 
                 <p className="section-description text-center lg:text-start">{t("subtitle")}</p>

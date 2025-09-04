@@ -27,25 +27,22 @@ export default function ServicesFacilities() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {
-                    /* Cards Grid */
-                    cards.map((card, index) => (
-                        <article key={card.title + index} className="flex flex-col bg-[#F2F6FC] rounded-[40px]">
-                            <Image
-                                width={422}
-                                height={312}
-                                src={card.imageSrc}
-                                alt={card.title}
-                                className="w-full object-cover object-center h-[321px] rounded-[38px] flex-shrink-0 p-2"
-                            />
+                {cards.map((card, index) => (
+                    <article key={card.title + index} className="flex flex-col bg-[#F2F6FC] rounded-[40px]">
+                        <Image
+                            width={422}
+                            height={312}
+                            src={card.imageSrc}
+                            alt={card.title}
+                            className="w-full object-cover object-center h-[321px] rounded-[38px] flex-shrink-0 p-2"
+                        />
 
-                            <div className="text-center md:text-start p-6">
-                                <h3 className="font-semibold text-2xl">{card.title}</h3>
-                                <p className="text-content-natural-primary/50 md:text-lg">{card.description}</p>
-                            </div>
-                        </article>
-                    ))
-                }
+                        <div className="text-center md:text-start p-6">
+                            <h3 className="font-semibold text-2xl">{card.title}</h3>
+                            <p className="text-content-natural-primary/50 md:text-lg">{card.description}</p>
+                        </div>
+                    </article>
+                ))}
             </div>
         </Section>
     );
