@@ -329,3 +329,103 @@ export const ChevronRightIcon = (props: SVGAttributes<SVGSVGElement>) => {
         </svg>
     );
 };
+
+export const WebCamIcon = (props: SVGAttributes<SVGSVGElement>) => (
+    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+        <path
+            d="M12.4985 17.1303C16.2552 17.1303 19.3007 14.0848 19.3007 10.3281C19.3007 6.57135 16.2552 3.52588 12.4985 3.52588C8.74177 3.52588 5.69727 6.57135 5.69727 10.3281C5.69727 14.0848 8.74177 17.1303 12.4985 17.1303Z"
+            stroke="white"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        />
+        <path
+            d="M15.8496 16.2329L17.8365 19.7114C18.2947 20.5209 17.71 21.527 16.7759 21.527H8.22716C7.28336 21.527 6.69859 20.5209 7.1666 19.7026L9.16123 16.2417"
+            stroke="white"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        />
+        <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M14.6997 10.3284C14.6997 11.5417 13.716 12.5264 12.5017 12.5264C11.2884 12.5264 10.3047 11.5417 10.3047 10.3284C10.3047 9.11505 11.2884 8.13135 12.5017 8.13135C13.716 8.13135 14.6997 9.11505 14.6997 10.3284Z"
+            stroke="white"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        />
+    </svg>
+);
+
+export const ExitIcon = (props: SVGAttributes<SVGSVGElement>) => (
+    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+        <path
+            d="M19.5 17.9629V5.6301C19.5 4.3299 18.4216 3.27588 17.0914 3.27588H7.90862C6.57838 3.27588 5.5 4.3299 5.5 5.6301V20.8417"
+            stroke="white"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        />
+        <path
+            d="M19.5004 19.2179V6.58139C19.5004 4.96006 17.9741 3.74807 16.3475 4.0778L11.2161 5.11801C10.0004 5.36444 9.12891 6.40982 9.12891 7.62159V18.1777C9.12891 19.3895 10.0004 20.4349 11.2161 20.6813L16.3475 21.7215C17.9741 22.0513 19.5004 20.8393 19.5004 19.2179Z"
+            stroke="white"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        />
+        <path d="M12.5 12.0588V13.7407" stroke="white" strokeWidth="1.5" strokeLinecap="round" />
+    </svg>
+);
+
+export const UserIcon = (props: SVGAttributes<SVGSVGElement>) => (
+    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+        <path
+            d="M12.6605 12.1459C12.6305 12.1459 12.6105 12.1459 12.5805 12.1459C12.5305 12.1359 12.4605 12.1359 12.4005 12.1459C9.50055 12.0559 7.31055 9.77588 7.31055 6.96588C7.31055 4.10588 9.64055 1.77588 12.5005 1.77588C15.3605 1.77588 17.6905 4.10588 17.6905 6.96588C17.6805 9.77588 15.4805 12.0559 12.6905 12.1459C12.6805 12.1459 12.6705 12.1459 12.6605 12.1459ZM12.5005 3.27588C10.4705 3.27588 8.81055 4.93588 8.81055 6.96588C8.81055 8.96588 10.3705 10.5759 12.3605 10.6459C12.4105 10.6359 12.5505 10.6359 12.6805 10.6459C14.6405 10.5559 16.1805 8.94588 16.1905 6.96588C16.1905 4.93588 14.5305 3.27588 12.5005 3.27588Z"
+            fill="white"
+        />
+        <path
+            d="M12.6696 23.0759C10.7096 23.0759 8.73961 22.5759 7.24961 21.5759C5.85961 20.6559 5.09961 19.3959 5.09961 18.0259C5.09961 16.6559 5.85961 15.3859 7.24961 14.4559C10.2496 12.4659 15.1096 12.4659 18.0896 14.4559C19.4696 15.3759 20.2396 16.6359 20.2396 18.0059C20.2396 19.3759 19.4796 20.6459 18.0896 21.5759C16.5896 22.5759 14.6296 23.0759 12.6696 23.0759ZM8.07961 15.7159C7.11961 16.3559 6.59961 17.1759 6.59961 18.0359C6.59961 18.8859 7.12961 19.7059 8.07961 20.3359C10.5696 22.0059 14.7696 22.0059 17.2596 20.3359C18.2196 19.6959 18.7396 18.8759 18.7396 18.0159C18.7396 17.1659 18.2096 16.3459 17.2596 15.7159C14.7696 14.0559 10.5696 14.0559 8.07961 15.7159Z"
+            fill="white"
+        />
+    </svg>
+);
+
+export const Pin3DIcon = (props: SVGAttributes<SVGSVGElement>) => {
+    return (
+        <svg width="37" height="42" viewBox="0 0 37 42" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+            <path
+            d="M6.51395 26.6514L13.2268 19.1927C14.2007 18.1106 15.7234 17.7086 17.1046 18.169C18.5992 18.6671 19.6072 20.0658 19.6072 21.6411V31.7413C19.6072 36.2861 14.9837 39.3685 10.7885 37.6205L8.7984 36.7912C4.74521 35.1024 3.57655 29.9152 6.51395 26.6514Z"
+            fill="url(#paint0_linear_1356_10959)"
+            />
+            <g filter="url(#filter0_i_1356_10959)">
+            <ellipse cx="19.6069" cy="14.2263" rx="14.3304" ry="9.55361" transform="rotate(19.0097 19.6069 14.2263)" fill="#0064E2" />
+            </g>
+            <defs>
+            <filter
+                id="filter0_i_1356_10959"
+                x="5.70312"
+                y="4.05688"
+                width="27.8086"
+                height="26.7079"
+                filterUnits="userSpaceOnUse"
+                colorInterpolationFilters="sRGB"
+            >
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                <feOffset dy="6.36908" />
+                <feGaussianBlur stdDeviation="3.18454" />
+                <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0" />
+                <feBlend mode="normal" in2="shape" result="effect1_innerShadow_1356_10959" />
+            </filter>
+            <linearGradient id="paint0_linear_1356_10959" x1="19.6072" y1="25.3722" x2="6.86907" y2="38.1104" gradientUnits="userSpaceOnUse">
+                <stop stopColor="#0064E2" />
+                <stop offset="0.475962" stopColor="#004FB1" />
+                <stop offset="1" stopColor="#00377C" />
+            </linearGradient>
+            </defs>
+        </svg>
+    );
+};
