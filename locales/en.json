@@ -286,8 +286,15 @@
     },
     "educational_programs": {
         "hero": {
-            "title": "Curricula and educational programs",
-            "subtitle": "Comprehensive educational curricula that combine Islamic values with international standards to build a balanced personality"
+            "enrichment": "Enrichment activities and programs",
+            "title": {
+                "part1": "Curricula and",
+                "part2": "educational programs"
+            },
+            "subtitle": "We offer a balanced education in three languages, combining Islamic values with global standards in a safe and stimulating environment.",
+            "registration": "Register Now!",
+            "counter": "+154K",
+            "counter_label": "Students are here"
         },
         "safe_start": {
             "title": "A Safe Start For Active And Balanced Learning",

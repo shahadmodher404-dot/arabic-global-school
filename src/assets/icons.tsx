@@ -539,3 +539,12 @@ export const MealPointIcon = (props: SVGAttributes<SVGSVGElement>) => {
         </svg>
     );
 };
+
+export const EducationalProgramsCircleIcon = (props: SVGAttributes<SVGSVGElement>) => {
+    return (
+        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="8" cy="8.5" r="8" fill="#FFFDC2" />
+            <circle cx="8" cy="8.5" r="5" fill="#FFDE22" />
+        </svg>
+    );
+};

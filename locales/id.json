@@ -244,8 +244,15 @@
     },
     "educational_programs": {
         "hero": {
-            "title": "Kurikulum dan program pendidikan",
-            "subtitle": "Kurikulum pendidikan komprehensif yang menggabungkan nilai-nilai Islam dengan standar internasional untuk membangun kepribadian yang seimbang"
+            "enrichment": "Kegiatan dan program pengayaan",
+            "title": {
+                "part1": "Kurikulum dan",
+                "part2": "program pendidikan"
+            },
+            "subtitle": "Kami menawarkan pendidikan seimbang dalam tiga bahasa, menggabungkan nilai-nilai Islam dengan standar global di lingkungan yang aman dan merangsang.",
+            "registration": "Daftar Sekarang!",
+            "counter": "+154K",
+            "counter_label": "Siswa ada di sini"
         },
         "safe_start": {
             "title": "Awal yang Aman untuk Pembelajaran Aktif dan Seimbang",
