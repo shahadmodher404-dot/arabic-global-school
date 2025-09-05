@@ -44,7 +44,7 @@ function Navbar() {
                             <ChevronRightIcon className="w-4 h-4 rotate-90" />
                         </DropdownMenuTrigger>
 
-                        <DropdownMenuContent className="w-44 bg-[#F2F6FC] border border-border-primary shadow-lg rounded-lg p-2">
+                        <DropdownMenuContent className="w-44 border-gray-100 shadow-lg rounded-lg p-2" align="start">
                             {curriculaItems.map((item) => (
                                 <DropdownMenuItem key={item.title} asChild>
                                     <Link

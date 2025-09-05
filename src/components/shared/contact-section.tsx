@@ -6,11 +6,19 @@ export default function ContactSection() {
     const t = useTranslations("contact");
 
     return (
-        <div className="overflow-hidden w-full">
-            <Section size={"screen"} className="bg-white !overflow-visible">
+        <div className="w-full">
+            <Section size={"screen"} className="bg-white">
                 <Section.Inner className="justify-center items-center min-h-[600px] relative !overflow-visible">
-                    <img src="/images/contact/md.png" alt="" className="absolute inset-0 w-full h-full scale-[1.35] object-cover md:hidden pointer-events-none" />
-                    <img src="/images/contact/lg.png" alt="" className="absolute inset-0 w-full h-full object-cover scale-125 hidden md:block pointer-events-none" />
+                    <img
+                        src="/images/contact/md.png"
+                        alt=""
+                        className="absolute inset-0 w-full h-full scale-[1.35] object-cover md:hidden pointer-events-none"
+                    />
+                    <img
+                        src="/images/contact/lg.png"
+                        alt=""
+                        className="absolute inset-0 w-full h-full object-cover scale-125 hidden md:block pointer-events-none"
+                    />
                     <div className="relative z-10">
                         <div className="absolute left-0 top-0 size-full bg-white blur-xl pointer-events-none"></div>
                         <h1 className="section-header relative z-10 text-center">{t("title")}</h1>

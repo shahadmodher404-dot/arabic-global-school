@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 import { cva, VariantProps } from "class-variance-authority";
 import React, { PropsWithChildren } from "react";
 
-const sectionVariants = cva("flex flex-col flex-1 overflow-hidden", {
+const sectionVariants = cva("flex flex-col flex-1 overflow-x-clip overflow-y-visible", {
     variants: {
         size: {
             default: "max-w-8xl w-full mx-auto py-16 px-4 md:px-8",
