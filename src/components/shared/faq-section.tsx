@@ -19,7 +19,7 @@ const faqs = Array.from({ length: 5 }).map((_, index) => ({
     answer: `We emphasize Islamic values throughout our educational process. Our curriculum includes the international ICO program for Arabic and Islamic studies, along with Noor Al-Bayan for Quran memorization and simplified Tajweed instruction from an early age. We also incorporate ethics and Islamic manners into daily lessons, guided by teachers who exemplify these values, fostering a balanced generation confident in their identity.`,
 }));
 
-export default function HomeFAQ() {
+export default function FAQSection() {
     const { locale } = useParams();
     const t = useTranslations("home.faq");
     const [currentFAQ, setCurrentFaq] = useState(0);
@@ -31,7 +31,7 @@ export default function HomeFAQ() {
     });
 
     return (
-          <Section size="screen" className="bg-white">
+        <Section size="screen" className="bg-white">
             <Section.Inner>
                 <h1 className="section-header max-w-lg">{t("title")}</h1>
 
@@ -39,10 +39,9 @@ export default function HomeFAQ() {
                     <div className="flex-1 space-y-4">
                         {data.items.map((faq, index) => {
                             // Handle both old and new response formats
-                            const question = typeof faq.question === 'string'
-                                ? faq.question
-                                : faq.question?.[locale as Locale] || faq.question?.en || '';
-                            
+                            const question =
+                                typeof faq.question === "string" ? faq.question : faq.question?.[locale as Locale] || faq.question?.en || "";
+
                             return (
                                 <button
                                     className={formateClasses(
@@ -116,9 +115,9 @@ export default function HomeFAQ() {
                                             src={data.items[currentFAQ].image}
                                             alt={(() => {
                                                 const faq = data.items[currentFAQ];
-                                                return typeof faq.question === 'string' 
-                                                    ? faq.question 
-                                                    : faq.question?.[locale as keyof typeof faq.question] || faq.question?.en || '';
+                                                return typeof faq.question === "string"
+                                                    ? faq.question
+                                                    : faq.question?.[locale as keyof typeof faq.question] || faq.question?.en || "";
                                             })()}
                                             onLoad={() => setImageLoading(false)}
                                             onLoadStart={() => setImageLoading(true)}
@@ -134,9 +133,9 @@ export default function HomeFAQ() {
                                     >
                                         {(() => {
                                             const faq = data.items[currentFAQ];
-                                            return typeof faq.question === 'string'
+                                            return typeof faq.question === "string"
                                                 ? faq.question
-                                                : faq.question?.[locale as keyof typeof faq.question] || faq.question?.en || '';
+                                                : faq.question?.[locale as keyof typeof faq.question] || faq.question?.en || "";
                                         })()}
                                     </motion.h1>
 
@@ -148,9 +147,9 @@ export default function HomeFAQ() {
                                     >
                                         {(() => {
                                             const faq = data.items[currentFAQ];
-                                            return typeof faq.answer === 'string'
+                                            return typeof faq.answer === "string"
                                                 ? faq.answer
-                                                : faq.answer?.[locale as keyof typeof faq.answer] || faq.answer?.en || '';
+                                                : faq.answer?.[locale as keyof typeof faq.answer] || faq.answer?.en || "";
                                         })()}
                                     </motion.p>
                                 </motion.div>
