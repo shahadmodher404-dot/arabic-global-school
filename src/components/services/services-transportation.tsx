@@ -23,7 +23,7 @@ export default function ServicesTransportation() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-12 w-fit mx-auto">
                     {cards.map((card, index) => (
-                        <div className={`max-w-sm mx-auto ${index === cards.length - 1 ? "col-span-1 md:col-span-2 lg:col-span-1" : ""}`}>
+                        <div key={card.title + index} className={`max-w-sm mx-auto ${index === cards.length - 1 ? "col-span-1 md:col-span-2 lg:col-span-1" : ""}`}>
                             <article key={card.title + index} className="flex flex-col bg-white rounded-[40px]">
                                 <Image
                                     width={320}

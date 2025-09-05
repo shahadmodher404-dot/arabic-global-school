@@ -8,7 +8,7 @@ export default function EducationalProgramsHero() {
     const t = useTranslations("educational_programs.hero");
 
     return (
-        <Section className="flex lg:flex-row *:flex-1 pb-0">
+        <Section className="flex lg:flex-row *:flex-1">
             <div className="flex flex-col">
                 <div className="bg-background-container rounded-full px-4 py-2 flex items-center gap-2 w-fit mb-4 mx-auto lg:mx-0">
                     <EducationalProgramsCircleIcon />
@@ -36,14 +36,14 @@ export default function EducationalProgramsHero() {
             <div className="hidden md:flex gap-6">
                 <div className="flex flex-col flex-1 gap-6">
                     <Image
-                        src={"/images/educational-programs/image-1.png"}
+                        src={"/images/educational-programs/hero/image-1.png"}
                         className="w-full rounded-4xl object-cover object-center"
                         width={200}
                         height={224}
                         alt={""}
                     />
                     <Image
-                        src={"/images/educational-programs/image-1.png"}
+                        src={"/images/educational-programs/hero/students.png"}
                         className="w-full rounded-4xl object-cover object-center min-h-[270px]"
                         width={200}
                         height={270}
@@ -52,14 +52,14 @@ export default function EducationalProgramsHero() {
                 </div>
                 <div className="flex flex-col flex-1 gap-6">
                     <Image
-                        src={"/images/educational-programs/image-1.png"}
+                        src={"/images/educational-programs/hero/students.png"}
                         className="w-full min-h-[270px] rounded-4xl object-cover object-center"
                         width={200}
                         height={270}
                         alt={""}
                     />
                     <Image
-                        src={"/images/educational-programs/image-1.png"}
+                        src={"/images/educational-programs/hero/image-3.png"}
                         className="w-full rounded-4xl object-cover object-center"
                         width={200}
                         height={224}
@@ -68,14 +68,14 @@ export default function EducationalProgramsHero() {
                 </div>
                 <div className="flex flex-col flex-1 gap-6">
                     <Image
-                        src={"/images/educational-programs/image-1.png"}
+                        src={"/images/educational-programs/hero/image-2.png"}
                         className="w-full rounded-4xl object-cover object-center"
                         width={200}
                         height={224}
                         alt={""}
                     />
                     <Image
-                        src={"/images/educational-programs/image-1.png"}
+                        src={"/images/educational-programs/hero/image-4.png"}
                         className="w-full rounded-4xl object-cover object-center min-h-[270px]"
                         width={200}
                         height={270}
@@ -86,21 +86,21 @@ export default function EducationalProgramsHero() {
 
             <div className="flex flex-col md:hidden gap-6">
                 <Image
-                    src={"/images/educational-programs/mobile-image-1.png"}
+                    src={"/images/educational-programs/hero/mobile-image-1.png"}
                     className="w-full rounded-4xl object-cover object-center max-h-[120px]"
                     width={400}
                     height={120}
                     alt={""}
                 />
                 <Image
-                    src={"/images/educational-programs/students.png"}
+                    src={"/images/educational-programs/hero/students.png"}
                     className="w-full rounded-4xl object-cover object-center max-h-[120px]"
                     width={400}
                     height={120}
                     alt={""}
                 />
                 <Image
-                    src={"/images/educational-programs/mobile-image-2.png"}
+                    src={"/images/educational-programs/hero/mobile-image-2.png"}
                     className="w-full rounded-4xl object-cover object-center max-h-[120px]"
                     width={400}
                     height={120}

@@ -20,7 +20,7 @@ export default function Home({ params }: { params: Promise<{ locale: Locale }> }
 
                 <HomeCurricula />
 
-                <LanguageSection />
+                <LanguageSection className="mt-16" />
 
                 <HomeActivities />
 

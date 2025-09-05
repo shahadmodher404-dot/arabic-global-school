@@ -298,7 +298,7 @@
         },
         "safe_start": {
             "title": "A Safe Start For Active And Balanced Learning",
-            "subtitle": "Our curriculum integrates values education with academic excellence, focusing on developing well-rounded students who excel both intellectually and morally.",
+            "subtitle": "We provide a warm classroom environment that encourages active and flexible learning, with educational support that considers the child's psychological and emotional growth.",
             "programs": {
                 "kindergarten": {
                     "title": "Kindergarten",
@@ -311,13 +311,17 @@
                 "intermediate": {
                     "title": "Intermediate School",
                     "desc": "Advanced learning with specialized subjects and leadership opportunities"
+                },
+                "ICO": {
+                    "title": "ICO",
+                    "desc": "Teach Arabic language and Islamic values in a simplified manner."
                 }
             }
         },
         "values": {
             "title": "Value And Moral Education",
             "subtitle": "Islamic values integrated into daily learning activities and character building programs that shape responsible citizens.",
-            "button": "Learn more"
+            "registration": "Register Now!"
         },
         "stages": {
             "title": "From Kindergarten To Elementary School",

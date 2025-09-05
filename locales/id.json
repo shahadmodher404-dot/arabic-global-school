@@ -256,7 +256,7 @@
         },
         "safe_start": {
             "title": "Awal yang Aman untuk Pembelajaran Aktif dan Seimbang",
-            "subtitle": "Kurikulum kami mengintegrasikan pendidikan nilai dengan keunggulan akademik, berfokus pada pengembangan siswa yang utuh yang unggul secara intelektual dan moral.",
+            "subtitle": "Kami menyediakan lingkungan kelas yang hangat yang mendorong pembelajaran yang aktif dan fleksibel, dengan dukungan pendidikan yang mempertimbangkan pertumbuhan psikologis dan emosional anak.",
             "programs": {
                 "kindergarten": {
                     "title": "Taman Kanak-kanak",
@@ -269,13 +269,17 @@
                 "intermediate": {
                     "title": "Sekolah Menengah",
                     "desc": "Pembelajaran lanjutan dengan mata pelajaran khusus dan peluang kepemimpinan"
+                },
+                "ICO": {
+                    "title": "ICO",
+                    "desc": "Mengajarkan bahasa Arab dan nilai-nilai Islam dengan cara yang disederhanakan."
                 }
             }
         },
         "values": {
             "title": "Pendidikan Nilai dan Moral",
             "subtitle": "Nilai-nilai Islam terintegrasi dalam kegiatan pembelajaran harian dan program pembangunan karakter yang membentuk warga negara yang bertanggung jawab.",
-            "button": "Pelajari lebih lanjut"
+            "registration": "Daftar Sekarang!"
         },
         "stages": {
             "title": "Dari Taman Kanak-kanak ke Sekolah Dasar",
