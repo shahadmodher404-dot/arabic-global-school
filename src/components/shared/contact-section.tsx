@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
-import Section from "./ui/section";
-import CustomLink from "./ui/Link";
+import Section from "../ui/section";
+import CustomLink from "../ui/Link";
 
 export default function ContactSection() {
     const t = useTranslations("contact");
