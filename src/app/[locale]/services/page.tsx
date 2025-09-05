@@ -1,4 +1,4 @@
-import ContactSection from "@/components/contact-section";
+import ContactSection from "@/components/shared/contact-section";
 import ServicesFacilities from "@/components/services/services-facilities";
 import ServicesHero from "@/components/services/services-hero";
 import ServicesMeal from "@/components/services/services-meal";

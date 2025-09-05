@@ -5,7 +5,7 @@ import { LanguageArrowIcon } from "@/assets/icons";
 import { Card, CardContent } from "../ui/card";
 import { ArabicContainerIcon, EnglishContainerIcon, IndonesianContainerIcon } from "@/assets/langs-container-icons";
 
-function HomeLanguage() {
+function LanguageSection() {
     const t = useTranslations("home.language");
 
     return (
@@ -102,4 +102,4 @@ function HomeLanguage() {
     );
 }
 
-export default HomeLanguage;
+export default LanguageSection;

@@ -7,7 +7,7 @@ import LangSwitcher from "./lang-switcher";
 import { Button } from "./ui/button";
 import { useNavbarToggler } from "@/hooks/use-navbar-toggler";
 import { BurgerMenu, ChevronRightIcon } from "@/assets/icons";
-import BergerMenu from "./BergerMenu";
+import BergerMenu from "./berger-menu";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "./ui/dropdown-menu";
 
 function Navbar() {
