@@ -1,4 +1,3 @@
-import { Locale } from "@/i18n/routing";
 import { API } from "./api.base";
 import { Faq, News, RootResponse } from "./response.types";
 

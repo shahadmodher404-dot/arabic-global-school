@@ -12,17 +12,11 @@ interface BurgerMenuProps {
     onClose: () => void;
 }
 
-interface DropdownItem {
-    title: string;
-    href: string;
-}
+// interface DropdownItem {
+//     title: string;
+//     href: string;
+// }
 
-interface MenuItem {
-    title: string;
-    href: string;
-    hasDropdown?: boolean;
-    dropdownItems?: DropdownItem[];
-}
 
 function BergerMenu({ isOpen, onClose }: BurgerMenuProps) {
     const [openDropdown, setOpenDropdown] = useState<string | null>(null);

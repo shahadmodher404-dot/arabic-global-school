@@ -12,7 +12,7 @@ interface FAQButtonProps {
     isMobile?: boolean;
 }
 
-export default function FAQButton({ faq, index, isActive, isExpanded, onClick, isMobile = false }: FAQButtonProps) {
+export default function FAQButton({ faq, isActive, onClick, isMobile = false }: FAQButtonProps) {
     const { locale } = useParams();
     
     // Extract localized text

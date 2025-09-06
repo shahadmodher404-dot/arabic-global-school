@@ -58,7 +58,7 @@ export interface News {
 }
 
 // Legacy interface for backward compatibility (deprecated)
-interface Isvisible {
-    value: number;
-    label: string;
-}
+// interface Isvisible {
+//     value: number;
+//     label: string;
+// }
