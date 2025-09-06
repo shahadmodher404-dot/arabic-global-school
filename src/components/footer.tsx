@@ -68,7 +68,7 @@ function Footer() {
 
                             <div className="flex flex-col gap-3 mt-6">
                                 {val.map((link) => (
-                                    <Link className="text-natural-tertiary font-normal leading-[140%]" href={link.href} key={link.href}>
+                                    <Link className="text-natural-tertiary font-normal leading-[140%] hover:underline" href={link.href} key={link.href}>
                                         {t(`${key}.links.${link.key}`)}
                                     </Link>
                                 ))}
@@ -77,7 +77,7 @@ function Footer() {
                     ))}
                 </div>
 
-                <div className="flex justify-between">
+                <div className="flex items-center justify-between">
                     <div className="space-y-4">
                         <h1 className="text-2xl md:text-3xl lg:text-4xl mb-6">{t("newsletter.title")}</h1>
 

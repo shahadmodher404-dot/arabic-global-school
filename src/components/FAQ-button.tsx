@@ -14,18 +14,16 @@ interface FAQButtonProps {
 
 export default function FAQButton({ faq, isActive, onClick, isMobile = false }: FAQButtonProps) {
     const { locale } = useParams();
-    
+
     // Extract localized text
-    const question = typeof faq.question === 'string' 
-        ? faq.question 
-        : faq.question?.[locale as Locale] || faq.question?.en || '';
+    const question = typeof faq.question === "string" ? faq.question : faq.question?.[locale as Locale] || faq.question?.en || "";
 
     return (
         <button
             className={formateClasses(
                 "px-6 py-4 border rounded-full flex items-center gap-4 w-full text-left transition-all duration-300 cursor-pointer",
                 isMobile ? "lg:max-w-full" : "lg:max-w-[545px]",
-                isActive ? "bg-[#F2F6FC] border-transparent" : "bg-transparent border-[#D5DEF1]"
+                isActive ? "bg-[#F2F6FC] border-transparent pointer-events-none" : "bg-transparent border-[#D5DEF1]"
             )}
             onClick={onClick}
         >

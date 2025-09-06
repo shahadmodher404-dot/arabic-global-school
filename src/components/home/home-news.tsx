@@ -99,7 +99,7 @@ export default function HomeNews() {
 
                     {/* Custom Navigation Buttons */}
                     <button
-                        className={`swiper-button-prev-custom absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-12 h-12 bg-white rounded-2xl shadow-lg flex items-center justify-center transition-all duration-300 border border-natural-tertiary ${
+                        className={`swiper-button-prev-custom absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-12 h-12 bg-white rounded-2xl shadow-lg items-center justify-center transition-all duration-300 border border-natural-tertiary hidden lg:flex ${
                             isBeginning ? "opacity-50 cursor-not-allowed" : "hover:bg-gray-50 opacity-100 cursor-pointer"
                         }`}
                         disabled={isBeginning}
@@ -108,7 +108,7 @@ export default function HomeNews() {
                     </button>
 
                     <button
-                        className={`swiper-button-next-custom absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 w-12 h-12 bg-white rounded-2xl shadow-lg flex items-center justify-center transition-all duration-300 border border-natural-tertiary ${
+                        className={`swiper-button-next-custom absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 w-12 h-12 bg-white rounded-2xl shadow-lg items-center justify-center transition-all duration-300 border border-natural-tertiary hidden lg:flex ${
                             isEnd ? "opacity-50 cursor-not-allowed" : "hover:bg-gray-50 opacity-100 cursor-pointer"
                         }`}
                         disabled={isEnd}

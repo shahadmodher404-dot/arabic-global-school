@@ -82,9 +82,9 @@ function MobileFooter() {
                         <AccordionItem value={key} key={key}>
                             <AccordionTrigger className="text-lg last-of-type:border-b">{t(`${key}.title`)}</AccordionTrigger>
 
-                            <AccordionContent className="flex flex-col gap-2">
+                            <AccordionContent className="flex flex-col gap-2 pt-4">
                                 {val.map((link) => (
-                                    <Link className="text-natural-tertiary font-normal leading-[140%]" href={link.href} key={link.href}>
+                                    <Link className="text-natural-tertiary font-normal leading-[140%] hover:underline" href={link.href} key={link.href}>
                                         {t(`${key}.links.${link.key}`)}
                                     </Link>
                                 ))}
