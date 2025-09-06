@@ -4,13 +4,14 @@ import { useTranslations } from "next-intl";
 import { LanguageArrowIcon } from "@/assets/icons";
 import { Card, CardContent } from "../ui/card";
 import { ArabicContainerIcon, EnglishContainerIcon, IndonesianContainerIcon } from "@/assets/langs-container-icons";
+import { formateClasses } from "@/lib/utils";
 
-function HomeLanguage() {
+function LanguageSection({ className }: { className?: string }) {
     const t = useTranslations("home.language");
 
     return (
-        <Section size={"screen"} className="bg-white mt-16">
-            <Section.Inner className="relative min-[400px]:py-0">
+        <Section size={"screen"} className={formateClasses("bg-white", className)}>
+            <Section.Inner className="relative">
                 <div className="" dir="ltr">
                     <div className="absolute scale-75 md:scale-90 lg:scale-100 top-[55%] md:top-1/6 lg:top-32 start-5 md:start-1/6 lg:start-1/4 -translate-x-1/5 md:-translate-x-1/3 lg:-translate-x-1/2 -translate-y-1/2 hidden min-[400px]:flex flex-col">
                         <div
@@ -102,4 +103,4 @@ function HomeLanguage() {
     );
 }
 
-export default HomeLanguage;
+export default LanguageSection;

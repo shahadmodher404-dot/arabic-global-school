@@ -31,6 +31,6 @@ export function generateGuid(): string {
     });
 }
 
-export function formateClasses(...classes:string[]){
-    return classes.join(" ").trim();
+export function formateClasses(...classes: (string | undefined)[]) {
+    return classes.filter(Boolean).join(" ").trim();
 }

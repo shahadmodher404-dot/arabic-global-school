@@ -64,6 +64,7 @@
     --color-secondary-solid: var(--secondary-solid);
     --color-border-primary: var(--border-primary);
     --color-secondary-solid-light: var(--secondary-solid-light);
+    --color-content-secondary: var(--content-secondary);
 }
 
 :root {
@@ -121,11 +122,30 @@
     --primary-solid: oklch(53.508% 0.20749 259.018);
     --secondary-solid: oklch(90.129% 0.18045 97.815);
     --secondary-solid-light: oklch(96.166% 0.13521 105.531);
+    --content-secondary: oklch(98.147% 0.07515 106.114);
 }
 
 @layer base {
     * {
         @apply border-border outline-ring/50;
+    }
+    html {
+        /* Smoothing (Safari/macOS) */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+
+        /* Better glyph shaping and kerning */
+        text-rendering: optimizeLegibility;
+        font-kerning: normal;
+        font-synthesis-weight: none;
+        font-synthesis-style: none;
+
+        /* Enable common ligatures + contextual alternates (helps Arabic too) */
+        font-variant-ligatures: common-ligatures contextual;
+        font-feature-settings: "kern" 1, "liga" 1, "clig" 1, "calt" 1;
+
+        /* For variable fonts (SF Pro, etc.) */
+        font-optical-sizing: auto;
     }
     body {
         @apply bg-background text-foreground;

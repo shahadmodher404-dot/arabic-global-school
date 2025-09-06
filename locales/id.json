@@ -159,14 +159,14 @@
     "services": {
         "hero": {
             "title": "Lingkungan Belajar Lengkap Untuk Pertumbuhan Dan Kenyamanan Anak Anda.",
-            "subtitle": "Kami menawarkan pendidikan seimbang dalam tiga bahasa, menggabungkan nilai-nilai Islam dengan standar global di lingkungan yang aman dan merangsang."
-        },
-        "stats": {
-            "students": "+154K Siswa ada di sini"
+            "subtitle": "Kami menawarkan pendidikan seimbang dalam tiga bahasa, menggabungkan nilai-nilai Islam dengan standar global di lingkungan yang aman dan merangsang.",
+            "registration": "Daftar Sekarang!",
+            "counter": "+154K",
+            "counter_label": "Siswa ada di sini"
         },
         "facilities": {
             "title": "Fasilitas dan Ruang Sekolah",
-            "subtitle": "Lingkungan yang aman, kreatif, dan inspiratif untuk pertumbuhan dan kenyamanan anak Anda.",
+            "subtitle": "Lingkungan yang aman, kreatif, dan menginspirasi untuk pertumbuhan dan kenyamanan anak Anda.",
             "register": "Daftar Sekarang!",
             "items": {
                 "classrooms": {
@@ -244,12 +244,19 @@
     },
     "educational_programs": {
         "hero": {
-            "title": "Kurikulum dan program pendidikan",
-            "subtitle": "Kurikulum pendidikan komprehensif yang menggabungkan nilai-nilai Islam dengan standar internasional untuk membangun kepribadian yang seimbang"
+            "enrichment": "Kegiatan dan program pengayaan",
+            "title": {
+                "part1": "Kurikulum dan",
+                "part2": "program pendidikan"
+            },
+            "subtitle": "Kami menawarkan pendidikan seimbang dalam tiga bahasa, menggabungkan nilai-nilai Islam dengan standar global di lingkungan yang aman dan merangsang.",
+            "registration": "Daftar Sekarang!",
+            "counter": "+154K",
+            "counter_label": "Siswa ada di sini"
         },
         "safe_start": {
             "title": "Awal yang Aman untuk Pembelajaran Aktif dan Seimbang",
-            "subtitle": "Kurikulum kami mengintegrasikan pendidikan nilai dengan keunggulan akademik, berfokus pada pengembangan siswa yang utuh yang unggul secara intelektual dan moral.",
+            "subtitle": "Kami menyediakan lingkungan kelas yang hangat yang mendorong pembelajaran yang aktif dan fleksibel, dengan dukungan pendidikan yang mempertimbangkan pertumbuhan psikologis dan emosional anak.",
             "programs": {
                 "kindergarten": {
                     "title": "Taman Kanak-kanak",
@@ -262,13 +269,17 @@
                 "intermediate": {
                     "title": "Sekolah Menengah",
                     "desc": "Pembelajaran lanjutan dengan mata pelajaran khusus dan peluang kepemimpinan"
+                },
+                "ICO": {
+                    "title": "ICO",
+                    "desc": "Mengajarkan bahasa Arab dan nilai-nilai Islam dengan cara yang disederhanakan."
                 }
             }
         },
         "values": {
             "title": "Pendidikan Nilai dan Moral",
             "subtitle": "Nilai-nilai Islam terintegrasi dalam kegiatan pembelajaran harian dan program pembangunan karakter yang membentuk warga negara yang bertanggung jawab.",
-            "button": "Pelajari lebih lanjut"
+            "registration": "Daftar Sekarang!"
         },
         "stages": {
             "title": "Dari Taman Kanak-kanak ke Sekolah Dasar",

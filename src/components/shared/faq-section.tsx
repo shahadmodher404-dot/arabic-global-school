@@ -12,7 +12,7 @@ import FAQButton from "../FAQ-button";
 import FAQContent from "../FAQ-content";
 import Section from "../ui/section";
 
-export default function HomeFAQ() {
+export default function FAQSection() {
     const { locale } = useParams();
     const t = useTranslations("home.faq");
     const [currentFAQ, setCurrentFaq] = useState(0);

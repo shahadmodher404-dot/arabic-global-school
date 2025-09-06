@@ -201,10 +201,10 @@
     "services": {
         "hero": {
             "title": "A Complete Learning Environment For Your Child's Growth And Comfort.",
-            "subtitle": "We offer a balanced education in three languages, combining Islamic values with global standards in a safe and stimulating environment."
-        },
-        "stats": {
-            "students": "+154K Students are here"
+            "subtitle": "We offer a balanced education in three languages, combining Islamic values with global standards in a safe and stimulating environment.",
+            "registration": "Register Now!",
+            "counter": "+154K",
+            "counter_label": "Students are here"
         },
         "facilities": {
             "title": "School Facilities And Spaces",
@@ -264,7 +264,7 @@
         },
         "meal": {
             "title": "A Healthy Meal That Promotes Values.",
-            "subtitle": "On Friday, students participate in organizing the table and distributing food under educational supervision, aiming to instill values of responsibility, cooperation, and respect.",
+            "subtitle": "A balanced meal with protein, vegetables, carbs, fruit and always water on the side",
             "points": {
                 "bring_plate": "Each student is required to bring a clean plate and spoon.",
                 "water_only": "Water is the only beverage allowed.",
@@ -286,12 +286,19 @@
     },
     "educational_programs": {
         "hero": {
-            "title": "Curricula and educational programs",
-            "subtitle": "Comprehensive educational curricula that combine Islamic values with international standards to build a balanced personality"
+            "enrichment": "Enrichment activities and programs",
+            "title": {
+                "part1": "Curricula and",
+                "part2": "educational programs"
+            },
+            "subtitle": "We offer a balanced education in three languages, combining Islamic values with global standards in a safe and stimulating environment.",
+            "registration": "Register Now!",
+            "counter": "+154K",
+            "counter_label": "Students are here"
         },
         "safe_start": {
             "title": "A Safe Start For Active And Balanced Learning",
-            "subtitle": "Our curriculum integrates values education with academic excellence, focusing on developing well-rounded students who excel both intellectually and morally.",
+            "subtitle": "We provide a warm classroom environment that encourages active and flexible learning, with educational support that considers the child's psychological and emotional growth.",
             "programs": {
                 "kindergarten": {
                     "title": "Kindergarten",
@@ -304,13 +311,17 @@
                 "intermediate": {
                     "title": "Intermediate School",
                     "desc": "Advanced learning with specialized subjects and leadership opportunities"
+                },
+                "ICO": {
+                    "title": "ICO",
+                    "desc": "Teach Arabic language and Islamic values in a simplified manner."
                 }
             }
         },
         "values": {
             "title": "Value And Moral Education",
             "subtitle": "Islamic values integrated into daily learning activities and character building programs that shape responsible citizens.",
-            "button": "Learn more"
+            "registration": "Register Now!"
         },
         "stages": {
             "title": "From Kindergarten To Elementary School",

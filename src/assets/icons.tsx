@@ -329,3 +329,222 @@ export const ChevronRightIcon = (props: SVGAttributes<SVGSVGElement>) => {
         </svg>
     );
 };
+
+export const WebCamIcon = (props: SVGAttributes<SVGSVGElement>) => (
+    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+        <path
+            d="M12.4985 17.1303C16.2552 17.1303 19.3007 14.0848 19.3007 10.3281C19.3007 6.57135 16.2552 3.52588 12.4985 3.52588C8.74177 3.52588 5.69727 6.57135 5.69727 10.3281C5.69727 14.0848 8.74177 17.1303 12.4985 17.1303Z"
+            stroke="white"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        />
+        <path
+            d="M15.8496 16.2329L17.8365 19.7114C18.2947 20.5209 17.71 21.527 16.7759 21.527H8.22716C7.28336 21.527 6.69859 20.5209 7.1666 19.7026L9.16123 16.2417"
+            stroke="white"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        />
+        <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M14.6997 10.3284C14.6997 11.5417 13.716 12.5264 12.5017 12.5264C11.2884 12.5264 10.3047 11.5417 10.3047 10.3284C10.3047 9.11505 11.2884 8.13135 12.5017 8.13135C13.716 8.13135 14.6997 9.11505 14.6997 10.3284Z"
+            stroke="white"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        />
+    </svg>
+);
+
+export const ExitIcon = (props: SVGAttributes<SVGSVGElement>) => (
+    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+        <path
+            d="M19.5 17.9629V5.6301C19.5 4.3299 18.4216 3.27588 17.0914 3.27588H7.90862C6.57838 3.27588 5.5 4.3299 5.5 5.6301V20.8417"
+            stroke="white"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        />
+        <path
+            d="M19.5004 19.2179V6.58139C19.5004 4.96006 17.9741 3.74807 16.3475 4.0778L11.2161 5.11801C10.0004 5.36444 9.12891 6.40982 9.12891 7.62159V18.1777C9.12891 19.3895 10.0004 20.4349 11.2161 20.6813L16.3475 21.7215C17.9741 22.0513 19.5004 20.8393 19.5004 19.2179Z"
+            stroke="white"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        />
+        <path d="M12.5 12.0588V13.7407" stroke="white" strokeWidth="1.5" strokeLinecap="round" />
+    </svg>
+);
+
+export const UserIcon = (props: SVGAttributes<SVGSVGElement>) => (
+    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+        <path
+            d="M12.6605 12.1459C12.6305 12.1459 12.6105 12.1459 12.5805 12.1459C12.5305 12.1359 12.4605 12.1359 12.4005 12.1459C9.50055 12.0559 7.31055 9.77588 7.31055 6.96588C7.31055 4.10588 9.64055 1.77588 12.5005 1.77588C15.3605 1.77588 17.6905 4.10588 17.6905 6.96588C17.6805 9.77588 15.4805 12.0559 12.6905 12.1459C12.6805 12.1459 12.6705 12.1459 12.6605 12.1459ZM12.5005 3.27588C10.4705 3.27588 8.81055 4.93588 8.81055 6.96588C8.81055 8.96588 10.3705 10.5759 12.3605 10.6459C12.4105 10.6359 12.5505 10.6359 12.6805 10.6459C14.6405 10.5559 16.1805 8.94588 16.1905 6.96588C16.1905 4.93588 14.5305 3.27588 12.5005 3.27588Z"
+            fill="white"
+        />
+        <path
+            d="M12.6696 23.0759C10.7096 23.0759 8.73961 22.5759 7.24961 21.5759C5.85961 20.6559 5.09961 19.3959 5.09961 18.0259C5.09961 16.6559 5.85961 15.3859 7.24961 14.4559C10.2496 12.4659 15.1096 12.4659 18.0896 14.4559C19.4696 15.3759 20.2396 16.6359 20.2396 18.0059C20.2396 19.3759 19.4796 20.6459 18.0896 21.5759C16.5896 22.5759 14.6296 23.0759 12.6696 23.0759ZM8.07961 15.7159C7.11961 16.3559 6.59961 17.1759 6.59961 18.0359C6.59961 18.8859 7.12961 19.7059 8.07961 20.3359C10.5696 22.0059 14.7696 22.0059 17.2596 20.3359C18.2196 19.6959 18.7396 18.8759 18.7396 18.0159C18.7396 17.1659 18.2096 16.3459 17.2596 15.7159C14.7696 14.0559 10.5696 14.0559 8.07961 15.7159Z"
+            fill="white"
+        />
+    </svg>
+);
+
+export const Pin3DIcon = (props: SVGAttributes<SVGSVGElement>) => {
+    return (
+        <svg width="37" height="42" viewBox="0 0 37 42" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+            <path
+                d="M6.51395 26.6514L13.2268 19.1927C14.2007 18.1106 15.7234 17.7086 17.1046 18.169C18.5992 18.6671 19.6072 20.0658 19.6072 21.6411V31.7413C19.6072 36.2861 14.9837 39.3685 10.7885 37.6205L8.7984 36.7912C4.74521 35.1024 3.57655 29.9152 6.51395 26.6514Z"
+                fill="url(#paint0_linear_1356_10959)"
+            />
+            <g filter="url(#filter0_i_1356_10959)">
+                <ellipse cx="19.6069" cy="14.2263" rx="14.3304" ry="9.55361" transform="rotate(19.0097 19.6069 14.2263)" fill="#0064E2" />
+            </g>
+            <defs>
+                <filter
+                    id="filter0_i_1356_10959"
+                    x="5.70312"
+                    y="4.05688"
+                    width="27.8086"
+                    height="26.7079"
+                    filterUnits="userSpaceOnUse"
+                    colorInterpolationFilters="sRGB"
+                >
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                    <feOffset dy="6.36908" />
+                    <feGaussianBlur stdDeviation="3.18454" />
+                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0" />
+                    <feBlend mode="normal" in2="shape" result="effect1_innerShadow_1356_10959" />
+                </filter>
+                <linearGradient id="paint0_linear_1356_10959" x1="19.6072" y1="25.3722" x2="6.86907" y2="38.1104" gradientUnits="userSpaceOnUse">
+                    <stop stopColor="#0064E2" />
+                    <stop offset="0.475962" stopColor="#004FB1" />
+                    <stop offset="1" stopColor="#00377C" />
+                </linearGradient>
+            </defs>
+        </svg>
+    );
+};
+
+export const BoldCalenderIcon = (props: SVGAttributes<SVGSVGElement>) => {
+    return (
+        <svg width="113" height="113" viewBox="0 0 113 113" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+            <g filter="url(#filter0_i_1356_11000)">
+                <path
+                    d="M39.2891 3.43701C42.5831 3.43701 45.2891 6.14297 45.2891 9.43701V23.437C45.2891 26.7311 42.5831 29.437 39.2891 29.437C35.995 29.437 33.2891 26.7311 33.2891 23.437V9.43701C33.2891 6.14297 35.995 3.43701 39.2891 3.43701Z"
+                    fill="#0064E2"
+                    stroke="white"
+                    strokeWidth="5"
+                />
+                <path
+                    d="M74.2891 3.43701C77.5831 3.43701 80.2891 6.14297 80.2891 9.43701V23.437C80.2891 26.7311 77.5831 29.437 74.2891 29.437C70.995 29.437 68.2891 26.7311 68.2891 23.437V9.43701C68.2891 6.14297 70.995 3.43701 74.2891 3.43701Z"
+                    fill="#0064E2"
+                    stroke="white"
+                    strokeWidth="5"
+                />
+                <path
+                    d="M56.79 55.937C58.4474 55.937 60.1142 56.3995 61.4121 57.4946C62.7582 58.6304 63.4902 60.2695 63.4902 62.1235C63.4902 63.9613 62.7542 65.595 61.4375 66.7368C60.1551 67.8488 58.4879 68.3569 56.79 68.3569C55.092 68.3569 53.4241 67.849 52.1416 66.7368C50.8249 65.595 50.0898 63.9613 50.0898 62.1235C50.0899 60.2695 50.8218 58.6304 52.168 57.4946C53.4659 56.3996 55.1327 55.937 56.79 55.937Z"
+                    fill="#0064E2"
+                    stroke="white"
+                    strokeWidth="5"
+                />
+                <path
+                    d="M56.7891 68.2568C60.6079 68.257 64.6083 70.8675 64.6084 75.0967C64.6084 79.3259 60.608 81.9364 56.7891 81.9365C52.9701 81.9365 48.9688 79.326 48.9688 75.0967C48.9688 70.8674 52.9701 68.2568 56.7891 68.2568Z"
+                    fill="#0064E2"
+                    stroke="white"
+                    strokeWidth="5"
+                />
+                <path
+                    d="M58.9355 13.937C62.8827 13.9373 66.1016 17.1568 66.1016 21.104V25.9565C66.1016 30.6542 70.1589 34.4216 74.9639 33.9233H74.9668C78.9604 33.5137 82.1016 29.7297 82.1016 25.3501V24.8833C82.1018 19.0306 88.6799 15.7008 93.3828 18.937L93.6055 19.0962L93.6289 19.1138C99.6729 23.7114 103.622 30.9169 103.622 39.1636V80.0435C103.622 93.9774 92.3294 105.27 78.3955 105.27H35.1816C21.2476 105.27 9.95508 93.9775 9.95508 80.0435L9.95508 39.1636C9.95508 38.4063 10.0091 37.6641 10.0547 37.0259L10.0557 37.0112L10.0566 36.9956C10.1008 36.4658 10.1543 35.8748 10.2607 35.2612C10.368 34.4652 10.5291 33.6532 10.751 32.8765C10.9302 32.2042 11.1502 31.3786 11.4873 30.5356C11.4954 30.5154 11.5048 30.4901 11.5234 30.439C11.5387 30.3972 11.5683 30.3141 11.6006 30.231C11.6466 30.1125 11.706 29.974 11.7832 29.8198C11.9968 29.1968 12.2651 28.6355 12.4873 28.189C12.5629 27.9729 12.6646 27.7688 12.79 27.5806C12.8183 27.5382 12.8487 27.5 12.876 27.4634C13.1755 26.8767 13.5394 26.208 13.9629 25.5806C14.0544 25.4253 14.1484 25.297 14.2314 25.1948C14.6126 24.591 15.0684 23.9417 15.6338 23.314C16.7101 21.9441 17.9722 20.683 19.373 19.5728C19.4482 19.5057 19.5161 19.4495 19.5723 19.4058C19.6528 19.3432 19.7301 19.288 19.7676 19.2612L19.8193 19.2104L19.9619 19.104C20.143 18.9682 20.3331 18.8342 20.5605 18.7017L20.6289 18.6343L20.9834 18.4546C25.5964 16.1126 31.4743 19.3325 31.4746 24.8833V25.3501C31.4746 28.3111 32.938 31.0711 35.1738 32.6528C35.4407 32.8301 35.7625 32.9955 36.2529 33.2407C36.5133 33.3709 36.7659 33.4783 37.0107 33.564L37.2539 33.6421L37.29 33.6538L37.3252 33.6655C37.6264 33.7659 37.9267 33.8409 38.2295 33.8843L38.5332 33.9165L38.5996 33.9214L38.665 33.9292C39.2058 33.9968 39.7444 33.9968 40.2852 33.9292L40.3506 33.9214L40.417 33.9165C40.8238 33.8874 41.2234 33.7994 41.625 33.6655L41.6904 33.6431L41.7568 33.6255C42.0967 33.5328 42.3739 33.4174 42.6006 33.2915L42.6484 33.2651L42.6973 33.2407C43.1906 32.9941 43.5135 32.8284 43.7812 32.6499L43.8096 32.6323L43.8369 32.6138C46.0171 31.2424 47.4746 28.767 47.4746 25.9565V21.104C47.4746 17.1567 50.6943 13.9371 54.6416 13.937L58.9355 13.937ZM56.7881 55.104C54.3416 55.1041 52.2861 55.7728 50.8984 56.8794C49.5772 57.9332 48.6953 59.5056 48.6953 61.7974C48.6954 63.8393 49.581 65.2573 51.042 66.2866L54.249 68.5464L50.8457 70.4985C48.7418 71.7057 47.6221 73.6512 47.6221 75.8901C47.6221 78.0856 48.4321 79.6917 49.8115 80.8032C51.2534 81.9651 53.5559 82.77 56.7881 82.77C59.9938 82.77 62.3002 81.9669 63.751 80.8013C65.1398 79.6854 65.9551 78.0771 65.9551 75.8901C65.955 73.6569 64.841 71.7164 62.6992 70.5073L59.2158 68.5405L62.5098 66.272C63.9754 65.2623 64.8349 63.8639 64.835 61.7974C64.835 59.4969 63.9578 57.9254 62.6494 56.8755C61.2754 55.7729 59.2344 55.104 56.7881 55.104Z"
+                    fill="#0064E2"
+                    stroke="white"
+                    strokeWidth="5"
+                />
+            </g>
+            <defs>
+                <filter
+                    id="filter0_i_1356_11000"
+                    x="7.45508"
+                    y="0.937012"
+                    width="106.666"
+                    height="114.833"
+                    filterUnits="userSpaceOnUse"
+                    colorInterpolationFilters="sRGB"
+                >
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                    <feOffset dx="8" dy="8" />
+                    <feGaussianBlur stdDeviation="5.8" />
+                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0" />
+                    <feBlend mode="normal" in2="shape" result="effect1_innerShadow_1356_11000" />
+                </filter>
+            </defs>
+        </svg>
+    );
+};
+
+export const MealPointIcon = (props: SVGAttributes<SVGSVGElement>) => {
+    return (
+        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_i_1356_11019)">
+                <circle cx="12" cy="12.5259" r="12" fill="#F05D25" />
+            </g>
+            <g filter="url(#filter1_i_1356_11019)">
+                <circle cx="12" cy="12.5259" r="6" fill="#FF956D" />
+            </g>
+            <defs>
+                <filter
+                    id="filter0_i_1356_11019"
+                    x="0"
+                    y="0.525879"
+                    width="24"
+                    height="26"
+                    filterUnits="userSpaceOnUse"
+                    colorInterpolationFilters="sRGB"
+                >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                    <feOffset dy="2" />
+                    <feGaussianBlur stdDeviation="2" />
+                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.5 0" />
+                    <feBlend mode="normal" in2="shape" result="effect1_innerShadow_1356_11019" />
+                </filter>
+                <filter
+                    id="filter1_i_1356_11019"
+                    x="6"
+                    y="6.52588"
+                    width="12"
+                    height="13.9"
+                    filterUnits="userSpaceOnUse"
+                    colorInterpolationFilters="sRGB"
+                >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                    <feOffset dy="2" />
+                    <feGaussianBlur stdDeviation="0.95" />
+                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0" />
+                    <feBlend mode="normal" in2="shape" result="effect1_innerShadow_1356_11019" />
+                </filter>
+            </defs>
+        </svg>
+    );
+};
+
+export const EducationalProgramsCircleIcon = (props: SVGAttributes<SVGSVGElement>) => {
+    return (
+        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="8" cy="8.5" r="8" fill="#FFFDC2" />
+            <circle cx="8" cy="8.5" r="5" fill="#FFDE22" />
+        </svg>
+    );
+};
